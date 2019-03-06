@@ -1,0 +1,44 @@
+html, body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 1rem;
+    color: #303137;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    padding: 10px;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.brand, .nav-link {
+    color: #303137;
+}
+
+.brand {
+   font-size: 25px; 
+}
+
+.sensei {
+    color: #66b6d3
+}
+
+.topnav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.topnav .nav-link {
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 20px;
+}
