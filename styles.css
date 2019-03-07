@@ -18,7 +18,7 @@ html, body {
     justify-content: space-between;
 }
 
-.brand, .nav-link {
+.brand, .nav-link, a {
     color: #303137;
 }
 
@@ -37,7 +37,7 @@ html, body {
     list-style: none;
 }
 
-.topnav .nav-link {
+.topnav .nav-link, a {
     text-decoration: none;
     padding-left: 20px;
     font-size: 20px;
@@ -47,17 +47,25 @@ html, body {
     display: none;
 }
 
-.dropdownLink a {
-    text-decoration: none;
-    color: #303137;
-    font-weight: bold;
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.headshot-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.headshot {
+    border-radius: 50%;
+    max-width: 200px;
+    width: 100%;
 }
 
 @media (max-width: 768px) {
-    /* .navbar {
-        display: block;
-    } */
-
     ul.topnav li a.nav-link {
         display: none;
     }
