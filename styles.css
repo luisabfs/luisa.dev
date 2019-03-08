@@ -92,9 +92,11 @@ h2 {
     color: #aaa;
 }
 
+/* ################ ABOUT ME ############### */
+
 .about-me {
     background-color: #f2f2f2;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
 }
 
 .media-object {
@@ -153,6 +155,34 @@ h2 {
     padding: .8rem 4rem;
     border-radius: 3px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+}
+
+/* ################ PROJECTS ############### */
+
+.section-header {
+    text-align: center;
+    padding: 6rem 0 4rem;
+}
+
+.portfolio-wrapper {
+    display: flex;
+    max-width: 250px;
+}
+
+.portfolio-object {
+    max-width: 250px;
+}
+
+.portfolio-box {
+    width: 250px;
+    height: 250px;
+    background-color: #f1f3fa;
+    transition: .2s ease-in-out;
+}
+
+.portfolio-box:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 /* ################ MOBILE ############### */
