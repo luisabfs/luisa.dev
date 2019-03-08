@@ -13,13 +13,16 @@ html, body {
 
 /* ################ NAVBAR ############### */
 
-.navbar {
-    display: flex;
-    padding: 10px;
+.navbar, .container {
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
     justify-content: space-between;
+    padding: 10px;
 }
 
 .brand, .nav-link, a {
@@ -30,8 +33,8 @@ html, body {
    font-size: 30px; 
 }
 
-.sensei {
-    color: #66b6d3
+.name {
+    color: #88c6dd;
 }
 
 .topnav {
@@ -89,9 +92,67 @@ h2 {
     color: #aaa;
 }
 
-.services {
-    background-color: #f1f3fa;
+.about-me {
+    background-color: #f2f2f2;
+    padding: 2rem 1rem;
+}
+
+.media-object {
+    display: flex;
+    align-items: center;
     padding: 4rem 1rem;
+}
+
+.icon-left, 
+.icon-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.blurb-wrapper-right,
+.blurb-wrapper-left {
+    flex: 1;
+}
+
+.icon-left, 
+.blurb-wrapper-left {
+    order: 1;
+}
+
+.icon-right,
+.blurb-wrapper-right {
+    order: 2;
+}
+
+.blurb-wrapper-right {
+    flex: 1;
+}
+
+.blurb-header {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.blurb-info {
+    color: #808080;
+    font-size: 18px;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.btn {
+    color: #ffffff;
+    background-color: #88c6dd;
+    font-size: 18px;
+    border: none;
+    padding: .8rem 4rem;
+    border-radius: 3px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
 }
 
 /* ################ MOBILE ############### */
