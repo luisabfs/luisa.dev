@@ -75,6 +75,12 @@ header {
     border-radius: 50%;
     max-width: 150px;
     width: 100%;
+    transition: .2s;
+}
+
+.headshot:hover {
+    box-shadow: 0 0px 4px 0 rgba(0,0,0,0.18), 0 0px 12px 0 rgba(0,0,0,0.15);
+    opacity: .8;
 }
 
 .headshot-wrapper h1, .headshot-wrapper h2 {
