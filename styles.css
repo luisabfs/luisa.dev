@@ -5,11 +5,29 @@ html, body {
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 25px;
     font-size: 1rem;
     color: #303137;
     margin: 0;
     scroll-behavior: smooth;
+}
+
+a.btn-primary {
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+    margin: 0 50px 30px;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    color: black;
+    background: none;
+    padding: 0;
+}
+
+a.btn-primary:hover {
+    color: black;
+    background: none;
 }
 
 /* ################ NAVBAR ############### */
@@ -128,7 +146,7 @@ h2 {
 .media-object {
     display: flex;
     align-items: center;
-    padding: 4rem 1rem;
+    padding: 3rem 1rem;
 }
 
 .icon-left, 
@@ -160,6 +178,7 @@ h2 {
 .blurb-header {
     font-size: 24px;
     margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .blurb-info {
