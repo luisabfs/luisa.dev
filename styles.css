@@ -12,7 +12,7 @@ html, body {
     scroll-behavior: smooth;
 }
 
-a.btn-primary {
+a.nohover {
     position: fixed;
     bottom: 0px;
     right: 0px; 
@@ -23,11 +23,6 @@ a.btn-primary {
     color: black;
     background: none;
     padding: 0;
-}
-
-a.btn-primary:hover {
-    color: black;
-    background: none;
 }
 
 /* ################ NAVBAR ############### */
