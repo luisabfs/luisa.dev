@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>My Landing Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,7 +19,7 @@
             <li class="dropdownLink"><a id="dropdownLink" href="javascript:void(0);">&#9776;</a></li>
         </ul>
     </nav>
-
+ 
     <header>
         <div class="headshot-wrapper">
             <a href="#about-me">
@@ -26,20 +28,20 @@
             <h1>Luísa Barros</h1>
             <h2>Mobile Developer</h2> 
             <div class="social">
-                <a class="social-item" href="">
-                    <img src="assets/github-logo-24px.png" alt="">
+                <a class="social-item" href="https://github.com/luisabfs">
+                    <img src="assets/github-logo-24px.png" alt="Github Icon" data-toggle="popover" data-trigger="hover" data-content="github.com/luisabfs" data-placement="bottom">
                 </a>
-                <a class="social-item" href="">
-                    <img src="assets/instagram-24px.png" alt="">
+                <a class="social-item" href="https://www.linkedin.com/in/luisa-bfs/">
+                    <img src="assets/linkedin-24px.png" alt="Linkedin Icon" data-toggle="popover" data-trigger="hover" data-content="linkedin.com/in/luisa-bfs" data-placement="bottom">
                 </a>
-                <a class="social-item" href="">
-                    <img src="assets/linkedin-24px.png" alt="">
+                <a class="social-item" href="javascript:void(0);">
+                    <img src="assets/whatsapp-24px.png" alt="WhatsApp Icon" data-toggle="popover" data-trigger="hover" data-content="+55 (79) 98819-4918" data-placement="bottom">
                 </a>
-                <a class="social-item" href="">
-                    <img src="assets/email-24px.png" alt="">
+                <a class="social-item" href="https://www.instagram.com/luisabfs/">
+                    <img src="assets/instagram-24px.png" alt="Instagram Icon" data-toggle="popover" data-trigger="hover" data-content="instagram.com/luisabfs" data-placement="bottom">
                 </a>
-                <a class="social-item" href="">
-                    <img src="assets/whatsapp-24px.png" alt="">
+                <a class="social-item" href="javascript:void(0);">
+                    <img src="assets/email-24px.png" alt="E-mail Icon" data-toggle="popover" data-trigger="hover" data-content="qlullyq@gmail.com" data-placement="bottom">
                 </a>
             </div>
         </div>
@@ -76,9 +78,9 @@
                     <div class="blurb-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel vestibulum urna, ac tempus magna. Sed tristique hendrerit dui in congue. Fusce ut massa ac lacus consequat tristique ac in enim.</div>
                 </div>
             </div>
-            <div class="btn-wrapper">
+            <!-- <div class="btn-wrapper">
                 <button class="btn">Resume</button>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -92,35 +94,42 @@
                     <a href="https://github.com/luisabfs/befit">
                         <img class="portfolio-box" src="assets/befit.png" alt=""/>
                     </a>
-                    <h3>Befit</h3>
+                    <h4 class="project-title">Befit</h4>
                     <div class="portfolio-text">Mobile application for scheduling physical activities in group.</div>                
                 </div>
                 <div class="portfolio-object">
                     <a href="https://github.com/luisabfs/whatsapp-clone">
-                        <img class="portfolio-box" src="assets/ic_launcher.png" alt=""/>
+                        <img class="portfolio-box" src="assets/whatsapp-256px.png" alt=""/>
                     </a>
-                    <h3>WhatsApp Clone</h3>
+                    <h4 class="project-title">WhatsApp Clone</h3>
                     <div class="portfolio-text">Clone of WhatsApp.</div>                
                 </div>
                 <div class="portfolio-object">
                     <a href="https://github.com/luisabfs/instagram-clone">
-                        <img class="portfolio-box" src="assets/ic_launcher.png" alt=""/>
+                        <img class="portfolio-box" src="assets/instagram-256px.png" alt=""/>
                     </a>
-                    <h3>Instagram Clone</h3>
+                    <h4 class="project-title">Instagram Clone</h4>
                     <div class="portfolio-text">Clone of Instagram.</div>                     
                 </div>
                 <div class="portfolio-object">
-                    <a href="https://github.com/luisabfs/befit">
-                        <img class="portfolio-box" src="assets/ic_launcher.png" alt=""/>
+                    <a href="https://github.com/luisabfs/spider-man-wiki">
+                        <img class="portfolio-box" src="assets/spider-man-128px.png" alt=""/>
                     </a>
-                    <h3>WhatsApp Clone</h3>
-                    <div class="portfolio-text">Clone of WhatsApp.</div>                            
+                    <h4 class="project-title">Spider-Man Wiki</h4>
+                    <div class="portfolio-text">Simple website to learn HTML and CSS.</div>                            
                 </div>
             </div> 
         </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover({container: 'body'});
+        });
+    </script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

@@ -9,10 +9,7 @@ html, body {
     font-size: 1rem;
     color: #303137;
     margin: 0;
-}
-
-a {
-    text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 /* ################ NAVBAR ############### */
@@ -31,6 +28,12 @@ a {
 
 .brand, .nav-link, a {
     color: #303137;
+    text-decoration: none;
+    transition: .2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #88c6dd;
 }
 
 .brand {
@@ -62,9 +65,9 @@ a {
 header {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    height: 100vh;
-    overflow: auto;
+    align-items: center;
+    /* height: 100vh;
+    overflow: auto; */
 }
 
 .headshot-wrapper {
@@ -103,14 +106,17 @@ h2 {
 }
 
 .social {
-    margin: 30px;
+    padding: 30px 30px 50px 30px;
+    border-bottom: 1px solid #ededed;
+}
+
+.social a {
+    text-decoration: none;
 }
 
 .social-item {
-    padding-left: 10px;
+    padding: 12px;
 }
-
-/* border-top: 1px solid #ededed; */
 
 /* ################ ABOUT ME ############### */
 
@@ -181,7 +187,7 @@ h2 {
 
 .section-header {
     text-align: center;
-    padding: 3rem 0 0;
+    padding: 3rem 0;
 }
 
 .portfolio-wrapper {
@@ -193,12 +199,13 @@ h2 {
 
 .portfolio-object {
     max-width: 250px;
-    margin: 1rem 0;
+    margin: 0 auto;
+    width: 18%;
 }
 
 .portfolio-box {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 2px;
     transition: .2s ease-in-out;
 }
@@ -206,6 +213,21 @@ h2 {
 .portfolio-box:hover {
     cursor: pointer;
     transform: scale(1.1);
+}
+
+.project-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.portfolio-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #808080;
+    font-size: 18px;
 }
 
 /* ################ MOBILE ############### */
