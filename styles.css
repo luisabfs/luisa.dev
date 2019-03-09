@@ -199,15 +199,16 @@ h2 {
 
 .portfolio-object {
     max-width: 250px;
-    margin: 0 auto;
-    width: 18%;
 }
 
 .portfolio-box {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 2px;
     transition: .2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .portfolio-box:hover {
@@ -245,6 +246,11 @@ h2 {
 
     ul.topnav li a.nav-link {
         display: none;
+    }
+
+    .dropdownLink a {
+        color: #000;
+        text-decoration: none;
     }
 
     ul.topnav li.dropdownLink {
@@ -294,6 +300,11 @@ h2 {
 
     .portfolio-wrapper {
         text-align: center;
+    }
+
+    .portfolio-object {
+        margin: 1rem;
+        width: 100%;
     }
 }
 
