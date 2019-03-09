@@ -17,10 +17,7 @@ a.nohover {
     bottom: 0px;
     right: 0px; 
     margin: 2% 3%;
-    border: none;
     border-radius: 50%;
-    text-align: center;
-    color: black;
     background: none;
     padding: 0;
 }
