@@ -2,6 +2,8 @@
 
 > Minimalist personal website.
 
+![alt text](assets/print.png)
+
 ## Stack
 
 1. HTML5
