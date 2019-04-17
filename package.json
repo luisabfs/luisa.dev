@@ -1,0 +1,28 @@
+{
+  "name": "luisabfs.github.io",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4"
+  },
+  "scripts": {
+    "test": "test",
+    "lint": "./node_modules/.bin/eslint src/js/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisabfs/luisabfs.github.io.git"
+  },
+  "author": "Luísa Barros <qlullyq@gmail.com> (https://luisabfs.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luisabfs/luisabfs.github.io/issues"
+  },
+  "homepage": "https://github.com/luisabfs/luisabfs.github.io#readme"
+}
