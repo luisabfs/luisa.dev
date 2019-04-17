@@ -2,7 +2,7 @@
   "name": "luisabfs.github.io",
   "version": "1.0.0",
   "description": "Personal website",
-  "main": "src/index.js",
+  "main": "index.html",
   "dependencies": {},
   "devDependencies": {
     "eslint": "^5.16.0",
