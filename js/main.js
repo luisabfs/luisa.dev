@@ -1,15 +1,24 @@
-(function (doc) {
-  function toggleDropDown() {
-    const navbarToggle = doc.querySelector('#navbar-toggle');
 
-    if (navbarToggle.className === 'topnav') {
-      navbarToggle.className += ' responsive';
-    } else {
-      navbarToggle.className = 'topnav';
-    }
+function toggleDropDown() {
+  const navbarToggle = document.querySelector('#navbar-toggle');
+
+  if (navbarToggle.className === 'topnav') {
+    navbarToggle.className += ' responsive';
+  } else {
+    navbarToggle.className = 'topnav';
   }
+}
 
-  const dropdownLink = doc.querySelector('#dropdownLink');
+function scrollFunction() {
+  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+    document.getElementById('myBtn').style.display = 'block';
+  } else {
+    document.getElementById('myBtn').style.display = 'none';
+  }
+}
 
-  dropdownLink.addEventListener('click', toggleDropDown, false);
-}(document));
+const dropdownLink = document.querySelector('#dropdownLink');
+
+dropdownLink.addEventListener('click', toggleDropDown, false);
+
+window.onscroll = () => scrollFunction();
