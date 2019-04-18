@@ -179,6 +179,7 @@ h2 {
 .blurb-info {
     color: #808080;
     font-size: 18px;
+    text-align: justify;
 }
 
 .btn-wrapper {
