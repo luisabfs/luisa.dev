@@ -1,28 +1,31 @@
 {
-  "name": "luisabfs.github.io",
-  "version": "1.0.0",
-  "description": "Personal website",
-  "main": "index.html",
-  "dependencies": {},
-  "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.17.2",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-react": "^7.12.4"
+  "name": "luisabfs",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-scripts": "3.2.0"
   },
   "scripts": {
-    "test": "test",
-    "lint": "./node_modules/.bin/eslint src/js/*.js"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/luisabfs/luisabfs.github.io.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "author": "Luísa Barros <qlullyq@gmail.com> (https://luisabfs.github.io/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/luisabfs/luisabfs.github.io/issues"
-  },
-  "homepage": "https://github.com/luisabfs/luisabfs.github.io#readme"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
