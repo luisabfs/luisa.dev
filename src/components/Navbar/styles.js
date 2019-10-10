@@ -11,6 +11,7 @@ export const NavMenu = styled.ul`
   list-style: none;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   width: 80%;
 
   li {
