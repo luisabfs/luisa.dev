@@ -31,6 +31,7 @@
     "react/state-in-constructor": "off",
     "react/static-property-placement": "off",
     "react/jsx-props-no-spreading": "off",
-    "react/jsx-curly-newline": "off"
+    "react/jsx-curly-newline": "off",
+    "jsx-a11y/anchor-is-valid": "off"
   }
 }
