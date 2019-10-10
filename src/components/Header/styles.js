@@ -11,7 +11,7 @@ export const Container = styled.div`
   background-size: cover;
   background-attachment: scroll;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 `;
 
 export const Blurb = styled.div`
