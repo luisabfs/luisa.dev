@@ -11,6 +11,15 @@ export const Container = styled.div`
   background-size: cover;
   background-attachment: scroll;
   width: 100%;
+  height: 100vh;
+`;
+
+export const Blurb = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
   height: 100%;
 `;
 
@@ -18,7 +27,6 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10rem 0;
 
   h1, h2 {
     margin: 0;
@@ -46,5 +54,19 @@ export const Headshot = styled.img`
   &:hover {
     box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.18), 0 0px 12px 0 rgba(0, 0, 0, 0.15);
     opacity: 0.8;
+  }
+`;
+
+export const SocialWrap = styled.div`
+  display: flex;
+  padding: 30px;
+  margin-bottom: 20px;
+
+  a {
+    text-decoration: none;
+
+    img {
+      padding: 12px;
+    }
   }
 `;
