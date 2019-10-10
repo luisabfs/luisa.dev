@@ -3,13 +3,13 @@ import React from 'react';
 import GlobalStyle from './styles/global';
 
 // import Routes from './routes';
-import Header from './components/Header';
+import Routes from './routes';
 
 function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <Header />
+      <Routes />
     </div>
   );
 }
