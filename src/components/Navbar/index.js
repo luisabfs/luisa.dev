@@ -1,9 +1,12 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 
 import { Container, NavMenu } from './styles';
 
+import background from '../../assets/images/home_background.png';
+
 const Navbar = () => (
-  <Container>
+  <Container bg={background}>
     <NavMenu>
       <li>
         <a href="">luisa.<span>dev</span></a>
