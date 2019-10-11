@@ -1,33 +1,37 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 
+import { NavLink } from 'react-router-dom';
+
 import { Container, NavMenu } from './styles';
 
 import background from '../../assets/images/home_background.png';
+
+const style = { borderBottom: '4px solid #88c6dd' };
 
 const Navbar = () => (
   <Container bg={background}>
     <NavMenu>
       <li>
-        <a href="">luisa.<span>dev</span></a>
+        <NavLink exact to="/">luisa.<span>dev</span></NavLink>
       </li>
       <li>
-        <a href="">home</a>
+        <NavLink exact to="/" activeStyle={style}>home</NavLink>
       </li>
       <li>
-        <a href="">sobre mim</a>
+        <NavLink to="/sobre" activeStyle={style}>sobre mim</NavLink>
       </li>
       <li>
-        <a href="">projetos</a>
+        <NavLink to="/projetos" activeStyle={style}>projetos</NavLink>
       </li>
       <li>
-        <a href="">blog</a>
+        <NavLink to="/blog" activeStyle={style}>blog</NavLink>
       </li>
       <li>
-        <a href="">currículo</a>
+        <NavLink to="">currículo</NavLink>
       </li>
       <li>
-        <a href="">português</a>
+        <NavLink to="">português</NavLink>
       </li>
     </NavMenu>
   </Container>

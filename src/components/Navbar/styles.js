@@ -16,12 +16,13 @@ export const NavMenu = styled.ul`
 
   li {
     align-items: center;
-    margin: 16px 15px;
+    margin-top: 10px;
 
     a {
       color: #000;
       font-size: 18px;
       text-decoration: none;
+      padding: 16px 15px;
 
       span {
         color: #88c6dd;
