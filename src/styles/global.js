@@ -26,6 +26,13 @@ const GlobalStyle = createGlobalStyle`
     color: #fff;
     overflow-x: hidden;
   }
+
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
 `;
 
 export default GlobalStyle;
