@@ -7,14 +7,15 @@ export const Container = styled.div`
   justify-content: center;
 
   width: 100%;
-  height: 80%;
   background-color: #f2f2f2;
 
   h1 {
+    width: 700px;
+    text-align: center;
     padding: 15px;
     font-size: 32px;
-    font-weight: 300;
-    margin: 40px;
+    font-weight: 400;
+    margin: 20px;
     box-shadow: 0 4px 6px -7px #aaa;
   }
 `;
@@ -24,6 +25,7 @@ export const CaptionWrap = styled.div`
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  margin: 20px 0 40px 0;
 `;
 
 export const Item = styled.div`
