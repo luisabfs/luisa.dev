@@ -18,9 +18,12 @@ export const Wrapper = styled.div`
   margin-top: 10px;
 `;
 
-export const Card = styled.img`
+export const Card = styled.a`
   width: 150px;
   height: 150px;
-  border-radius: 5px;
   margin: 5px;
+
+  img {
+    border-radius: 4px;
+  }
 `;

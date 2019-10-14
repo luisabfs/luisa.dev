@@ -6,9 +6,11 @@ const Instagram = ({ images }) => (
   <Container>
     <h1>Instagram</h1>
     <Wrapper>
-      { images.map((image => {
-        return <Card src={image.images.thumbnail.url} alt="" />
-      })) }
+      { images.map(((image) => (
+        <Card href={image.link}>
+          <img src={image.images.thumbnail.url} alt="" />
+        </Card>
+      ))) }
     </Wrapper>
   </Container>
 );

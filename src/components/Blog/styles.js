@@ -24,7 +24,7 @@ export const Card = styled.div`
   margin: 10px;
   border: 1px solid #e3e3e3;
   border-radius: 4px;
-  transition: 0.8s ease-in-out;
+  transition: 1s ease-in-out;
 
   &:hover {
     img {
