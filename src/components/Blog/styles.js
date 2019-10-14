@@ -46,9 +46,8 @@ export const CardDetails = styled.div`
   justify-content: space-between;
 
   padding: 10px 20px;
-  border-radius: 4px;
+  border-radius: 2px;
   background-color: #fff;
-  opacity: 0.9;
 
   a {
     text-decoration: underline;
