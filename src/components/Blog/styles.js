@@ -6,14 +6,13 @@ export const Container = styled.div`
   align-items: center;
 
   height: 80%;
-  margin: 40px 20px;
 `;
 
 export const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 20px;
+  margin: 20px;
 `;
 
 export const Card = styled.div`

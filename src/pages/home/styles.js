@@ -9,5 +9,7 @@ export const Bottom = styled.section`
 export const Wrapper = styled.div`
   display: flex;
   width: 100%;
-  margin: 0 100px;
+  height: 100%;
+  margin: 20px 100px;
+  padding: 40px;
 `;
