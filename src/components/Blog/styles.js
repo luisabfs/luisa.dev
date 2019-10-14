@@ -4,15 +4,16 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  height: 80%;
+  border: 1px solid #a0a0a0;
+  border-radius: 4px;
+  margin-right: 20px;
+  padding: 20px;
 `;
 
 export const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 20px;
 `;
 
 export const Card = styled.div`
