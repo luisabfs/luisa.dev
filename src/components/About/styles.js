@@ -5,9 +5,8 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  width: 100%;
   background-color: #f2f2f2;
+  padding: 40px;
 
   h1 {
     width: 700px;
@@ -25,7 +24,7 @@ export const CaptionWrap = styled.div`
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  margin: 20px 0 40px 0;
+  margin: 20px;
 `;
 
 export const Item = styled.div`
@@ -44,5 +43,20 @@ export const Item = styled.div`
     font-size: 20px;
     font-weight: 300;
     margin-left: 10px;
+  }
+`;
+
+export const Action = styled.a`
+  height: 30px;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  font-size: 18px;
+  border-bottom: 3px solid #656565;
+  transition: .2s ease-in-out;
+
+  &:hover {
+    color: #88c6dd;
+    border-bottom: 3px solid #88c6dd;
   }
 `;

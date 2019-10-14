@@ -1,6 +1,11 @@
 import React from 'react';
 
-import { Container, Item, CaptionWrap } from './styles';
+import {
+  Container,
+  Item,
+  CaptionWrap,
+  Action,
+} from './styles';
 
 import userIcon from '../../assets/images/user_64px.png';
 import ifsIcon from '../../assets/images/ifs_60px.png';
@@ -9,7 +14,7 @@ import booksIcon from '../../assets/images/books_64px.png';
 
 const About = () => (
   <Container>
-    <h1>bem-vinda, pessoa!</h1>
+    <h1>Hello world!</h1>
     <CaptionWrap>
       <Item>
         <img src={userIcon} alt="" />
@@ -28,6 +33,7 @@ const About = () => (
         <span>Estar em constante progresso é a minha estratégia.</span>
       </Item>
     </CaptionWrap>
+    <Action href="">Saber mais</Action>
   </Container>
 );
 
