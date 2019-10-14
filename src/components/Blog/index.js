@@ -1,13 +1,17 @@
 import React from 'react';
 
-import { Container, Wrapper, Card, CardDetails } from './styles';
+import { Container, WrapCaption, Wrapper, Card, CardDetails } from './styles';
 
+import layer from '../../assets/images/layer.png';
 import thumbnail from '../../assets/images/thumbnail.png';
 import thumbnail2 from '../../assets/images/thumbnail2.png';
 
 const Blog = () => (
   <Container>
-    <h1>últimos posts no blog</h1>
+    <WrapCaption>
+      <h1>últimos posts no blog</h1>
+      <img src={layer} alt="" />
+    </WrapCaption>
     <Wrapper>
       <Card>
         <img src={thumbnail} alt=""/>

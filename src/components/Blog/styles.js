@@ -8,6 +8,20 @@ export const Container = styled.div`
   padding: 20px;
 `;
 
+export const WrapCaption = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-weight: 600;
+  }
+
+  img {
+    margin: 10px;
+  }
+`;
+
 export const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -21,9 +35,13 @@ export const Card = styled.div`
   width: 350px;
   height: 260px;
   margin: 10px;
-  border: 1px solid #e3e3e3;
-  border-radius: 4px;
+  box-shadow:0 .5rem 1rem rgba(0,0,0,.15);
+  border-radius: 5px;
   transition: 1s ease-in-out;
+
+  img {
+    border-radius: 5px;
+  }
 
   &:hover {
     img {
