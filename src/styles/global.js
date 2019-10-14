@@ -4,7 +4,6 @@ const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
-
   }
 
   html, body, #root, .App {
@@ -24,7 +23,6 @@ const GlobalStyle = createGlobalStyle`
     background: #181818;
     font-family: 'Montserrat', sans-serif;
     color: #fff;
-    overflow-x: hidden;
   }
 
   h1 {
