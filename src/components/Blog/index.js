@@ -3,6 +3,7 @@ import React from 'react';
 import { Container, Wrapper, Card, CardDetails } from './styles';
 
 import thumbnail from '../../assets/images/thumbnail.png';
+import thumbnail2 from '../../assets/images/thumbnail2.png';
 
 const Blog = () => (
   <Container>
@@ -19,7 +20,7 @@ const Blog = () => (
         </CardDetails>
       </Card>
       <Card>
-        <img src={thumbnail} alt=""/>
+        <img src={thumbnail2} alt=""/>
         <CardDetails>
           <span>#web</span>
           <a href="">
@@ -29,7 +30,7 @@ const Blog = () => (
         </CardDetails>
       </Card>
       <Card>
-        <img src={thumbnail} alt=""/>
+        <img src={thumbnail2} alt=""/>
         <CardDetails>
           <span>#web</span>
           <a href="">

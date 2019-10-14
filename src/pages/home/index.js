@@ -8,6 +8,7 @@ import About from '../../components/About';
 import Projects from '../../components/Projects';
 import Blog from '../../components/Blog';
 import Instagram from '../../components/Instagram';
+import Footer from '../../components/Footer';
 
 export default class Home extends Component {
   state = {
@@ -38,6 +39,7 @@ export default class Home extends Component {
             <Instagram images={images} />
           </Wrapper>
         </Bottom>
+        <Footer />
       </>
     );
   }
