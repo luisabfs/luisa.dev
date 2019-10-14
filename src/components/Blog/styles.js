@@ -25,22 +25,14 @@ export const Card = styled.div`
   margin: 10px;
   border: 1px solid #e3e3e3;
   border-radius: 4px;
-  /* background: url(${(props) => props.src}) no-repeat center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: scroll; */
-  transition: .2s ease-in-out;
+  transition: 0.8s ease-in-out;
 
   &:hover {
     img {
-      filter: blur(1px);
-      transition: .2s ease-in-out;
+      filter: blur(1.5px);
     }
 
     div {
-      transition: .3s ease-in-out;
       visibility: visible;
     }
   }
@@ -53,9 +45,28 @@ export const CardDetails = styled.div`
   visibility: hidden;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
-  border: 1px solid #e3e3e3;
+
+  padding: 10px 20px;
   border-radius: 4px;
   background-color: #fff;
+  opacity: 0.9;
 
+  a {
+    text-decoration: underline;
+    color: #000;
+
+    &:hover {
+      color: #88c6dd;
+    }
+  }
+
+  h2 {
+    font-size: 14px;
+    margin: 1rem 0;
+  }
+
+  span {
+    font-size: 11px;
+    letter-spacing: 1.11px;
+  }
 `;

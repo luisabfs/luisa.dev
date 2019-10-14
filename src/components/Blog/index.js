@@ -11,33 +11,41 @@ const Blog = () => (
       <Card>
         <img src={thumbnail} alt=""/>
         <CardDetails>
-          <span>web</span>
-          <h1>VER MAIS</h1>
-          <span>2 dias</span>
+          <span>#web</span>
+          <a href="">
+             <h2>VER MAIS</h2>
+          </a>
+          <span>há 2 dias</span>
         </CardDetails>
       </Card>
       <Card>
         <img src={thumbnail} alt=""/>
         <CardDetails>
-          <span>web</span>
-          <h1>VER MAIS</h1>
-          <span>2 dias</span>
+          <span>#web</span>
+          <a href="">
+             <h2>VER MAIS</h2>
+          </a>
+          <span>há 2 dias</span>
         </CardDetails>
       </Card>
       <Card>
         <img src={thumbnail} alt=""/>
         <CardDetails>
-          <span>web</span>
-          <h1>VER MAIS</h1>
-          <span>2 dias</span>
+          <span>#web</span>
+          <a href="">
+             <h2>VER MAIS</h2>
+          </a>
+          <span>há 2 dias</span>
         </CardDetails>
       </Card>
       <Card>
         <img src={thumbnail} alt=""/>
         <CardDetails>
-          <span>web</span>
-          <h1>VER MAIS</h1>
-          <span>2 dias</span>
+          <span>#web</span>
+          <a href="">
+             <h2>VER MAIS</h2>
+          </a>
+          <span>há 2 dias</span>
         </CardDetails>
       </Card>
     </Wrapper>
