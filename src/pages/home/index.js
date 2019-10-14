@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { BottomWrapper } from './styles';
+import { Bottom, Wrapper } from './styles';
 
 import Header from '../../components/Header';
 import About from '../../components/About';
@@ -15,10 +15,12 @@ export default class Home extends Component {
         <Header />
         <About />
         <Projects />
-        <BottomWrapper>
-          <Blog />
-          <Instagram />
-        </BottomWrapper>
+        <Bottom>
+          <Wrapper>
+            <Blog />
+            <Instagram />
+          </Wrapper>
+        </Bottom>
       </>
     );
   }

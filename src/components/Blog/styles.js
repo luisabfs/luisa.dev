@@ -5,7 +5,6 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
-  width: 70%;
   height: 80%;
   margin: 40px 20px;
 `;
@@ -18,8 +17,8 @@ export const Wrapper = styled.div`
 `;
 
 export const Card = styled.div`
-  width: 350px;
-  height: 260px;
+  width: 300px;
+  height: 210px;
   background-color: #c4c4c4;
   margin: 10px;
 `;
