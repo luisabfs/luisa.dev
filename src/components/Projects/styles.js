@@ -24,6 +24,7 @@ export const WrapCaption = styled.div`
 
 export const WrapProject = styled.div`
   display: flex;
+  width: 50%;
   align-items: center;
   justify-content: center;
   margin: 0 40px 80px 40px;

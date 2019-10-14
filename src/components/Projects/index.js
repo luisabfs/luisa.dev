@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 
+import AwesomeSlider from 'react-awesome-slider';
+import 'react-awesome-slider/dist/styles.css';
+
 import { Container, WrapCaption, WrapProject } from './styles';
 
 import background from '../../assets/images/projects_background.png';
-import slider from '../../assets/images/slider.png';
+import project1 from '../../assets/images/todolist.png';
+import project2 from '../../assets/images/gitcompare.png';
+import project3 from '../../assets/images/barber.png';
+
 
 export default class Projects extends Component {
   render() {
@@ -13,7 +19,11 @@ export default class Projects extends Component {
           <h1>projetos</h1>
         </WrapCaption>
         <WrapProject>
-          <img src={slider} alt="" />
+          <AwesomeSlider>
+            <div data-src={project1} />
+            <div data-src={project2} />
+            <div data-src={project3} />
+          </AwesomeSlider>
         </WrapProject>
       </Container>
     );
