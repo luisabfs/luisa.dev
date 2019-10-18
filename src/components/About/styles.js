@@ -62,7 +62,3 @@ export const Item = styled.div`
     margin-left: 10px;
   }
 `;
-
-export const Action = styled.a`
-
-`;

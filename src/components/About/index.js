@@ -5,7 +5,6 @@ import {
   Container,
   Item,
   CaptionWrap,
-  Action,
 } from './styles';
 
 import userIcon from '../../assets/images/user_64px.png';
