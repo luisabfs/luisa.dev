@@ -17,6 +17,23 @@ export const Container = styled.div`
     margin: 20px;
     box-shadow: 0 4px 6px -7px #aaa;
   }
+
+  a {
+    width: 120px;
+    height: 30px;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    border-bottom: 3px solid #656565;
+    transition: .2s ease-in-out;
+
+    &:hover {
+      color: #88c6dd;
+      border-bottom: 3px solid #88c6dd;
+    }
+  }
 `;
 
 export const CaptionWrap = styled.div`
@@ -47,18 +64,5 @@ export const Item = styled.div`
 `;
 
 export const Action = styled.a`
-  width: 120px;
-  height: 30px;
-  font-family: "Poppins", sans-serif;
-  text-decoration: none;
-  text-align: center;
-  color: #000;
-  font-size: 18px;
-  border-bottom: 3px solid #656565;
-  transition: .2s ease-in-out;
 
-  &:hover {
-    color: #88c6dd;
-    border-bottom: 3px solid #88c6dd;
-  }
 `;

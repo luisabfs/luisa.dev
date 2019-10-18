@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import {
   Container,
@@ -33,7 +34,7 @@ const About = () => (
         <span>Estar em constante progresso é a minha estratégia.</span>
       </Item>
     </CaptionWrap>
-    <Action href="">SABER MAIS</Action>
+    <Link to="/sobre">SABER MAIS</Link>
   </Container>
 );
 
