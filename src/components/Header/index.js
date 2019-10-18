@@ -12,11 +12,11 @@ import Navbar from '../Navbar';
 
 import background from '../../assets/images/home_background.png';
 import headshot from '../../assets/images/headshot.jpg';
-import githubIcon from '../../assets/images/github_24px.png';
-import linkedinIcon from '../../assets/images/linkedin_24px.png';
-import instagramIcon from '../../assets/images/instagram_24px.png';
-import behanceIcon from '../../assets/images/behance_24px.png';
-import emailIcon from '../../assets/images/email_24px.png';
+import githubIcon from '../../assets/images/github_32px.png';
+import linkedinIcon from '../../assets/images/linkedin_32px.png';
+import instagramIcon from '../../assets/images/instagram_32px.png';
+import behanceIcon from '../../assets/images/behance_32px.png';
+import emailIcon from '../../assets/images/email_32px.png';
 
 const Header = () => (
   <Container bg={background}>

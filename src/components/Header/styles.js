@@ -68,6 +68,10 @@ export const SocialWrap = styled.div`
 
     img {
       padding: 12px;
+
+      &:hover {
+        opacity: 0.7;
+      }
     }
   }
 `;
