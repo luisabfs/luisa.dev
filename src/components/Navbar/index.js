@@ -32,7 +32,7 @@ const Navbar = () => (
         <NavLink to={resume} target="_blank">currículo</NavLink>
       </li>
       <li>
-        <NavLink to="">português</NavLink>
+        <NavLink to="">contato</NavLink>
       </li>
     </NavMenu>
   </Container>
