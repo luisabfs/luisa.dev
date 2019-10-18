@@ -13,10 +13,6 @@ export const WrapCaption = styled.div`
   flex-direction: column;
   align-items: center;
 
-  h1 {
-    font-weight: 600;
-  }
-
   img {
     margin: 10px;
   }
