@@ -1,20 +1,15 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 
-import {
-  Container,
-  WrapCaption,
-  WrapProject,
-  Action,
-} from './styles';
+import { Container, WrapCaption, WrapProject, Project } from './styles';
 
 import background from '../../assets/images/projects_background.png';
 import project1 from '../../assets/images/todolist.png';
 import project2 from '../../assets/images/gitcompare.png';
 import project3 from '../../assets/images/barber.png';
-
 
 export default class Projects extends Component {
   render() {
@@ -30,7 +25,7 @@ export default class Projects extends Component {
             <div data-src={project3} />
           </AwesomeSlider>
         </WrapProject>
-        <Action href="">VER MAIS</Action>
+        <Link to="/projetos">VER MAIS</Link>
       </Container>
     );
   }

@@ -5,8 +5,24 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding-bottom: 40px;
-
   width: 100%;
+
+  a {
+    width: 120px;
+    height: 30px;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    border-bottom: 3px solid #656565;
+    transition: .2s ease-in-out;
+
+    &:hover {
+      color: #88c6dd;
+      border-bottom: 3px solid #88c6dd;
+    }
+  }
 `;
 
 export const WrapCaption = styled.div`
@@ -31,19 +47,3 @@ export const WrapProject = styled.div`
   margin: 0 40px 80px 40px;
 `;
 
-export const Action = styled.a`
-  width: 120px;
-  height: 30px;
-  font-family: "Poppins", sans-serif;
-  text-decoration: none;
-  text-align: center;
-  color: #000;
-  font-size: 18px;
-  border-bottom: 3px solid #656565;
-  transition: .2s ease-in-out;
-
-  &:hover {
-    color: #88c6dd;
-    border-bottom: 3px solid #88c6dd;
-  }
-`;
