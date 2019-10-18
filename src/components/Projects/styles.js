@@ -45,5 +45,29 @@ export const WrapProject = styled.div`
   align-items: center;
   justify-content: center;
   margin: 0 40px 80px 40px;
+
+  div {
+    div {
+      div {
+        div {
+          div {
+            div {
+              width: 100%;
+              height: 100%;
+              z-index: -1;
+            }
+          }
+        }
+      }
+    }
+  }
 `;
 
+export const Project = styled.div`
+  display: flex;
+
+  div {
+
+  }
+
+`;

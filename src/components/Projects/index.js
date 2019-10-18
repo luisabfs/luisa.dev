@@ -4,7 +4,12 @@ import { Link } from 'react-router-dom';
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 
-import { Container, WrapCaption, WrapProject, Project } from './styles';
+import {
+  Container,
+  WrapCaption,
+  WrapProject,
+  Project,
+} from './styles';
 
 import background from '../../assets/images/projects_background.png';
 import project1 from '../../assets/images/todolist.png';
@@ -20,9 +25,9 @@ export default class Projects extends Component {
         </WrapCaption>
         <WrapProject>
           <AwesomeSlider>
-            <div data-src={project1} />
-            <div data-src={project2} />
-            <div data-src={project3} />
+            <Project data-src={project1} />
+            <Project data-src={project2} />
+            <Project data-src={project3} />
           </AwesomeSlider>
         </WrapProject>
         <Link to="/projetos">VER MAIS</Link>
