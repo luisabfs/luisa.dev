@@ -1,15 +1,21 @@
 import React, { Component } from 'react';
 
-import { BottomWrapper } from './styles';
+import { Container, Wrapper, Sidebar } from './styles';
 
-import Header from '../../components/Header';
+import Navbar from '../../components/Navbar';
+import Card from '../../components/Card';
 
 export default class About extends Component {
   render() {
     return (
-      <>
-        <Header />
-      </>
+      <Container>
+        <Navbar />
+        <Wrapper>
+          <Sidebar>
+            <Card />
+          </Sidebar>
+        </Wrapper>
+      </Container>
     );
   }
 }
