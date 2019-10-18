@@ -33,7 +33,7 @@ const About = () => (
         <span>Estar em constante progresso é a minha estratégia.</span>
       </Item>
     </CaptionWrap>
-    <Action href="">Saber mais</Action>
+    <Action href="">SABER MAIS</Action>
   </Container>
 );
 

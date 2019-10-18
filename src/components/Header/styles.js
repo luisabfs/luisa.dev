@@ -50,6 +50,7 @@ export const Headshot = styled.img`
   max-width: 150px;
   width: 100%;
   transition: 0.2s;
+  background: #eee;
 
   &:hover {
     box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.18), 0 0px 12px 0 rgba(0, 0, 0, 0.15);

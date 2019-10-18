@@ -41,13 +41,15 @@ export const Item = styled.div`
 
   span {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
     margin-left: 10px;
   }
 `;
 
 export const Action = styled.a`
+  width: 120px;
   height: 30px;
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
   text-align: center;
   color: #000;

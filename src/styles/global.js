@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
   html, body, #root, .App {
     height: 100%;
     background-color: #fff;
-    color: #000;
+    color: #191919;
   }
 
   html {
@@ -29,7 +29,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
     font-size: 32px;
     letter-spacing: 2px;
-    font-weight: 400;
+    font-weight: 600;
   }
 `;
 
