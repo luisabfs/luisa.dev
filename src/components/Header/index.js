@@ -7,7 +7,6 @@ import {
   FaInstagram,
   FaBehance,
   FaEnvelope,
-
 } from 'react-icons/fa';
 
 import {

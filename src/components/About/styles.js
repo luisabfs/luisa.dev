@@ -50,9 +50,7 @@ export const Item = styled.div`
   align-items: center;
   padding: 10px;
 
-  img {
-    width: 50px;
-    height: 50px;
+  svg {
     padding: 15px;
   }
 

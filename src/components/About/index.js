@@ -1,35 +1,42 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import { IconContext } from 'react-icons';
+import { MdPerson, MdSchool, MdTrendingUp } from 'react-icons/md';
+import { FaReact } from 'react-icons/fa';
+
 import {
   Container,
   Item,
   CaptionWrap,
 } from './styles';
 
-import userIcon from '../../assets/images/user_64px.png';
-import ifsIcon from '../../assets/images/ifs_60px.png';
-import reactIcon from '../../assets/images/react_64px.png';
-import booksIcon from '../../assets/images/books_64px.png';
-
 const About = () => (
   <Container>
     <h1>Hello world!</h1>
     <CaptionWrap>
       <Item>
-        <img src={userIcon} alt="" />
+        <IconContext.Provider value={{ size: '64px', color: '#000' }}>
+          <MdPerson />
+        </IconContext.Provider>
         <span>Tenho 18 anos, programo desde os 13 e sou de Aracaju, Sergipe - Brasil.</span>
       </Item>
       <Item>
-        <img src={ifsIcon} alt="" />
+        <IconContext.Provider value={{ size: '64px', color: '#000' }}>
+          <MdSchool />
+        </IconContext.Provider>
         <span>Sou formada técnica em Informática pelo Instituto Federal de Sergipe. </span>
       </Item>
       <Item>
-        <img src={reactIcon} alt="" />
+        <IconContext.Provider value={{ size: '64px', color: '#000' }}>
+          <FaReact />
+        </IconContext.Provider>
         <span>Atualmente estudo o ecossistema Javascript - com foco em React e NodeJS.</span>
       </Item>
       <Item>
-        <img src={booksIcon} alt="" />
+        <IconContext.Provider value={{ size: '64px', color: '#000' }}>
+          <MdTrendingUp />
+        </IconContext.Provider>
         <span>Estar em constante progresso é a minha estratégia.</span>
       </Item>
     </CaptionWrap>
