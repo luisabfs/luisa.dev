@@ -4,7 +4,7 @@ export const Container = styled.footer`
   display: flex;
   justify-content: center;
   text-align: center;
-  background-color: #c4c4c4;
+  background-color: #f2f2f2;
   padding: 10px;
 
   h2 {
@@ -12,8 +12,8 @@ export const Container = styled.footer`
   }
 
   a {
-    text-decoration: none;
-    color: #fff;
+    text-decoration: underline;
+    color: #191919;
   }
 
 
