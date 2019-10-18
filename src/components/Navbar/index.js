@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom';
 import { Container, NavMenu } from './styles';
 
 import background from '../../assets/images/home_background.png';
+import resume from '../../assets/curriculo_luisabfs.pdf';
 
 const style = { borderBottom: '4px solid #88c6dd' };
 
@@ -28,7 +29,7 @@ const Navbar = () => (
         <NavLink to="/blog" activeStyle={style}>blog</NavLink>
       </li>
       <li>
-        <NavLink to="">currículo</NavLink>
+        <NavLink to={resume} target="_blank">currículo</NavLink>
       </li>
       <li>
         <NavLink to="">português</NavLink>
