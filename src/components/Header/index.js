@@ -1,5 +1,15 @@
 import React from 'react';
 
+import { IconContext } from 'react-icons';
+import {
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+  FaBehance,
+  FaEnvelope,
+
+} from 'react-icons/fa';
+
 import {
   Container,
   Wrapper,
@@ -12,11 +22,6 @@ import Navbar from '../Navbar';
 
 import background from '../../assets/images/home_background.png';
 import headshot from '../../assets/images/headshot.jpg';
-import githubIcon from '../../assets/images/github_32px.png';
-import linkedinIcon from '../../assets/images/linkedin_32px.png';
-import instagramIcon from '../../assets/images/instagram_32px.png';
-import behanceIcon from '../../assets/images/behance_32px.png';
-import emailIcon from '../../assets/images/email_32px.png';
 
 const Header = () => (
   <Container bg={background}>
@@ -29,21 +34,24 @@ const Header = () => (
         <h1>Luísa Barros</h1>
         <h2>Desenvolvedora Full-Stack</h2>
         <SocialWrap>
-          <a href="">
-            <img src={githubIcon} alt="" />
-          </a>
-          <a href="">
-            <img src={linkedinIcon} alt="" />
-          </a>
-          <a href="">
-            <img src={instagramIcon} alt="" />
-          </a>
-          <a href="">
-            <img src={behanceIcon} alt="" />
-          </a>
-          <a href="">
-            <img src={emailIcon} alt="" />
-          </a>
+          <IconContext.Provider value={{ size: '32px', color: '#000' }}>
+            <a href="">
+              <FaGithub />
+            </a>
+            <a href="">
+              <FaLinkedin />
+            </a>
+            <a href="">
+              <FaInstagram />
+            </a>
+            <a href="">
+              <FaBehance />
+            </a>
+            <a href="">
+              <FaEnvelope />
+            </a>
+          </IconContext.Provider>
+
         </SocialWrap>
       </Wrapper>
     </Blurb>
