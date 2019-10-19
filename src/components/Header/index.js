@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { IconContext } from 'react-icons';
 import {
@@ -34,19 +35,19 @@ const Header = () => (
         <h2>Desenvolvedora Full-Stack</h2>
         <SocialWrap>
           <IconContext.Provider value={{ size: '32px', color: '#000' }}>
-            <a href="">
+            <a href="https://github.com/luisabfs" target="_blank" rel="noopener noreferrer">
               <FaGithub />
             </a>
-            <a href="">
+            <a href="https://linkedin.com/in/luisabfs" target="_blank" rel="noopener noreferrer">
               <FaLinkedin />
             </a>
-            <a href="">
+            <a href="https://instagram.com/luisa.dev" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
-            <a href="">
+            <a href="https://behance.net/luisabfs" target="_blank" rel="noopener noreferrer">
               <FaBehance />
             </a>
-            <a href="">
+            <a href="qlullyq@gmail.com" mail>
               <FaEnvelope />
             </a>
           </IconContext.Provider>
