@@ -33,6 +33,10 @@ export const NavMenu = styled.ul`
       }
     }
 
+    svg {
+      display: none;
+    }
+
     &:first-child {
       margin-right: auto;
 
@@ -43,6 +47,18 @@ export const NavMenu = styled.ul`
         &:hover {
           color: #000;
         }
+      }
+    }
+
+     /* ############### RESPONSIVE ############### */
+
+     @media (max-width: 768px) {
+      svg {
+        display: flex;
+      }
+
+      &:not(:first-child):not(:last-child) {
+        display: none;
       }
     }
   }
