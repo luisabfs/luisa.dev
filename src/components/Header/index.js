@@ -28,9 +28,9 @@ const Header = () => (
     <Navbar />
     <Blurb>
       <Wrapper>
-        <a href="">
+        <Link to="/sobre">
           <Headshot src={headshot} alt="" />
-        </a>
+        </Link>
         <h1>Luísa Barros</h1>
         <h2>Desenvolvedora Full-Stack</h2>
         <SocialWrap>
