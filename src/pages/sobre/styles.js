@@ -25,3 +25,8 @@ export const Sidebar = styled.div`
   flex-direction: column;
   margin-left: auto;
 `;
+
+export const Sticky = styled.div`
+  position: sticky;
+  top: 20px;
+`;
