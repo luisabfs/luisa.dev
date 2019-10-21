@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 
-import { Container, Wrapper, Sidebar } from './styles';
+import {
+  Container,
+  Wrapper,
+  Main,
+  Sidebar,
+} from './styles';
 
 import Navbar from '../../components/Navbar';
-import Card from '../../components/Card';
+import Profile from '../../components/Profile';
 
 export default class About extends Component {
   render() {
@@ -11,8 +16,11 @@ export default class About extends Component {
       <Container>
         <Navbar />
         <Wrapper>
+          <Main>
+
+          </Main>
           <Sidebar>
-            <Card />
+            <Profile />
           </Sidebar>
         </Wrapper>
       </Container>

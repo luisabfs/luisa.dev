@@ -12,7 +12,12 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: flex-start;
   width: 80%;
-  padding: 40px 0;
+  padding: 40px;
+`;
+
+export const Main = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Sidebar = styled.div`

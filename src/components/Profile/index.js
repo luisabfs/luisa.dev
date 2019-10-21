@@ -2,12 +2,12 @@ import React from 'react';
 
 import { Container, Avatar } from './styles';
 
-import Social from '../../components/Social';
+import Social from '../Social';
 
 import headshot from '../../assets/images/headshot.jpg';
 import layer from '../../assets/images/layer.png';
 
-const Card = () => (
+const Profile = () => (
   <Container>
     <Avatar src={headshot} />
     <h1>Luísa Barros</h1>
@@ -20,4 +20,4 @@ const Card = () => (
   </Container>
 );
 
-export default Card;
+export default Profile;
