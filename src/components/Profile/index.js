@@ -1,6 +1,12 @@
 import React from 'react';
 
-import { Container, Avatar } from './styles';
+import { IconContext } from 'react-icons';
+import {
+  FiMapPin,
+} from 'react-icons/fi';
+
+
+import { Container, Avatar, Location } from './styles';
 
 import Social from '../Social';
 
@@ -11,9 +17,14 @@ const Profile = () => (
   <Container>
     <Avatar src={headshot} />
     <h1>Luísa Barros</h1>
-    <p>Desde os 11 anos sou fascinada pela área de tecnologia,
-     especialmente programação. Agora, com 18, estou determinada a
-     construir uma carreira como desenvolvedora de software.
+    <Location>
+      <IconContext.Provider value={{ size: '24px', color: '#000' }}>
+        <FiMapPin />Aracaju-Sergipe, Brasil
+      </IconContext.Provider>
+    </Location>
+    <p>Oi! Tenho 18 anos e sou programadora Javascript. Amo exercer a minha
+      independência e crescer com as pessoas ao meu redor, por isso busco sempre
+      aprender coisas novas e compartilhar o que aprendo.
     </p>
     <img src={layer} alt="" />
     <Social />

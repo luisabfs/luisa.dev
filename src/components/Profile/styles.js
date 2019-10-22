@@ -18,6 +18,7 @@ export const Container = styled.div`
     font-weight: 400;
     text-align: center;
     margin-bottom: 30px;
+    padding: 0 10px;
   }
 `;
 
@@ -26,4 +27,15 @@ export const Avatar = styled.img`
   height: 200px;
   border-radius: 100%;
   margin-bottom: 20px;
+`;
+
+export const Location = styled.div`
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    margin-right: 5px;
+  }
 `;
