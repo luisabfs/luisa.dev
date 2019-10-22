@@ -5,6 +5,7 @@ import { Container, Wrapper, Card } from './styles';
 const Instagram = ({ images }) => (
   <Container>
     <h1>Instagram</h1>
+
     <Wrapper>
       { images.map(((image) => (
         <Card href={image.link}>

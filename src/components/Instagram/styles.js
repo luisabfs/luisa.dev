@@ -4,11 +4,15 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60%;
   margin-left: 20px;
   padding: 20px;
   border: 2px dotted #c4c4c4;
   border-radius: 4px;
+  height: 100%;
+
+  h1 {
+    margin: 20px;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -16,7 +20,6 @@ export const Wrapper = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
 `;
 
 export const Card = styled.a`
