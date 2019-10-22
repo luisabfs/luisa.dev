@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import api from '../../services/api';
 
-import { Bottom, Wrapper } from './styles';
+import { Bottom, Wrapper, ContactWrap, InstaWrap } from './styles';
 
 import Header from '../../components/Header';
 import About from '../../components/About';
 import Projects from '../../components/Projects';
-import Blog from '../../components/Blog';
+import Contact from '../../components/Contact';
 import Instagram from '../../components/Instagram';
 import Footer from '../../components/Footer';
 
@@ -35,8 +35,12 @@ export default class Home extends Component {
         <Projects />
         <Bottom>
           <Wrapper>
-            <Blog />
-            <Instagram images={images} />
+            <ContactWrap>
+              <Contact />
+            </ContactWrap>
+            <InstaWrap>
+              <Instagram images={images} />
+            </InstaWrap>
           </Wrapper>
         </Bottom>
         <Footer />
