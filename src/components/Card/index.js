@@ -16,7 +16,9 @@ const Profile = ({ icon, title, content }) => (
       </IconContext.Provider>
       <Title>{title}</Title>
     </WrapCaption>
-    <Content>{content}</Content>
+    <Content>
+      {content}
+    </Content>
   </Container>
 );
 
