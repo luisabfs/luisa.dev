@@ -33,6 +33,7 @@ import {
 import Navbar from '../../components/Navbar';
 import Card from '../../components/Card';
 import Profile from '../../components/Profile';
+import { ScrollToTopOnMount } from '../../components/ScrollToTop';
 
 import funfacts from '../../assets/images/funfacts.png';
 
@@ -40,6 +41,7 @@ export default class About extends Component {
   render() {
     return (
       <Container>
+        <ScrollToTopOnMount />
         <Navbar />
         <Wrapper>
           <Main>
