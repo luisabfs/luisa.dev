@@ -44,6 +44,11 @@ export default class About extends Component {
         <ScrollToTopOnMount />
         <Navbar />
         <Wrapper>
+          <Sidebar>
+            <Sticky>
+              <Profile />
+            </Sticky>
+          </Sidebar>
           <Main>
             <Card
               icon={<FiTerminal />}
@@ -176,11 +181,6 @@ export default class About extends Component {
               }
             />
           </Main>
-          <Sidebar>
-            <Sticky>
-              <Profile />
-            </Sticky>
-          </Sidebar>
         </Wrapper>
       </Container>
     );

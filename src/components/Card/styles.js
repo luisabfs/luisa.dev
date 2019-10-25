@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
 
-  margin: 0 60px 20px 0;
+  margin-bottom: 20px;
   padding: 40px;
   background-color: #f2f2f2;
 `;
@@ -34,6 +34,10 @@ export const Content = styled.p`
 
     &:hover {
       color: #6594a5;
+    }
+
+    img {
+      width: 100%;
     }
   }
 `;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.section`
+export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,20 +10,53 @@ export const Container = styled.section`
 
 export const Wrapper = styled.div`
   display: flex;
-  justify-content: flex-start;
-  width: 80%;
-  padding: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px 0;
+
+   /* regular phones and below */
+   @media (max-width: 480px) {
+    padding: 20px 0;
+  }
 `;
 
 export const Main = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+
+  @media (max-width: 768px) {
+    max-width: 600px;
+  }
+
+   /* regular phones and below */
+   @media (max-width: 480px) {
+    margin: 0 20px 20px 20px;
+  }
 `;
 
 export const Sidebar = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: auto;
+  max-width: 360px;
+  margin-right: auto;
+
+  @media (max-width: 1180px) {
+    max-width: 800px;
+    margin: 0 0 20px 0;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 600px;
+  }
+
+  /* regular phones and below */
+  @media (max-width: 480px) {
+    margin: 0 20px 20px 20px;
+  }
 `;
 
 export const Sticky = styled.div`
@@ -41,7 +74,8 @@ export const FunFacts = styled.div`
 
 export const SkillWrapper = styled.div`
   display: flex;
-  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 
 export const Skill = styled.div`
@@ -49,8 +83,7 @@ export const Skill = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  margin: 0 40px;
+  padding: 10px 40px;
 
   svg {
     margin: 5px 0 5px 0;

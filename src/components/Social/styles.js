@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  padding-top: 30px;
+  padding-top: 20px;
 
   a {
     text-decoration: none;

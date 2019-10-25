@@ -4,9 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  width: 350px;
-  padding: 40px;
+  padding: 20px;
   background-color: #f2f2f2;
 
   h1 {
@@ -17,16 +15,18 @@ export const Container = styled.div`
     font-size: 18px;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 30px;
-    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 1024px) {
   }
 `;
 
 export const Avatar = styled.img`
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 100%;
-  margin-bottom: 20px;
+  margin: 20px 0;
 `;
 
 export const Location = styled.div`
