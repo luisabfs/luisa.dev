@@ -7,12 +7,37 @@ export const Container = styled.div`
   width: 100%;
 `;
 
+export const Wrapper = styled.div`
+  width: 100%;
+  max-width: 1200px;
+
+  /* ############### RESPONSIVE ############### */
+
+  @media (max-width: 1180px) {
+    max-width: 800px;
+  }
+
+  /* portrait tablet and regular desktop */
+  @media (max-width: 768px) {
+    max-width: 600px;
+  }
+
+  /* portrait phones to regular tablet */
+  @media (min-width: 768px) and (max-width: 979px) {
+  }
+
+  /* regular phones and below */
+  @media (max-width: 480px) {
+    margin: 0 20px;
+  }
+`;
+
 export const NavMenu = styled.ul`
+  width: 100%;
   list-style: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
 
   li {
     align-items: center;
@@ -31,6 +56,12 @@ export const NavMenu = styled.ul`
       &:hover {
         color: #88c6dd;
       }
+
+    /* ############### RESPONSIVE ############### */
+
+    @media (max-width: 1180px) {
+      padding: 12px 10px;
+  }
     }
 
     svg {
