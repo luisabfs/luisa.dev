@@ -2,27 +2,39 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
-  margin-right: 20px;
-  padding: 20px;
 `;
 
 export const WrapCaption = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
+
+  h1 {
+    text-align: center;
+  }
 
   img {
     margin: 10px;
+  }
+
+  /* regular phones and below */
+  @media (max-width: 424px) {
+    h1 {
+      font-size: 24px;
+    }
   }
 `;
 
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   flex-wrap: wrap;
   justify-content: center;
 

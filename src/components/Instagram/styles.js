@@ -4,7 +4,6 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 20px;
   padding: 20px;
   border: 2px dotted #c4c4c4;
   border-radius: 4px;
@@ -20,6 +19,7 @@ export const Wrapper = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  width: 100%;
 `;
 
 export const Card = styled.a`

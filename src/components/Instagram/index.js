@@ -8,7 +8,7 @@ const Instagram = ({ images }) => (
 
     <Wrapper>
       { images.map(((image) => (
-        <Card href={image.link}>
+        <Card href={image.link} target="_blank" rel="noopener noreferrer">
           <img src={image.images.thumbnail.url} alt="" />
         </Card>
       ))) }

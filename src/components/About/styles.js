@@ -27,11 +27,35 @@ export const Container = styled.div`
     color: #000;
     font-size: 18px;
     border-bottom: 3px solid #656565;
+    margin: 20px;
     transition: .2s ease-in-out;
 
     &:hover {
       color: #88c6dd;
       border-bottom: 3px solid #88c6dd;
+    }
+  }
+
+  @media (max-width: 1180px) {
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      width: 600px;
+    }
+  }
+
+  /* regular phones and below */
+  @media (max-width: 480px) {
+    h1 {
+      width: 400px;
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    h1 {
+      width: fit-content;
     }
   }
 `;
@@ -58,5 +82,14 @@ export const Item = styled.div`
     font-size: 20px;
     font-weight: 400;
     margin-left: 10px;
+  }
+
+  /* regular phones and below */
+  @media (max-width: 480px) {
+    flex-direction: column;
+
+    span {
+      text-align: center;
+    }
   }
 `;
