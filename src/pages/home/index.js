@@ -10,7 +10,7 @@ import {
 
 import Header from '../../components/Header';
 import About from '../../components/About';
-import Projects from '../../components/Projects';
+import Slider from '../../components/Slider';
 import Contact from '../../components/Contact';
 import Instagram from '../../components/Instagram';
 import Footer from '../../components/Footer';
@@ -22,7 +22,7 @@ export default class Home extends Component {
 
   async componentDidMount() {
     const token = '13066341700.0243229.dc58665d3bde4286b7dd1adf8977e0e0';
-    const count = 9;
+    const count = 6;
 
     const { data: allImages } = await api.get(`v1/users/self/media/recent/?access_token=${token}&count=${count}`);
     this.setState({ images: allImages.data });
@@ -37,7 +37,7 @@ export default class Home extends Component {
       <>
         <Header />
         <About />
-        <Projects />
+        <Slider />
         <Bottom>
           <Wrapper>
             <ContactWrap>
