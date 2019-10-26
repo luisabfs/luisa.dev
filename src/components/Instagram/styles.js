@@ -4,13 +4,13 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 40px;
   border: 2px dotted #c4c4c4;
   border-radius: 4px;
   height: 100%;
 
   h1 {
-    margin: 20px;
+    margin-bottom: 10px;
   }
 `;
 
