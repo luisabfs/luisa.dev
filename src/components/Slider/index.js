@@ -16,7 +16,7 @@ import project1 from '../../assets/images/todolist.png';
 import project2 from '../../assets/images/gitcompare.png';
 import project3 from '../../assets/images/barber.png';
 
-export default class Projects extends Component {
+export default class Slider extends Component {
   render() {
     return (
       <Container>
