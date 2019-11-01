@@ -2,6 +2,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+import { animateScroll } from 'react-scroll';
+
 import { FiMenu } from 'react-icons/fi';
 
 import { Container, Wrapper, NavMenu } from './styles';
@@ -27,14 +29,14 @@ const Navbar = () => (
         <li>
           <NavLink to="/projetos" activeStyle={style}>projetos</NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to="/blog" activeStyle={style}>blog</NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink to={resume} target="_blank">currículo</NavLink>
         </li>
         <li>
-          <NavLink to="">contato</NavLink>
+          <NavLink to="/" onClick={() => animateScroll.scrollToBottom()}>contato</NavLink>
         </li>
         <li>
           <FiMenu />
