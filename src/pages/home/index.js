@@ -40,7 +40,7 @@ export default class Home extends Component {
         <Slider />
         <Bottom>
           <Wrapper>
-            <ContactWrap>
+            <ContactWrap id="contact">
               <Contact />
             </ContactWrap>
             <InstaWrap>
