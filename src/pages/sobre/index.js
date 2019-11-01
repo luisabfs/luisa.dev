@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { IconContext } from 'react-icons';
 
+import Rodal from 'rodal';
+
 import {
   FiTerminal,
   FiAtSign,
@@ -30,27 +32,46 @@ import {
   CaptionWrapper,
 } from './styles';
 
+import 'rodal/lib/rodal.css';
+
 import Navbar from '../../components/Navbar';
-import Card from '../../components/Card';
+import AboutCard from '../../components/AboutCard';
 import Profile from '../../components/Profile';
 import { ScrollToTopOnMount } from '../../components/ScrollToTop';
 
 import funfacts from '../../assets/images/funfacts.png';
 
 export default class About extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { visible: false };
+  }
+
+  show() {
+    this.setState({ visible: true });
+  }
+
+  hide() {
+    this.setState({ visible: false });
+  }
+
   render() {
+    const { visible } = this.state;
     return (
       <Container>
         <ScrollToTopOnMount />
         <Navbar />
         <Wrapper>
-          <Sidebar>
+          <Rodal visible={visible} onClose={() => this.hide()}>
+            <h3>Content</h3>
+          </Rodal>
+          <Sidebar onClick={() => this.show()}>
             <Sticky>
               <Profile />
             </Sticky>
           </Sidebar>
           <Main>
-            <Card
+            <AboutCard
               icon={<FiTerminal />}
               title="introdução"
               content="Eu tinha 11 anos quando entrei em contato pela primeira vez
@@ -59,7 +80,7 @@ export default class About extends Component {
               técnico e diversas horas de estudos por conta própria, estou determinada
               a construir uma carreira como desenvolvedora de software."
             />
-            <Card
+            <AboutCard
               icon={<FiAtSign />}
               title="skills"
               content={
@@ -106,7 +127,7 @@ export default class About extends Component {
                 )
               }
             />
-            <Card
+            <AboutCard
               icon={<FiCoffee />}
               title="interesses"
               content={
@@ -129,7 +150,7 @@ export default class About extends Component {
                 )
               }
             />
-            <Card
+            <AboutCard
               icon={<FiStar />}
               title="estudos"
               content={
@@ -169,7 +190,7 @@ export default class About extends Component {
                 )
               }
             />
-            <Card
+            <AboutCard
               icon={<FaCode />}
               title="diversos"
               content={

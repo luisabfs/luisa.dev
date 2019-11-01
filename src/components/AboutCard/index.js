@@ -8,7 +8,7 @@ import {
   Content,
 } from './styles';
 
-const Profile = ({ icon, title, content }) => (
+const AboutCard = ({ icon, title, content }) => (
   <Container>
     <WrapCaption>
       <IconContext.Provider value={{ size: '32px', color: '#000' }}>
@@ -22,4 +22,4 @@ const Profile = ({ icon, title, content }) => (
   </Container>
 );
 
-export default Profile;
+export default AboutCard;
