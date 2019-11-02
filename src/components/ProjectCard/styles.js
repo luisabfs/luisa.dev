@@ -3,7 +3,9 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   max-width: 300px;
+  height: 400px;
   margin: 20px;
   padding: 10px;
   border-radius: 7px;
@@ -23,14 +25,23 @@ export const Link = styled.a`
 
 export const Image = styled.img`
   width: 100%;
+  max-width: 300px;
+  height: 200px;
+  background-color: #f4f4f4;
   border-radius: 4px;
+`;
+
+export const Wrapper = styled.div`
+  justify-content: center;
+  height: 100%;
 `;
 
 export const WrapCaption = styled.div`
   display: flex;
+  height: 100%;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10px
 `;
 
 export const Title = styled.h1`

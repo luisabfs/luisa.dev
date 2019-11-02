@@ -4,6 +4,7 @@ import {
   Link,
   Container,
   Image,
+  Wrapper,
   WrapCaption,
   Title,
   Content,
@@ -13,12 +14,14 @@ const AboutCard = ({ link, img, title, content }) => (
   <Link href={link} target="_blank" rel="noopener noreferrer">
     <Container>
       <Image src={img} />
-      <WrapCaption>
-        <Title>{title}</Title>
-      </WrapCaption>
-      <Content>
-        {content}
-      </Content>
+      <Wrapper>
+        <WrapCaption>
+          <Title>{title}</Title>
+          <Content>
+            {content}
+          </Content>
+        </WrapCaption>
+      </Wrapper>
     </Container>
   </Link>
 );
