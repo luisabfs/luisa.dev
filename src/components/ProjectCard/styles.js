@@ -8,6 +8,7 @@ export const Container = styled.div`
   padding: 10px;
   border-radius: 7px;
   background-color: #f2f2f2;
+  box-shadow:0 .2rem 1rem rgba(0,0,0,.11);
   transition: transform .2s;
 
   &:hover {
@@ -15,8 +16,14 @@ export const Container = styled.div`
   }
 `;
 
+export const Link = styled.a`
+  text-decoration: none;
+  color: #000;
+`;
+
 export const Image = styled.img`
   width: 100%;
+  border-radius: 4px;
 `;
 
 export const WrapCaption = styled.div`
