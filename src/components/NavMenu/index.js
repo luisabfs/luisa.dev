@@ -3,11 +3,10 @@ import { NavLink, Link } from 'react-router-dom';
 
 import { HashLink } from 'react-router-hash-link';
 
-import { FiMenu } from 'react-icons/fi';
-
 import { Container, Wrapper, NavMenu } from './styles';
 
 import resume from '../../assets/curriculo_luisabfs.pdf';
+
 const style = { borderBottom: '4px solid #88c6dd' };
 
 export default class Menu extends Component {

@@ -28,7 +28,7 @@ const Social = () => (
       <a href="https://behance.net/luisabfs" target="_blank" rel="noopener noreferrer">
         <FaBehance />
       </a>
-      <a href="qlullyq@gmail.com" mail>
+      <a href="mailto:qlullyq@gmail.com" mail>
         <FaEnvelope />
       </a>
     </IconContext.Provider>

@@ -25,8 +25,20 @@ export default class Navbar extends Component {
   }
 
   handleMenuShow = () => {
+    const { showMenu } = this.state;
+
     this.setState({
-      showMenu: !this.state.showMenu,
+      showMenu: !showMenu,
+    }, () => {
+      document.addEventListener('click', this.handleMenuClose);
+    });
+  }
+
+  handleMenuClose = () => {
+    this.setState({
+      showMenu: false,
+    }, () => {
+      document.removeEventListener('click', this.handleMenuClose);
     });
   }
 
