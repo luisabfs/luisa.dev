@@ -1,28 +1,51 @@
 {
-  "name": "luisabfs.github.io",
-  "version": "1.0.0",
-  "description": "Personal website",
-  "main": "index.html",
-  "dependencies": {},
-  "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.17.2",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-react": "^7.12.4"
+  "name": "luisabfs",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.0",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.18.2",
+    "react": "^16.10.2",
+    "react-awesome-slider": "^2.0.0",
+    "react-dom": "^16.10.2",
+    "react-icons": "^3.7.0",
+    "react-router-dom": "^5.1.2",
+    "react-router-hash-link": "^1.2.2",
+    "react-scripts": "3.2.0",
+    "react-useanimations": "^1.2.10",
+    "rodal": "^1.7.0",
+    "styled-components": "^4.4.0"
   },
   "scripts": {
-    "test": "test",
-    "lint": "./node_modules/.bin/eslint src/js/*.js"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/luisabfs/luisabfs.github.io.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "author": "Luísa Barros <qlullyq@gmail.com> (https://luisabfs.github.io/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/luisabfs/luisabfs.github.io/issues"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
-  "homepage": "https://github.com/luisabfs/luisabfs.github.io#readme"
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^1.7.0"
+  }
 }

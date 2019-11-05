@@ -2,10 +2,11 @@
 
 > Minimalist personal website.
 
-![alt text](assets/print.png)
+![alt text](assets/images/print.png)
 
 ## Stack
 
-* HTML5
-* CSS3 (Bootstrap 4)
-* Javascript (JQuery)
+- React
+- CSS-in-JS with styled-components
+- Declarative routing with react-router-dom
+- HTTP requests and REST API's consuming with axios
