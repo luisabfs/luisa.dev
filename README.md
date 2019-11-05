@@ -2,7 +2,7 @@
 
 > Minimalist personal website.
 
-![alt text](assets/images/print.png)
+![alt text](src/assets/images/print.png)
 
 ## Stack
 
