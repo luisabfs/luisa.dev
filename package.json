@@ -1,5 +1,6 @@
 {
-  "homepage": "https://luisabfs.github.io/",
+  "homepage": "https://luisabfs.github.io",
+  "main": "src/index.js",
   "name": "luisabfs",
   "version": "0.1.0",
   "private": true,
