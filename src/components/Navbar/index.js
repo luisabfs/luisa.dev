@@ -2,7 +2,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import { animateScroll } from 'react-scroll';
+import { HashLink } from 'react-router-hash-link';
 
 import { FiMenu } from 'react-icons/fi';
 
@@ -36,7 +36,7 @@ const Navbar = () => (
           <NavLink to={resume} target="_blank">currículo</NavLink>
         </li>
         <li>
-          <NavLink to="/" onClick={() => animateScroll.scrollToBottom()}>contato</NavLink>
+          <HashLink to="/#contact">contato</HashLink>
         </li>
         <li>
           <FiMenu />
