@@ -1,5 +1,5 @@
 {
-  "homepage": "https://luisabfs.github.io",
+  "homepage": "https://luisabfs.github.io/",
   "main": "src/index.js",
   "name": "luisabfs",
   "version": "0.1.0",
@@ -22,8 +22,8 @@
     "styled-components": "^4.4.0"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
