@@ -1,6 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-import App from './App';
+import GlobalStyle from './styles/global';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import Routes from './routes';
+
+function App() {
+  return (
+    <div className="App">
+      <GlobalStyle />
+      <Routes />
+    </div>
+  );
+}
+
+export default App;
