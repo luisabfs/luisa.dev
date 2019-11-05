@@ -39,58 +39,78 @@ export const NavMenu = styled.ul`
   align-items: center;
   justify-content: center;
 
-  li {
-    align-items: center;
-    margin-top: 10px;
+  /* ############### RESPONSIVE ############### */
 
-    a {
-      color: #000;
-      font-size: 18px;
-      text-decoration: none;
-      padding: 16px 15px;
+  @media (max-width: 768px) {
+    align-items: ${(props) => (props.menu === true ? 'flex-start' : 'center')};
+  }
+`;
 
-      span {
-        color: #88c6dd;
-      }
+export const NavItem = styled.li`
+  align-items: center;
+  margin-top: 10px;
 
-      &:hover {
-        color: #88c6dd;
-      }
+  a {
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 16px 15px;
+
+    span {
+      color: #88c6dd;
+    }
+
+    &:hover {
+      color: #88c6dd;
+    }
 
     /* ############### RESPONSIVE ############### */
 
     @media (max-width: 1180px) {
       padding: 12px 10px;
+    }
   }
+
+  svg {
+    display: none;
+
+    @media (max-width: 769px) {
+      margin-left: auto;
+      padding: 15px 0;
+    }
+  }
+
+  &:first-child {
+    margin-right: auto;
+
+    a {
+      font-family: 'Fredericka the Great', cursive;
+      font-size: 48px;
+
+      &:hover {
+        color: #000;
+      }
     }
 
+    @media (max-width: 769px) {
+      padding: 15px 0;
+    }
+  }
+
+    /* ############### RESPONSIVE ############### */
+
+    @media (max-width: 768px) {
     svg {
+      display: flex;
+    }
+
+    &:not(:first-child):not(:last-child) {
       display: none;
     }
-
-    &:first-child {
-      margin-right: auto;
-
-      a {
-        font-family: 'Fredericka the Great', cursive;
-        font-size: 48px;
-
-        &:hover {
-          color: #000;
-        }
-      }
-    }
-
-     /* ############### RESPONSIVE ############### */
-
-     @media (max-width: 768px) {
-      svg {
-        display: flex;
-      }
-
-      &:not(:first-child):not(:last-child) {
-        display: none;
-      }
-    }
   }
+`;
+
+export const WrapMenu = styled.div`
+  display: flex;
+  justify-content: flex-end;
 `;
