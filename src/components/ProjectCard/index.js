@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import {
   Link,
@@ -10,7 +11,9 @@ import {
   Content,
 } from './styles';
 
-const AboutCard = ({ link, img, title, content }) => (
+const AboutCard = ({
+  link, img, title, content,
+}) => (
   <Link href={link} target="_blank" rel="noopener noreferrer">
     <Container>
       <Image src={img} />
@@ -25,5 +28,12 @@ const AboutCard = ({ link, img, title, content }) => (
     </Container>
   </Link>
 );
+
+AboutCard.propTypes = {
+  link: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+};
 
 export default AboutCard;
