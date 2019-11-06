@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import { IconContext } from 'react-icons';
 
 import {
@@ -21,5 +23,11 @@ const AboutCard = ({ icon, title, content }) => (
     </Content>
   </Container>
 );
+
+AboutCard.propTypes = {
+  icon: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+};
 
 export default AboutCard;
