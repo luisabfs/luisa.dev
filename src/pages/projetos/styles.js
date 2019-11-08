@@ -8,14 +8,21 @@ export const Container = styled.div`
   height: 100%;
 `;
 
+export const Blurb = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+`;
+
 export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
   max-width: 1200px;
-  padding: 40px 0;
   width: 100%;
-  height: 100%;
 `;
 
 export const WrapProjects = styled.div`
@@ -40,7 +47,6 @@ export const WrapCaption = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 30px 0;
 
   h1 {
     text-align: center;
