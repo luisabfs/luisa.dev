@@ -2,14 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { IconContext } from 'react-icons';
-import { MdPerson, MdSchool, MdTrendingUp } from 'react-icons/md';
-import { FaReact } from 'react-icons/fa';
+import { MdPerson, MdSchool } from 'react-icons/md';
+import { FaReact, FaMobileAlt } from 'react-icons/fa';
 
-import {
-  Container,
-  Item,
-  CaptionWrap,
-} from './styles';
+import { Container, Item, CaptionWrap } from './styles';
 
 const About = () => (
   <Container>
@@ -19,25 +15,38 @@ const About = () => (
         <IconContext.Provider value={{ size: '64px', color: '#000' }}>
           <MdPerson />
         </IconContext.Provider>
-        <span>Tenho 18 anos, programo desde os 13 e sou de Aracaju, Sergipe - Brasil.</span>
+        <span>
+          Tenho 18 anos, programo desde os 13 e sou de Aracaju, Sergipe -
+          Brasil.
+        </span>
       </Item>
       <Item>
         <IconContext.Provider value={{ size: '64px', color: '#000' }}>
           <MdSchool />
         </IconContext.Provider>
-        <span>Sou formada técnica em Informática pelo Instituto Federal de Sergipe. </span>
+        <span>
+          Sou formada técnica em Informática pelo Instituto Federal de Sergipe.{' '}
+        </span>
       </Item>
       <Item>
         <IconContext.Provider value={{ size: '64px', color: '#000' }}>
           <FaReact />
         </IconContext.Provider>
-        <span>Atualmente estudo o ecossistema Javascript - com foco em React e NodeJS.</span>
+        <span>
+          Estudo o ecossistema Javascript - com foco em React e NodeJS.
+        </span>
       </Item>
       <Item>
         <IconContext.Provider value={{ size: '64px', color: '#000' }}>
-          <MdTrendingUp />
+          <FaMobileAlt />
         </IconContext.Provider>
-        <span>Estar em constante progresso é a minha estratégia.</span>
+        <span>
+          Atualmente trabalho como desenvolvedora React Native na{' '}
+          <a href="https://www.ma9.com.br/" style={{ margin: 0 }}>
+            ma9
+          </a>
+          .
+        </span>
       </Item>
     </CaptionWrap>
     <Link to="/sobre">SABER MAIS</Link>

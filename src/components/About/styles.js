@@ -21,14 +21,14 @@ export const Container = styled.div`
   a {
     width: 120px;
     height: 30px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     text-align: center;
     color: #000;
     font-size: 18px;
     border-bottom: 3px solid #656565;
     margin: 20px;
-    transition: .2s ease-in-out;
+    transition: 0.2s ease-in-out;
 
     &:hover {
       color: #88c6dd;
