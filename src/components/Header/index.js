@@ -12,7 +12,7 @@ import Navbar from '../Navbar';
 import Social from '../Social';
 
 import background from '../../assets/images/home_background.png';
-import headshot from '../../assets/images/headshot.jpg';
+import headshot from '../../assets/images/headshot.jpeg';
 
 const Header = () => (
   <Container bg={background}>
@@ -23,7 +23,7 @@ const Header = () => (
           <Headshot src={headshot} alt="" />
         </Link>
         <h1>Luísa Barros</h1>
-        <h2>Desenvolvedora Full-Stack</h2>
+        <h2>Desenvolvedora Mobile</h2>
         <Social />
       </Wrapper>
     </Blurb>

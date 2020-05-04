@@ -10,7 +10,7 @@ import { Container, Avatar, Location } from './styles';
 
 import Social from '../Social';
 
-import headshot from '../../assets/images/headshot.jpg';
+import headshot from '../../assets/images/headshot.jpeg';
 import layer from '../../assets/images/layer.png';
 
 const Profile = () => (
