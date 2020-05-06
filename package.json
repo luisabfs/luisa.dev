@@ -25,6 +25,7 @@
   "scripts": {
     "predeploy": "yarn run build",
     "deploy": "gh-pages -b master -d build",
+    "clear": "rm -rf node_modules && rm -rf yarn.lock && yarn",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
