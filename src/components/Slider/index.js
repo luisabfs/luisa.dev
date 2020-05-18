@@ -5,10 +5,7 @@ import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 
 import {
-  Container,
-  WrapCaption,
-  WrapProject,
-  Project,
+  Container, WrapCaption, WrapProject, Project,
 } from './styles';
 
 import background from '../../assets/images/projects_background.png';

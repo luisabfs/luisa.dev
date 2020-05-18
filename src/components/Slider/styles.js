@@ -10,13 +10,13 @@ export const Container = styled.div`
   a {
     width: 120px;
     height: 30px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     text-align: center;
     color: #000;
     font-size: 18px;
     border-bottom: 3px solid #656565;
-    transition: .2s ease-in-out;
+    transition: 0.2s ease-in-out;
 
     &:hover {
       color: #88c6dd;
@@ -31,7 +31,7 @@ export const WrapCaption = styled.div`
   justify-content: center;
   width: 300px;
   height: 300px;
-  background: url(${(props) => props.bg}) no-repeat center fixed;
+  background: url(${props => props.bg}) no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -67,7 +67,5 @@ export const Project = styled.div`
   display: flex;
 
   div {
-
   }
-
 `;
