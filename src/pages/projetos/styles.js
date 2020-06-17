@@ -10,11 +10,11 @@ export const Container = styled.div`
 
 export const Blurb = styled.div`
   display: flex;
-  align-items: center;
+  /* align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  height: 100%;
+  height: 100%; */
 `;
 
 export const Wrapper = styled.div`
@@ -29,8 +29,6 @@ export const WrapProjects = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  width: 100%;
 
   @media (max-width: 1024px) {
     justify-content: center;
