@@ -8,7 +8,7 @@ import Projects from '../pages/projetos';
 import Links from '../pages/links';
 
 const Routes = () => (
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Switch>
       <Route exact path="/" component={Home} />
       <Route path="/sobre" component={About} />
