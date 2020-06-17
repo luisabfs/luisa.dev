@@ -5,7 +5,6 @@ import {
   FiMapPin,
 } from 'react-icons/fi';
 
-
 import { Container, Avatar, Location } from './styles';
 
 import Social from '../Social';

@@ -38,7 +38,7 @@ export const Wrapper = styled.div`
 
 export const WrapCaption = styled.div`
   display: flex;
-  height: 100%;
+  height: 200px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
