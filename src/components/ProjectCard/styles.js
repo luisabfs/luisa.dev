@@ -10,11 +10,11 @@ export const Container = styled.div`
   padding: 10px;
   border-radius: 7px;
   background-color: #f2f2f2;
-  box-shadow:0 .2rem 1rem rgba(0,0,0,.11);
+  box-shadow:0 .2rem 1rem rgba(0,0,0,.05);
   transition: transform .2s;
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
   }
 `;
 
