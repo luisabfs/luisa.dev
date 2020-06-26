@@ -36,18 +36,6 @@ const About = () => (
           Estudo o ecossistema Javascript - com foco em React e NodeJS.
         </span>
       </Item>
-      <Item>
-        <IconContext.Provider value={{ size: '64px', color: '#000' }}>
-          <FaMobileAlt />
-        </IconContext.Provider>
-        <span>
-          Atualmente trabalho como desenvolvedora React Native na{' '}
-          <a href="https://www.ma9.com.br/" style={{ margin: 0 }}>
-            ma9
-          </a>
-          .
-        </span>
-      </Item>
     </CaptionWrap>
     <Link to="/sobre">SABER MAIS</Link>
   </Container>
