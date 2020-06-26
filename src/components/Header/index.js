@@ -12,7 +12,7 @@ import Navbar from '../Navbar';
 import Social from '../Social';
 
 import background from '../../assets/images/home_background.png';
-import headshot from '../../assets/images/headshot.jpeg';
+import headshot from '../../assets/images/headshot.jpg';
 
 const Header = () => (
   <Container bg={background}>
