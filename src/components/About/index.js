@@ -25,7 +25,7 @@ const About = () => (
           <MdSchool />
         </IconContext.Provider>
         <span>
-          Sou formada técnica em Informática pelo Instituto Federal de Sergipe.{' '}
+          Sou formada técnica em Informática pelo Instituto Federal de Sergipe.
         </span>
       </Item>
       <Item>

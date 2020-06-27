@@ -28,19 +28,19 @@ export default class About extends Component {
                 link="https://github.com/luisabfs/todolist"
                 img={project1}
                 title="To-do List"
-                content="Simple React application to dive into the Unform library."
+                content="POC da biblioteca Unform com ReactJS."
               />
               <ProjectCard
                 link="https://github.com/luisabfs/gobarber"
                 img={project2}
                 title="GoBarber"
-                content="Node.js application for a fictional barber shop."
+                content="Aplicação de uma barbearia ficcional com NodeJS."
               />
               <ProjectCard
                 link="https://github.com/luisabfs/gituser"
                 img={project3}
                 title="Git User"
-                content="Simple React Native application for listing Github user's info."
+                content="Aplicação React Native com integração à API do Github."
               />
             </WrapProjects>
           </Wrapper>
