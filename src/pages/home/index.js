@@ -7,7 +7,7 @@ import {
 
 import Header from '../../components/Header';
 import About from '../../components/About';
-import Slider from '../../components/Slider';
+import Projects from '../projetos';
 import Contact from '../../components/Contact';
 import Instagram from '../../components/Instagram';
 import Footer from '../../components/Footer';
@@ -34,7 +34,7 @@ export default class Home extends Component {
       <>
         <Header />
         <About />
-        <Slider />
+        <Projects />
         <Bottom>
           <Wrapper>
             <ContactWrap id="contact">
