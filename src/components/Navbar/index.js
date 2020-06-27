@@ -57,14 +57,14 @@ export default class Navbar extends Component {
             <NavItem>
               <NavLink to="/sobre" activeStyle={style}>sobre mim</NavLink>
             </NavItem>
-            <NavItem>
+            {/* <NavItem>
               <NavLink to="/projetos" activeStyle={style}>projetos</NavLink>
-            </NavItem>
+            </NavItem> */}
             {/* <NavItem>
               <NavLink to="/blog" activeStyle={style}>blog</NavLink>
             </NavItem> */}
             <NavItem>
-              <a href={resume} target="_blank" rel="noreferrer">currículo</a>
+              <a href={resume} target="_blank" rel="noopener noreferrer">currículo</a>
             </NavItem>
             <NavItem>
               <HashLink to="/#contact">contato</HashLink>
