@@ -4,7 +4,7 @@ import {
   Container, Blurb, Wrapper, WrapCaption, WrapProjects,
 } from './styles';
 
-import Navbar from '../../components/Navbar';
+// import Navbar from '../../components/Navbar';
 import ProjectCard from '../../components/ProjectCard';
 
 import project1 from '../../assets/images/todolist.png';
@@ -16,7 +16,7 @@ export default class About extends Component {
   render() {
     return (
       <Container>
-        <Navbar />
+        {/* <Navbar /> */}
         <Blurb>
           <Wrapper>
             <WrapCaption>
