@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { IconContext } from 'react-icons';
 
+import { BsBriefcase } from 'react-icons/bs';
 import {
   FiTerminal, FiAtSign, FiStar, FiCoffee,
 } from 'react-icons/fi';
-
 import {
   FaJs, FaNodeJs, FaReact, FaCode,
 } from 'react-icons/fa';
@@ -108,23 +108,72 @@ export default class About extends Component {
               icon={<FiCoffee />}
               title="interesses"
               content={(
-                <p>
-                  Sou apaixonada pelo conhecimento e a programação é um meio de
-                  por minhas ideias em prática, além de exercitar a minha
-                  criatividade. Também gosto de passar o tempo com a minha
-                  família (incluindo meus 3 gatos haha) e adoro tomar um café -
-                  sem açúcar, por favor! :P Um dos meus hobbies favoritos é o
-                  aprendizado de línguas e até agora já tenho confiança no
-                  Inglês e Francês - dá uma olhada no meu
+                <>
+                  <p>
+                    Sou apaixonada pelo conhecimento e a programação é apenas uma das formas de
+                    exercitar a minha criatividade e pôr as minhas ideias em prática.
+                  </p>
+                  <br />
+                  <p>
+                    Meus hobbies favoritos são: ler, cantar, ouvir música, assistir filmes, jogar LOL e aprender novas línguas.
+                    Também gosto de passar o tempo com a minha família (incluindo meus 2 gatos haha)
+                    e adoro tomar um café - sem açúcar, por favor!
+                  </p>
+
+                  <br />
+                  Porém, acima de tudo, o que eu mais AMO fazer é organizar todas essas coisas! Então, caso alguém queira acompanhar o que eu venho fazendo, aqui estão algumas redes sociais que utilizo:
+                  <br />
+                  <br />
+
                   <a
-                    href="https://www.duome.eu/lul_ly"
+                    href="https://www.skoob.com.br/usuario/1123866-lully"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Duolingo
+                    Livros - Skoob
                   </a>
-                  !
-                </p>
+
+                  <a
+                    href="https://filmow.com/usuario/lul_ly"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Filmes/Séries - Filmow
+                  </a>
+
+                  <a
+                    href="https://www.duolingo.com/profile/lul_ly"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Aprendizado de Línguas - Duolingo
+                  </a>
+                </>
+
+              )}
+            />
+            <AboutCard
+              icon={<BsBriefcase />}
+              title="experiência profissional"
+              content={(
+                <>
+                  <CaptionWrapper>
+                    <b>Desenvolvedora Mobile</b>
+                    <p>
+                      ma9 Soluções Inteligentes | full-time
+                      <span>novembro/2019 - junho/2020</span>
+                      <span>
+                        <li> Atuei no desenvolvimento de um aplicativo mobile fintech em React Native</li>
+                        <li> Implementei UIs <i>cross-platform</i>, feitas pela equipe de design responsável</li>
+                        <li> Trabalhei, como parte do time de desenvolvimento, com a metologia ágil Scrum</li>
+                        <li> Colaborei na manutenção de um repositório no Github</li>
+                        <br />
+                        Principal realização: Contribui para um aumento de produtividade nos processos de code review e pull request, ao adequá-los a ferramentas automatizadas - como pre-commit hooks e lints de código - e adotar padrões mundialmente aceitos de mensagens de commits.
+                      </span>
+                    </p>
+
+                  </CaptionWrapper>
+                </>
               )}
             />
             <AboutCard
@@ -150,20 +199,11 @@ export default class About extends Component {
                         Bootcamp GoStack 6.0 | Rocketseat
                       </a>
                       <a
-                        href="https://www.udemy.com/course/ultimate-web/"
+                        href="https://www.udemy.com/course/git-e-github-na-vida-real"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Beginner Full Stack Web Development: HTML, CSS, React &
-                        Node | Devslopes
-                      </a>
-                      <a
-                        href="https://www.udemy.com/course/curso-kotlin-android/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Curso Completo de Kotlin para Desenvolvimento Android |
-                        AndroidPro Blog
+                        Git e Github na Vida Real | Willian Justen
                       </a>
                       <a
                         href="https://www.udemy.com/course/git-e-github-para-iniciantes/"
@@ -173,11 +213,11 @@ export default class About extends Component {
                         Git e Github para Iniciantes | Willian Justen
                       </a>
                       <a
-                        href="https://www.udemy.com/course/git-e-github-na-vida-real"
+                        href="https://www.udemy.com/course/ultimate-web/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Git e Github na Vida Real | Willian Justen
+                        Beginner Full Stack Web Development | Devslopes
                       </a>
                       <a
                         href="https://www.udemy.com/course/curso-completo-do-desenvolvedor-android/"
@@ -186,6 +226,14 @@ export default class About extends Component {
                       >
                         Curso Completo de Desenvolvimento Android | Jamilton
                         Damasceno
+                      </a>
+                      <a
+                        href="https://www.udemy.com/course/curso-kotlin-android/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Curso Completo de Kotlin para Desenvolvimento Android |
+                        AndroidPro Blog
                       </a>
                     </p>
                   </CaptionWrapper>
