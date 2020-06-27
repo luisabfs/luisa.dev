@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { IconContext } from 'react-icons';
 import { MdPerson, MdSchool } from 'react-icons/md';
-import { FaReact, FaMobileAlt } from 'react-icons/fa';
+import { FaReact } from 'react-icons/fa';
 
 import { Container, Item, CaptionWrap } from './styles';
 
