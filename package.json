@@ -4,23 +4,6 @@
   "name": "luisabfs",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@material-ui/core": "^4.9.13",
-    "axios": "^0.19.0",
-    "eslint-config-react": "^1.1.7",
-    "prettier": "^1.18.2",
-    "prop-types": "^15.7.2",
-    "react": "^16.10.2",
-    "react-awesome-slider": "^2.0.0",
-    "react-dom": "^16.10.2",
-    "react-icons": "^3.7.0",
-    "react-router-dom": "^5.1.2",
-    "react-router-hash-link": "^1.2.2",
-    "react-scripts": "3.2.0",
-    "react-useanimations": "^1.2.10",
-    "rodal": "^1.7.0",
-    "styled-components": "^4.4.0"
-  },
   "scripts": {
     "predeploy": "yarn run build",
     "deploy": "gh-pages -b master -d build",
@@ -44,6 +27,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.9.13",
+    "axios": "^0.19.0",
+    "eslint-config-react": "^1.1.7",
+    "prettier": "^1.18.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-icons": "^3.7.0",
+    "react-router-dom": "^5.1.2",
+    "react-router-hash-link": "^1.2.2",
+    "react-scripts": "3.2.0",
+    "react-useanimations": "^1.2.10",
+    "styled-components": "^4.4.0"
   },
   "devDependencies": {
     "eslint": "^6.5.1",
