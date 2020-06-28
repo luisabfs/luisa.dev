@@ -142,7 +142,7 @@ export default class About extends Component {
                   </a>
 
                   <a
-                    href="https://www.duolingo.com/profile/lul_ly"
+                    href="https://duome.eu/lul_ly"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -154,21 +154,20 @@ export default class About extends Component {
             />
             <AboutCard
               icon={<BsBriefcase />}
-              title="experiência profissional"
+              title="experiência"
               content={(
                 <>
                   <CaptionWrapper>
                     <b>Desenvolvedora Mobile</b>
                     <p>
-                      ma9 Soluções Inteligentes | full-time
+                      ma9 Soluções Inteligentes
                       <span>novembro/2019 - junho/2020</span>
+                      <br />
                       <span>
                         <li> Atuei no desenvolvimento de um aplicativo mobile fintech em React Native</li>
                         <li> Implementei UIs <i>cross-platform</i>, feitas pela equipe de design responsável</li>
                         <li> Trabalhei, como parte do time de desenvolvimento, com a metologia ágil Scrum</li>
                         <li> Colaborei na manutenção de um repositório no Github</li>
-                        <br />
-                        Principal realização: Contribui para um aumento de produtividade nos processos de code review e pull request, ao adequá-los a ferramentas automatizadas - como pre-commit hooks e lints de código - e adotar padrões mundialmente aceitos de mensagens de commits.
                       </span>
                     </p>
 
