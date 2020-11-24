@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { colors } from '../../theme';
 
 export const Container = styled.div`
   display: flex;
@@ -51,17 +52,17 @@ export const NavItem = styled.li`
   margin-top: 10px;
 
   a {
-    color: #000;
+    color: ${colors.black};
     font-size: 18px;
     text-decoration: none;
     padding: 16px 15px;
 
     span {
-      color: #88c6dd;
+      color: ${colors.accent};
     }
 
     &:hover {
-      color: #88c6dd;
+      color: ${colors.accent};
     }
 
     /* ############### RESPONSIVE ############### */
@@ -88,7 +89,7 @@ export const NavItem = styled.li`
       font-size: 48px;
 
       &:hover {
-        color: #000;
+        color: ${colors.black};
       }
     }
 

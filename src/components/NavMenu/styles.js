@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { colors } from '../../theme';
 
 export const Container = styled.div`
   display: flex;
@@ -40,11 +41,11 @@ export const NavMenu = styled.ul`
       /* padding: 16px 15px; */
 
       span {
-        color: #88c6dd;
+        color: red;
       }
 
       &:hover {
-        color: #88c6dd;
+        color: ${colors.primary};
       }
     }
   }
