@@ -29,5 +29,7 @@ export const Card = styled.a`
 
   img {
     border-radius: 4px;
+    width: 150px;
+    height: 150px;
   }
 `;
