@@ -1,4 +1,15 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const appearFromLeft = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
 
 export const Container = styled.div`
   display: flex;
@@ -15,6 +26,7 @@ export const Wrapper = styled.div`
   width: 100%;
   max-width: 1200px;
   padding: 40px 0;
+  animation: ${appearFromLeft} 1s;
 
    /* regular phones and below */
    @media (max-width: 480px) {
