@@ -10,6 +10,7 @@ import {
 } from 'react-icons/fa';
 
 import { DiGit } from 'react-icons/di';
+import { SiTypescript } from 'react-icons/si';
 
 import {
   Container,
@@ -47,7 +48,7 @@ export default class About extends Component {
               title="introdução"
               content="Eu tinha 11 anos quando entrei em contato pela primeira vez
               com algoritmos. Desde então sou fascinada pela área de tecnologia,
-              especialmente pela programação. Agora, aos 18, após 3 anos de curso
+              especialmente pela programação. Agora, aos 19, após 3 anos de curso
               técnico e diversas horas de estudos por conta própria, estou determinada
               a construir uma carreira como desenvolvedora de software."
             />
@@ -66,6 +67,14 @@ export default class About extends Component {
                           <FaJs />
                         </IconContext.Provider>
                         <span>Javascript</span>
+                      </Skill>
+                      <Skill>
+                        <IconContext.Provider
+                          value={{ size: '64px', color: '#007acc' }}
+                        >
+                          <SiTypescript />
+                        </IconContext.Provider>
+                        <span>Typescript</span>
                       </Skill>
                       <Skill>
                         <IconContext.Provider
@@ -96,9 +105,9 @@ export default class About extends Component {
                   <CaptionWrapper>
                     <h3>outros</h3>
                     <p>
-                      #html5 #css3 #bootstrap #restAPIs #axios #express.js
+                      #html5 #css3 #restAPIs #axios #express.js
                       #redux #redux-saga #postgres #mongodb #docker #eslint
-                      #editorconfig #styled-components #prop-types #sass
+                      #styled-components
                     </p>
                   </CaptionWrapper>
                 </>

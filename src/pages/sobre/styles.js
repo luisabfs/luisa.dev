@@ -95,7 +95,7 @@ export const Skill = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px 40px;
+  padding: 10px 30px;
 
   svg {
     margin: 5px 0 5px 0;
