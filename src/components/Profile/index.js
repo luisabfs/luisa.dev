@@ -21,7 +21,7 @@ const Profile = () => (
         <FiMapPin />Aracaju-Sergipe, Brasil
       </IconContext.Provider>
     </Location>
-    <p>Oi! Tenho 18 anos e sou programadora Javascript. Amo exercer a minha
+    <p>Oi! Tenho 19 anos e sou programadora Javascript. Amo exercer a minha
       independência e crescer com as pessoas ao meu redor, por isso busco sempre
       conhecer coisas novas e compartilhar o que aprendo.
     </p>
