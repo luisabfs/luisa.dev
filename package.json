@@ -1,12 +1,10 @@
 {
-  "homepage": "https://luisabfs.github.io/",
+  "homepage": "https://luisa.dev/",
   "main": "src/index.js",
   "name": "luisabfs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -b master -d build",
     "clear": "rm -rf node_modules && rm -rf yarn.lock && yarn",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -54,6 +52,5 @@
     "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^1.7.0",
-    "gh-pages": "^2.1.1"
   }
 }
