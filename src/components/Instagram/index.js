@@ -28,7 +28,7 @@ const Instagram = () => {
       link: 'https://www.instagram.com/p/Bxjw0r7A8UA/',
       thumbnail: 'https://instagram.faju1-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/59950272_1306226776195189_4542922853872950960_n.jpg?_nc_ht=instagram.faju1-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=3hgMVSszI2IAX8PhSCr&tp=1&oh=304f21d8dcb9ce6725ba5458cd054922&oe=5FFDF938',
     },
-  ]);
+  ], []);
 
   return (
     <Container>
