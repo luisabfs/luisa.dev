@@ -35,7 +35,7 @@ const Instagram = () => {
       <h1>Instagram</h1>
       <Wrapper>
         { images.map(((image) => (
-          <Card href={image.link} target="_blank" rel="noopener noreferrer">
+          <Card key={Math.random()} href={image.link} target="_blank" rel="noopener noreferrer">
             <img src={image.thumbnail} alt="" />
           </Card>
         ))) }
