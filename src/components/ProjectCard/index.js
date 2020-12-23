@@ -7,6 +7,7 @@ import {
   Image,
   Wrapper,
   WrapCaption,
+  WrapImage,
   Title,
   Content,
 } from './styles';
@@ -16,8 +17,10 @@ const ProjectCard = ({
 }) => (
   <Link href={link} target="_blank" rel="noopener noreferrer">
     <Container>
-      <Image src={img} />
       <Wrapper>
+        <WrapImage>
+          <Image src={img} />
+        </WrapImage>
         <WrapCaption>
           <Title>{title}</Title>
           <Content>

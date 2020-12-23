@@ -8,7 +8,7 @@ import {
 import ProjectCard from '../../components/ProjectCard';
 
 import project1 from '../../assets/images/todolist.png';
-import project2 from '../../assets/images/barber.png';
+import project2 from '../../assets/images/favtube.png';
 import project3 from '../../assets/images/gituser.png';
 import layer from '../../assets/images/layer.png';
 
@@ -31,16 +31,16 @@ export default class About extends Component {
                 content="POC da biblioteca Unform com ReactJS."
               />
               <ProjectCard
-                link="https://github.com/luisabfs/gobarber"
+                link="https://github.com/luisabfs/favtube"
                 img={project2}
-                title="GoBarber"
-                content="Aplicação de uma barbearia ficcional com NodeJS."
+                title="FavTube"
+                content="App React Native com integração ao RealmDB."
               />
               <ProjectCard
                 link="https://github.com/luisabfs/gituser"
                 img={project3}
                 title="Git User"
-                content="Aplicação React Native com integração à API do Github."
+                content="App React Native com integração à Github API."
               />
             </WrapProjects>
           </Wrapper>
