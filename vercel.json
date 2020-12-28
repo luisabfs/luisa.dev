@@ -1,0 +1,5 @@
+{
+  "routes": [{
+    "src": "/todolist", "dest": "https://todolist.luisa.dev/"
+  }]
+}
