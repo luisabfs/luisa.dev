@@ -1,5 +1,5 @@
 {
   "routes": [{
-    "src": "/todolist", "dest": "https://todolist.luisabfs.vercel.app/"
+    "src": "/todolist", "dest": "https://todolist.luisa.dev/"
   }]
 }
