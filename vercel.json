@@ -1,5 +1,5 @@
 {
-  "routes": [{
-    "src": "/todolist", "dest": "https://todolist.luisa.dev/"
+  "rewrites": [{
+    "source": "/todolist", "destination": "https://todolist.luisa.dev/"
   }]
 }
