@@ -14,6 +14,7 @@ const Routes = () => (
       <Route path="/sobre" component={About} />
       <Route path="/projetos" component={Projects} />
       <Route path="/links" component={Links} />
+      <Route path="/todolist" />
     </Switch>
   </BrowserRouter>
 );
