@@ -1,13 +1,13 @@
 import React, { useMemo } from 'react';
 
 import ProjectCard from '../../components/ProjectCard';
+import Title from '../../components/Title';
 
-import layer from '../../assets/images/layer.png';
-import project1 from '../../assets/images/todolist.png';
-import project2 from '../../assets/images/barber.png';
-import project3 from '../../assets/images/gituser.png';
+import project1 from '../../assets/images/projects/todolist.png';
+import project2 from '../../assets/images/projects/barber.png';
+import project3 from '../../assets/images/projects/gituser.png';
 
-import { Container, WrapCaption, WrapProjects } from './styles';
+import { Container, WrapProjects } from './styles';
 
 const Projects = () => {
   const projects = useMemo(() => [
@@ -31,10 +31,7 @@ const Projects = () => {
 
   return (
     <Container>
-      <WrapCaption>
-        <h1>meus projetinhos</h1>
-        <img src={layer} alt="" />
-      </WrapCaption>
+      <Title>meus projetinhos</Title>
       <WrapProjects>
         {projects.map((project) => (
           <ProjectCard
