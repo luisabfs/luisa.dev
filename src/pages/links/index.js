@@ -1,32 +1,34 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 
-// Components
 import Navbar from '../../components/Navbar';
 import Card from '../../components/LinkCard';
 import Footer from '../../components/Footer';
+import Title from '../../components/Title';
 
-// Assets
 import Logbook from '../../assets/images/logbook.png';
-import layer from '../../assets/images/layer.png';
 
-// Styles
-import { Container, Title } from './styles';
+import { Container } from './styles';
 
 function Links() {
+  const links = useMemo(() => [
+    {
+      url: 'https://bit.ly/OnLogbooks',
+      title: 'On Logbooks',
+      thumbnail: Logbook,
+    },
+  ], []);
+
   return (
     <Container>
       <Navbar />
-      <Title>
-        <h1>links úteis</h1>
-        <img src={layer} alt="" />
-      </Title>
-
-      <Card
-        title="On Logbooks"
-        src={Logbook}
-        link="https://bit.ly/OnLogbooks"
-      />
-
+      <Title>links úteis</Title>
+      {links.map((link) => (
+        <Card
+          title={link.title}
+          src={link.thumbnail}
+          link={link.url}
+        />
+      ))}
       <Footer />
     </Container>
   );
