@@ -3,20 +3,9 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin: 40px;
-`;
-
-export const Blurb = styled.div`
-  display: flex;
-`;
-
-export const Wrapper = styled.div`
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 1200px;
-  width: 100%;
 `;
 
 export const WrapProjects = styled.div`

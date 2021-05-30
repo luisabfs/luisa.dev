@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react';
+
 import Thumb1 from '../../assets/images/instagram/instagram1.jpg';
 import Thumb2 from '../../assets/images/instagram/instagram2.jpg';
 import Thumb3 from '../../assets/images/instagram/instagram3.jpg';
@@ -40,11 +41,11 @@ const Instagram = () => {
     <Container>
       <h1>Instagram</h1>
       <Wrapper>
-        { images.map(((image) => (
+        {images.map((image) => (
           <Card href={image.link} target="_blank" rel="noopener noreferrer">
             <img src={image.thumbnail} alt="" />
           </Card>
-        ))) }
+        ))}
       </Wrapper>
     </Container>
   );
