@@ -50,18 +50,12 @@ export const Form = styled.form`
     color: #444;
     margin: 10px;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.05);
+    resize: none;
   }
-`;
 
-export const Name = styled.input`
-`;
-
-export const Email = styled.input`
-`;
-
-export const Message = styled.textarea`
-  height: 100px;
-  resize: none;
+  textarea {
+    height: 100px;
+  }
 `;
 
 export const Button = styled.button`
