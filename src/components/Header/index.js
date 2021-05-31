@@ -11,7 +11,7 @@ import {
 import Navbar from '../Navbar';
 import Social from '../Social';
 
-import background from '../../assets/images/home_background.png';
+import background from '../../assets/backgrounds/home_background.png';
 import headshot from '../../assets/images/headshot.jpg';
 
 const Header = () => (

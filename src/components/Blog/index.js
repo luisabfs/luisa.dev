@@ -6,8 +6,8 @@ import {
   Container, Wrapper, Card, CardDetails,
 } from './styles';
 
-import thumbnail from '../../assets/images/thumbnail.png';
-import thumbnail2 from '../../assets/images/thumbnail2.png';
+import thumbnail from '../../assets/images/blog/thumbnail.png';
+import thumbnail2 from '../../assets/images/blog/thumbnail2.png';
 
 const Blog = () => (
   <Container>

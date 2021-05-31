@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import layer from '../../assets/images/layer.png';
+import layer from '../../assets/icons/layer.png';
 
 import { Container } from './styles';
 
