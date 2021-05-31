@@ -8,6 +8,7 @@ export const Container = styled.div`
   width: 450px;
   margin-bottom: 30px;
   background-color: #f2f2f2;
+  margin-top: 10px;
 
   &:hover{
     opacity: 0.8;

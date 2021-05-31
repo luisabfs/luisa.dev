@@ -1,52 +1,49 @@
-import React, { Component } from 'react';
+import React, { useMemo } from 'react';
 
-import {
-  Container, Blurb, Wrapper, WrapCaption, WrapProjects,
-} from './styles';
-
-// import Navbar from '../../components/Navbar';
 import ProjectCard from '../../components/ProjectCard';
+import Title from '../../components/Title';
 
-import project1 from '../../assets/images/todolist.png';
-import project2 from '../../assets/images/favtube.png';
-import project3 from '../../assets/images/gituser.png';
-import layer from '../../assets/images/layer.png';
+import project1 from '../../assets/images/projects/todolist.png';
+import project2 from '../../assets/images/projects/barber.png';
+import project3 from '../../assets/images/projects/gituser.png';
 
-export default class About extends Component {
-  render() {
-    return (
-      <Container>
-        {/* <Navbar /> */}
-        <Blurb>
-          <Wrapper>
-            <WrapCaption>
-              <h1>meus projetinhos</h1>
-              <img src={layer} alt="" />
-            </WrapCaption>
-            <WrapProjects>
-              <ProjectCard
-                link="https://github.com/luisabfs/todolist"
-                img={project1}
-                title="To-do List"
-                content="POC da biblioteca Unform com ReactJS."
-              />
-              <ProjectCard
-                link="https://github.com/luisabfs/favtube"
-                img={project2}
-                title="FavTube"
-                content="App React Native com integração ao RealmDB."
-              />
-              <ProjectCard
-                link="https://github.com/luisabfs/gituser"
-                img={project3}
-                title="Git User"
-                content="App React Native com integração à Github API."
-              />
-            </WrapProjects>
-          </Wrapper>
-        </Blurb>
+import { Container, WrapProjects } from './styles';
 
-      </Container>
-    );
-  }
-}
+const Projects = () => {
+  const projects = useMemo(() => [
+    {
+      link: 'https://github.com/luisabfs/todolist',
+      title: 'To-do List',
+      thumbnail: project1,
+      description: 'POC da biblioteca Unform com ReactJS.',
+    }, {
+      link: 'https://github.com/luisabfs/gobarber',
+      title: 'GoBarber',
+      thumbnail: project2,
+      description: 'Aplicação de uma barbearia ficcional com NodeJS.',
+    }, {
+      link: 'https://github.com/luisabfs/gituser',
+      title: 'Git User',
+      thumbnail: project3,
+      description: 'Aplicação React Native com integração à API do Github.',
+    },
+  ], []);
+
+  return (
+    <Container>
+      <Title>meus projetinhos</Title>
+      <WrapProjects>
+        {projects.map((project) => (
+          <ProjectCard
+            link={project.link}
+            img={project.thumbnail}
+            title={project.title}
+            content={project.description}
+          />
+        ))}
+      </WrapProjects>
+    </Container>
+  );
+};
+
+export default Projects;

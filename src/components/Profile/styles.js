@@ -7,6 +7,9 @@ export const Container = styled.div`
   padding: 20px;
   background-color: #f2f2f2;
 
+  position: sticky;
+  top: 20px;
+
   h1 {
     margin-bottom: 20px;
   }
