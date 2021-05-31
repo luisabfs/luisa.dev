@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
 import { FiMenu } from 'react-icons/fi';
@@ -71,12 +71,12 @@ export default class Navbar extends Component {
             </NavItem>
             <NavItem>
               <WrapMenu>
-                <Link onClick={this.handleMenuShow}>
+                <a role="button" tabIndex={0} onKeyDown={this.handleMenuShow} onClick={this.handleMenuShow}>
                   <FiMenu />
                   {
                     showMenu ? <Menu /> : null
                   }
-                </Link>
+                </a>
               </WrapMenu>
             </NavItem>
           </NavMenu>

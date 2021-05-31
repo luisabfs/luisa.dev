@@ -26,22 +26,33 @@ export const Link = styled.a`
 export const Image = styled.img`
   width: 100%;
   max-width: 300px;
-  height: 200px;
+  max-height: 200px;
   background-color: #f4f4f4;
   border-radius: 4px;
 `;
 
 export const Wrapper = styled.div`
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   justify-content: center;
-  height: 100%;
+  align-items: center;
 `;
 
-export const WrapCaption = styled.div`
+export const WrapImage = styled.div`
   display: flex;
   height: 200px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 10px;
+
+`;export const WrapCaption = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
 `;
 
 export const Title = styled.h1`
