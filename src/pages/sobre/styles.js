@@ -71,11 +71,6 @@ export const Sidebar = styled.div`
   }
 `;
 
-export const Sticky = styled.div`
-  position: sticky;
-  top: 20px;
-`;
-
 export const FunFacts = styled.div`
   display: flex;
   flex-direction: column;
@@ -88,18 +83,6 @@ export const SkillWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-`;
-
-export const Skill = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 30px;
-
-  svg {
-    margin: 5px 0 5px 0;
-  }
 `;
 
 export const CaptionWrapper = styled.div`
