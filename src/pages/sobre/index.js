@@ -63,55 +63,40 @@ function About() {
       ),
     },
     {
-      title: 'interesses',
-      icon: <FiCoffee />,
-      content: (
-        <>
-          <p>
-            Sou apaixonada pelo conhecimento e a programação é apenas uma das formas de
-            exercitar a minha criatividade e pôr as minhas ideias em prática.
-          </p>
-          <br />
-          <p>
-            Meus hobbies favoritos são: ler, cantar, ouvir música, assistir filmes, jogar LOL e aprender novas línguas.
-            Também gosto de passar o tempo com a minha família (incluindo meus 2 gatos haha)
-            e adoro tomar um café - sem açúcar, por favor!
-          </p>
-
-          <br />
-          Porém, acima de tudo, o que eu mais AMO fazer é organizar todas essas coisas! Então, caso alguém queira acompanhar o que eu venho fazendo, aqui estão algumas redes sociais que utilizo:
-          <br />
-          <br />
-
-          {interestsLinks.map((link) => (
-            <a
-              href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {link.title}
-            </a>
-          ))}
-        </>
-
-      ),
-    },
-    {
       title: 'experiência',
       icon: <BsBriefcase />,
       content: (
         <>
           <CaptionWrapper>
+            <b>Desenvolvedora Fullstack</b>
+            <p>
+              Lojas Riachuelo S/A
+              <span>janeiro/2021 - atualmente</span>
+
+              <span>
+                <li>Atuação em uma das maiores varejistas do Brasil</li>
+                <li>Implementação de um PDV Mobile, almejando melhorias na experiência do cliente em lojas físicas, no contexto de vendas e pagamentos</li>
+                <li>Substituição de sistemas legados, visando integração <i>omnichannel</i></li>
+                <li>UIs e arquiteturas de acordo com princípios <i>offline-first</i></li>
+                <li>Squad composta por 10+ desenvolvedores, PM/POs, QAs e UXs</li>
+                <li>Metodologia ágil Kanban, Jira e cerimônias (dailies, plannings e retrospectivas)</li>
+                <li>Manutenção de repositórios no Microsoft Azure, seguindo o pipeline CI/CD</li>
+                <li>Stack: Java/Spring Boot, Typescript, NodeJS, React, React Native, RealmDB</li>
+              </span>
+            </p>
+
+          </CaptionWrapper>
+          <br />
+          <CaptionWrapper>
             <b>Desenvolvedora Mobile</b>
             <p>
               ma9 Soluções Inteligentes
               <span>novembro/2019 - junho/2020</span>
-              <br />
               <span>
-                <li> Atuei no desenvolvimento de um aplicativo mobile fintech em React Native</li>
-                <li> Implementei UIs <i>cross-platform</i>, feitas pela equipe de design responsável</li>
-                <li> Trabalhei, como parte do time de desenvolvimento, com a metologia ágil Scrum</li>
-                <li> Colaborei na manutenção de um repositório no Github</li>
+                <li>Atuei no desenvolvimento de um aplicativo mobile fintech em React Native</li>
+                <li>Implementei UIs <i>cross-platform</i>, feitas pela equipe de design responsável</li>
+                <li>Trabalhei, como parte do time de desenvolvimento, com a metologia ágil Scrum</li>
+                <li>Colaborei na manutenção de um repositório no Github</li>
               </span>
             </p>
 
@@ -146,6 +131,40 @@ function About() {
             </p>
           </CaptionWrapper>
         </>
+      ),
+    },
+    {
+      title: 'interesses',
+      icon: <FiCoffee />,
+      content: (
+        <>
+          <p>
+            Sou apaixonada pelo conhecimento e a programação é apenas uma das formas de
+            exercitar a minha criatividade e pôr as minhas ideias em prática.
+          </p>
+          <br />
+          <p>
+            Meus hobbies favoritos são: ler, cantar, ouvir música, assistir filmes, jogar LOL e aprender novas línguas.
+            Também gosto de passar o tempo com a minha família (incluindo meus 2 gatos haha)
+            e adoro tomar um café - sem açúcar, por favor!
+          </p>
+
+          <br />
+          Porém, acima de tudo, o que eu mais AMO fazer é organizar todas essas coisas! Então, caso alguém queira acompanhar o que eu venho fazendo, aqui estão algumas redes sociais que utilizo:
+          <br />
+          <br />
+
+          {interestsLinks.map((link) => (
+            <a
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {link.title}
+            </a>
+          ))}
+        </>
+
       ),
     },
     {
