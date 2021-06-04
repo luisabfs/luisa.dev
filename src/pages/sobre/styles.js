@@ -118,6 +118,10 @@ export const CaptionWrapper = styled.div`
       font-size: 15px;
       letter-spacing: 1.11px;
       margin-top: 5px;
+
+      &:not(:last-of-type) {
+        margin-bottom: 15px;
+      }
     }
   }
 `;
