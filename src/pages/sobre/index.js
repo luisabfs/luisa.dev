@@ -72,7 +72,6 @@ function About() {
             <p>
               Lojas Riachuelo S/A
               <span>janeiro/2021 - atualmente</span>
-
               <span>
                 <li>Atuação em uma das maiores varejistas do Brasil</li>
                 <li>Implementação de um PDV Mobile, almejando melhorias na experiência do cliente em lojas físicas, no contexto de vendas e pagamentos</li>
@@ -84,7 +83,6 @@ function About() {
                 <li>Stack: Java/Spring Boot, Typescript, NodeJS, React, React Native, RealmDB</li>
               </span>
             </p>
-
           </CaptionWrapper>
           <br />
           <CaptionWrapper>
