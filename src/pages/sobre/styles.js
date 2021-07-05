@@ -120,4 +120,8 @@ export const CaptionWrapper = styled.div`
       margin-top: 5px;
     }
   }
+
+  &:not(:first-of-type) {
+    margin-top: 20px;
+  }
 `;
