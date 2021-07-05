@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import React, { useMemo } from 'react';
-
+import { useTheme } from 'styled-components';
 import { DiGit } from 'react-icons/di';
 import { BsBriefcase } from 'react-icons/bs';
 import { SiTypescript } from 'react-icons/si';
@@ -29,7 +29,9 @@ import { ScrollToTopOnMount } from '../../components/ScrollToTop';
 import funfacts from '../../assets/images/funfacts/funfacts.png';
 import { interestsLinks, studyLinks } from './data';
 
-function About() {
+function About(p) {
+  const theme = useTheme();
+
   const infos = useMemo(() => [
     {
       title: 'introdução',
@@ -44,11 +46,11 @@ function About() {
           <CaptionWrapper>
             <h3>principais</h3>
             <SkillWrapper>
-              <Skill icon={<FaJs />} color="#f0db4f" text="Javascript" />
-              <Skill icon={<SiTypescript />} color="#007acc" text="Typescript" />
-              <Skill icon={<FaReact />} color="#61dbfb" text="React" />
-              <Skill icon={<FaNodeJs />} color="#3c873a" text="Node.js" />
-              <Skill icon={<DiGit />} color="#f1502f" text="Git" />
+              <Skill icon={<FaJs />} color={theme.colors.yellowJs} text="Javascript" />
+              <Skill icon={<SiTypescript />} color={theme.colors.blueTs} text="Typescript" />
+              <Skill icon={<FaReact />} color={theme.colors.blueReact} text="React" />
+              <Skill icon={<FaNodeJs />} color={theme.colors.greenNode} text="Node.js" />
+              <Skill icon={<DiGit />} color={theme.colors.redGit} text="Git" />
             </SkillWrapper>
           </CaptionWrapper>
           <CaptionWrapper>
@@ -57,6 +59,71 @@ function About() {
               #html5 #css3 #restAPIs #axios #express.js
               #redux #redux-saga #postgres #mongodb #docker #eslint
               #styled-components
+            </p>
+          </CaptionWrapper>
+        </>
+      ),
+    },
+    {
+      title: 'experiência',
+      icon: <BsBriefcase />,
+      content: (
+        <>
+          <CaptionWrapper>
+            <b>Desenvolvedora Fullstack</b>
+            <p>
+              Lojas Riachuelo S/A
+              <span>janeiro/2021 - atualmente</span>
+              <br />
+              <span>
+                <li> Atuo no desenvolvimento de um ponto de venda mobile em React Native</li>
+                <li> Implementei UIs <i>cross-platform</i>, feitas pela equipe de design responsável</li>
+                <li> Trabalhei, como parte do time de desenvolvimento, com a metologia ágil Scrum</li>
+                <li> Colaborei na manutenção de um repositório no Github</li>
+              </span>
+            </p>
+          </CaptionWrapper>
+          <CaptionWrapper>
+            <b>Desenvolvedora Mobile</b>
+            <p>
+              ma9 Soluções Inteligentes
+              <span>novembro/2019 - junho/2020</span>
+              <br />
+              <span>
+                <li> Atuei no desenvolvimento de um aplicativo mobile fintech em React Native</li>
+                <li> Implementei UIs <i>cross-platform</i>, feitas pela equipe de design responsável</li>
+                <li> Trabalhei, como parte do time de desenvolvimento, com a metologia ágil Scrum</li>
+                <li> Colaborei na manutenção de um repositório no Github</li>
+              </span>
+            </p>
+          </CaptionWrapper>
+        </>
+      ),
+    },
+    {
+      title: 'estudos',
+      icon: <FiStar />,
+      content: (
+        <>
+          <CaptionWrapper>
+            <h3>acadêmico</h3>
+            <p>
+              Técnico, Informática | Instituto Federal de Sergipe - IFS
+              <span>junho/2015 - agosto/2018</span>
+            </p>
+          </CaptionWrapper>
+          <CaptionWrapper>
+            <h3>cursos</h3>
+            <p>
+              {studyLinks.map((link) => (
+                <a
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {link.title}
+                </a>
+              ))}
             </p>
           </CaptionWrapper>
         </>
@@ -94,58 +161,6 @@ function About() {
           ))}
         </>
 
-      ),
-    },
-    {
-      title: 'experiência',
-      icon: <BsBriefcase />,
-      content: (
-        <>
-          <CaptionWrapper>
-            <b>Desenvolvedora Mobile</b>
-            <p>
-              ma9 Soluções Inteligentes
-              <span>novembro/2019 - junho/2020</span>
-              <br />
-              <span>
-                <li> Atuei no desenvolvimento de um aplicativo mobile fintech em React Native</li>
-                <li> Implementei UIs <i>cross-platform</i>, feitas pela equipe de design responsável</li>
-                <li> Trabalhei, como parte do time de desenvolvimento, com a metologia ágil Scrum</li>
-                <li> Colaborei na manutenção de um repositório no Github</li>
-              </span>
-            </p>
-
-          </CaptionWrapper>
-        </>
-      ),
-    },
-    {
-      title: 'estudos',
-      icon: <FiStar />,
-      content: (
-        <>
-          <CaptionWrapper>
-            <h3>acadêmico</h3>
-            <p>
-              Técnico, Informática | Instituto Federal de Sergipe - IFS
-              <span>junho/2015 - agosto/2018</span>
-            </p>
-          </CaptionWrapper>
-          <CaptionWrapper>
-            <h3>cursos</h3>
-            <p>
-              {studyLinks.map((link) => (
-                <a
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {link.title}
-                </a>
-              ))}
-            </p>
-          </CaptionWrapper>
-        </>
       ),
     },
     {
