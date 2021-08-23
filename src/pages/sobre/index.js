@@ -179,7 +179,7 @@ function About(p) {
         </a>
       ),
     },
-  ], []);
+  ], [theme.colors.blueReact, theme.colors.blueTs, theme.colors.greenNode, theme.colors.redGit, theme.colors.yellowJs]);
 
   return (
     <Container>
