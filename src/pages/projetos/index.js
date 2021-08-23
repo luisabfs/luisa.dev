@@ -35,6 +35,7 @@ const Projects = () => {
       <WrapProjects>
         {projects.map((project) => (
           <ProjectCard
+            key={project.link}
             link={project.link}
             img={project.thumbnail}
             title={project.title}

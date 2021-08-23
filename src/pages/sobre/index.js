@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import React, { useMemo } from 'react';
-
+import { useTheme } from 'styled-components';
 import { DiGit } from 'react-icons/di';
 import { BsBriefcase } from 'react-icons/bs';
 import { SiTypescript } from 'react-icons/si';
@@ -29,7 +29,9 @@ import { ScrollToTopOnMount } from '../../components/ScrollToTop';
 import funfacts from '../../assets/images/funfacts/funfacts.png';
 import { interestsLinks, studyLinks } from './data';
 
-function About() {
+function About(p) {
+  const theme = useTheme();
+
   const infos = useMemo(() => [
     {
       title: 'introdução',
@@ -44,11 +46,11 @@ function About() {
           <CaptionWrapper>
             <h3>principais</h3>
             <SkillWrapper>
-              <Skill icon={<FaJs />} color="#f0db4f" text="Javascript" />
-              <Skill icon={<SiTypescript />} color="#007acc" text="Typescript" />
-              <Skill icon={<FaReact />} color="#61dbfb" text="React" />
-              <Skill icon={<FaNodeJs />} color="#3c873a" text="Node.js" />
-              <Skill icon={<DiGit />} color="#f1502f" text="Git" />
+              <Skill icon={<FaJs />} color={theme.colors.yellowJs} text="Javascript" />
+              <Skill icon={<SiTypescript />} color={theme.colors.blueTs} text="Typescript" />
+              <Skill icon={<FaReact />} color={theme.colors.blueReact} text="React" />
+              <Skill icon={<FaNodeJs />} color={theme.colors.greenNode} text="Node.js" />
+              <Skill icon={<DiGit />} color={theme.colors.redGit} text="Git" />
             </SkillWrapper>
           </CaptionWrapper>
           <CaptionWrapper>
@@ -97,7 +99,6 @@ function About() {
                 <li>Colaborei na manutenção de um repositório no Github</li>
               </span>
             </p>
-
           </CaptionWrapper>
         </>
       ),
@@ -178,7 +179,7 @@ function About() {
         </a>
       ),
     },
-  ], []);
+  ], [theme.colors.blueReact, theme.colors.blueTs, theme.colors.greenNode, theme.colors.redGit, theme.colors.yellowJs]);
 
   return (
     <Container>

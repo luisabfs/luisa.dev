@@ -1,1 +1,4 @@
-export { colors } from './colors';
+import { colors } from './colors';
+import { lightTheme } from './themes';
+
+export default { colors, lightTheme };

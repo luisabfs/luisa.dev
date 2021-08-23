@@ -124,4 +124,8 @@ export const CaptionWrapper = styled.div`
       }
     }
   }
+
+  &:not(:first-of-type) {
+    margin-top: 20px;
+  }
 `;

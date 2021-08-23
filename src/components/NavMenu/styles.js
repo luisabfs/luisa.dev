@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors } from '../../theme';
+import theme from '../../theme';
 
 export const Container = styled.div`
   display: flex;
@@ -45,7 +45,7 @@ export const NavMenu = styled.ul`
       }
 
       &:hover {
-        color: ${colors.primary};
+        color: ${theme.colors.primary};
       }
     }
   }
