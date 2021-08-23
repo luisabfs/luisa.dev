@@ -74,26 +74,29 @@ function About(p) {
             <p>
               Lojas Riachuelo S/A
               <span>janeiro/2021 - atualmente</span>
-              <br />
               <span>
-                <li> Atuo no desenvolvimento de um ponto de venda mobile em React Native</li>
-                <li> Implementei UIs <i>cross-platform</i>, feitas pela equipe de design responsável</li>
-                <li> Trabalhei, como parte do time de desenvolvimento, com a metologia ágil Scrum</li>
-                <li> Colaborei na manutenção de um repositório no Github</li>
+                <li>Atuação em uma das maiores varejistas do Brasil</li>
+                <li>Implementação de um PDV Mobile, almejando melhorias na experiência do cliente em lojas físicas, no contexto de vendas e pagamentos</li>
+                <li>Substituição de sistemas legados, visando integração <i>omnichannel</i></li>
+                <li>UIs e arquiteturas de acordo com princípios <i>offline-first</i></li>
+                <li>Squad composta por 10+ desenvolvedores, PM/POs, QAs e UXs</li>
+                <li>Metodologia ágil Kanban, Jira e cerimônias (dailies, plannings e retrospectivas)</li>
+                <li>Manutenção de repositórios no Microsoft Azure, seguindo o pipeline CI/CD</li>
+                <li>Stack: Java/Spring Boot, Typescript, NodeJS, React, React Native, RealmDB</li>
               </span>
             </p>
           </CaptionWrapper>
+          <br />
           <CaptionWrapper>
             <b>Desenvolvedora Mobile</b>
             <p>
               ma9 Soluções Inteligentes
               <span>novembro/2019 - junho/2020</span>
-              <br />
               <span>
-                <li> Atuei no desenvolvimento de um aplicativo mobile fintech em React Native</li>
-                <li> Implementei UIs <i>cross-platform</i>, feitas pela equipe de design responsável</li>
-                <li> Trabalhei, como parte do time de desenvolvimento, com a metologia ágil Scrum</li>
-                <li> Colaborei na manutenção de um repositório no Github</li>
+                <li>Atuei no desenvolvimento de um aplicativo mobile fintech em React Native</li>
+                <li>Implementei UIs <i>cross-platform</i>, feitas pela equipe de design responsável</li>
+                <li>Trabalhei, como parte do time de desenvolvimento, com a metologia ágil Scrum</li>
+                <li>Colaborei na manutenção de um repositório no Github</li>
               </span>
             </p>
           </CaptionWrapper>
