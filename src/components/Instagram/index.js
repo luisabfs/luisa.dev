@@ -4,8 +4,8 @@ import Thumb1 from '../../assets/images/instagram/instagram1.jpg';
 import Thumb2 from '../../assets/images/instagram/instagram2.jpg';
 import Thumb3 from '../../assets/images/instagram/instagram3.jpg';
 import Thumb4 from '../../assets/images/instagram/instagram4.jpg';
-import Thumb5 from '../../assets/images/instagram/instagram5.jpg';
 import Thumb6 from '../../assets/images/instagram/instagram6.jpg';
+import Thumb7 from '../../assets/images/instagram/instagram7.jpg';
 
 import { Container, Wrapper, Card } from './styles';
 
@@ -28,8 +28,8 @@ const Instagram = () => {
       thumbnail: Thumb4,
     },
     {
-      link: 'https://www.instagram.com/p/B_xk9AagGV2/',
-      thumbnail: Thumb5,
+      link: 'https://www.instagram.com/p/CSxyTlFDKGR/',
+      thumbnail: Thumb7,
     },
     {
       link: 'https://www.instagram.com/p/Bxjw0r7A8UA/',
