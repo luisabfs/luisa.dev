@@ -36,7 +36,7 @@ function About(p) {
     {
       title: 'introdução',
       icon: <FiTerminal />,
-      content: 'Eu tinha 11 anos quando entrei em contato pela primeira vez com algoritmos. Desde então sou fascinada pela área de tecnologia, especialmente pela programação. Agora, aos 19, após 3 anos de curso técnico e diversas horas de estudos por conta própria, estou determinada a construir uma carreira como desenvolvedora de software.',
+      content: 'Eu tinha 11 anos quando entrei em contato pela primeira vez com algoritmos. Desde então sou fascinada pela área de tecnologia, especialmente pela programação. Agora, aos 21, após 3 anos de curso técnico e diversas horas de estudos por conta própria, estou determinada a construir uma carreira como desenvolvedora de software.',
     },
     {
       title: 'skills',
