@@ -12,7 +12,7 @@ import {
   WrapMenu,
 } from './styles';
 
-import resume from '../../assets/files/luisa-cv.pdf';
+import resume from '../../assets/files/cv-luisa-barros.pdf';
 
 import Menu from '../NavMenu';
 
