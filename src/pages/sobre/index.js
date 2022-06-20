@@ -143,7 +143,7 @@ function About(p) {
           </p>
           <br />
           <p>
-            Meus hobbies favoritos são: ler, cantar, ouvir música, assistir filmes, jogar LOL e aprender novas línguas.
+            Meus hobbies favoritos são: ler, cantar, ouvir música, assistir filmes/séries e aprender novas línguas.
             Também gosto de passar o tempo com a minha família (incluindo meus 2 gatos haha)
             e adoro tomar um café - sem açúcar, por favor!
           </p>
