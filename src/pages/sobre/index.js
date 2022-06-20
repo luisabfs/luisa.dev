@@ -36,7 +36,7 @@ function About(p) {
     {
       title: 'introdução',
       icon: <FiTerminal />,
-      content: 'Eu tinha 11 anos quando entrei em contato pela primeira vez com algoritmos. Desde então sou fascinada pela área de tecnologia, especialmente pela programação. Agora, aos 19, após 3 anos de curso técnico e diversas horas de estudos por conta própria, estou determinada a construir uma carreira como desenvolvedora de software.',
+      content: 'Eu tinha 11 anos quando entrei em contato pela primeira vez com algoritmos. Desde então sou fascinada pela área de tecnologia, especialmente pela programação. Agora, aos 21, após 3 anos de curso técnico e diversas horas de estudos por conta própria, estou determinada a construir uma carreira como desenvolvedora de software.',
     },
     {
       title: 'skills',
@@ -143,7 +143,7 @@ function About(p) {
           </p>
           <br />
           <p>
-            Meus hobbies favoritos são: ler, cantar, ouvir música, assistir filmes, jogar LOL e aprender novas línguas.
+            Meus hobbies favoritos são: ler, cantar, ouvir música, assistir filmes/séries e aprender novas línguas.
             Também gosto de passar o tempo com a minha família (incluindo meus 2 gatos haha)
             e adoro tomar um café - sem açúcar, por favor!
           </p>

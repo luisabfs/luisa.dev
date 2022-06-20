@@ -5,7 +5,7 @@ import { HashLink } from 'react-router-hash-link';
 
 import { Container, Wrapper, NavMenu } from './styles';
 
-import resume from '../../assets/files/luisa-cv.pdf';
+import resume from '../../assets/files/cv-luisa-barros.pdf';
 
 const style = { borderBottom: '4px solid #88c6dd' };
 

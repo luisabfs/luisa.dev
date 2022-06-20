@@ -16,7 +16,7 @@ const About = () => (
           <MdPerson />
         </IconContext.Provider>
         <span>
-          Tenho 19 anos, programo desde os 13 e sou de Aracaju, Sergipe -
+          Tenho 21 anos, programo desde os 13 e sou de Aracaju, Sergipe -
           Brasil.
         </span>
       </Item>
