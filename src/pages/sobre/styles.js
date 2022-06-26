@@ -71,14 +71,6 @@ export const Sidebar = styled.div`
   }
 `;
 
-export const FunFacts = styled.div`
-  display: flex;
-  flex-direction: column;
-  background-color: #f2f2f2;
-  margin: 20px 0;
-  padding: 20px;
-`;
-
 export const SkillWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;

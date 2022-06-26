@@ -1,14 +1,13 @@
-/* eslint-disable max-len */
 import React, { useMemo } from 'react';
 import { useTheme } from 'styled-components';
 import { DiGit } from 'react-icons/di';
 import { BsBriefcase } from 'react-icons/bs';
 import { SiTypescript } from 'react-icons/si';
 import {
-  FaJs, FaNodeJs, FaReact, FaCode,
+  FaJs, FaNodeJs, FaReact,
 } from 'react-icons/fa';
 import {
-  FiTerminal, FiAtSign, FiStar, FiCoffee,
+  FiAtSign, FiStar, FiCoffee,
 } from 'react-icons/fi';
 
 import Navbar from '../../components/Navbar';
@@ -26,7 +25,6 @@ import {
 } from './styles';
 import { ScrollToTopOnMount } from '../../components/ScrollToTop';
 
-import funfacts from '../../assets/images/funfacts/funfacts.png';
 import { interestsLinks, studyLinks } from './data';
 
 function About(p) {
@@ -34,17 +32,11 @@ function About(p) {
 
   const infos = useMemo(() => [
     {
-      title: 'introdução',
-      icon: <FiTerminal />,
-      content: 'Eu tinha 11 anos quando entrei em contato pela primeira vez com algoritmos. Desde então sou fascinada pela área de tecnologia, especialmente pela programação. Agora, aos 21, após 3 anos de curso técnico e diversas horas de estudos por conta própria, estou determinada a construir uma carreira como desenvolvedora de software.',
-    },
-    {
       title: 'skills',
       icon: <FiAtSign />,
       content: (
         <>
           <CaptionWrapper>
-            <h3>principais</h3>
             <SkillWrapper>
               <Skill icon={<FaJs />} color={theme.colors.yellowJs} text="Javascript" />
               <Skill icon={<SiTypescript />} color={theme.colors.blueTs} text="Typescript" />
@@ -52,14 +44,6 @@ function About(p) {
               <Skill icon={<FaNodeJs />} color={theme.colors.greenNode} text="Node.js" />
               <Skill icon={<DiGit />} color={theme.colors.redGit} text="Git" />
             </SkillWrapper>
-          </CaptionWrapper>
-          <CaptionWrapper>
-            <h3>outros</h3>
-            <p>
-              #html5 #css3 #restAPIs #axios #express.js
-              #redux #redux-saga #postgres #mongodb #docker #eslint
-              #styled-components
-            </p>
           </CaptionWrapper>
         </>
       ),
@@ -97,6 +81,7 @@ function About(p) {
                 <li>Implementei UIs <i>cross-platform</i>, feitas pela equipe de design responsável</li>
                 <li>Trabalhei, como parte do time de desenvolvimento, com a metologia ágil Scrum</li>
                 <li>Colaborei na manutenção de um repositório no Github</li>
+                <li>Stack: Javascript, React, React Native, AsyncStorage, React Context API</li>
               </span>
             </p>
           </CaptionWrapper>
@@ -163,22 +148,8 @@ function About(p) {
             </a>
           ))}
         </>
-
-      ),
-    },
-    {
-      title: 'diversos',
-      icon: <FaCode />,
-      content: (
-        <a
-          href="https://sourcerer.io/luisabfs"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={funfacts} alt="" />
-        </a>
-      ),
-    },
+      )
+    }
   ], [theme.colors.blueReact, theme.colors.blueTs, theme.colors.greenNode, theme.colors.redGit, theme.colors.yellowJs]);
 
   return (
