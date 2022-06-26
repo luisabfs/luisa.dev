@@ -21,10 +21,7 @@ const Profile = () => (
         <FiMapPin />Aracaju-Sergipe, Brasil
       </IconContext.Provider>
     </Location>
-    <p>Oi! Tenho 21 anos e sou programadora Javascript. Amo exercer a minha
-      independência e crescer com as pessoas ao meu redor, por isso busco sempre
-      conhecer coisas novas e compartilhar o que aprendo.
-    </p>
+    <p>21 anos. Programadora mobile. Autodidata. Aspirante a poliglota.</p>
     <img src={layer} alt="" />
     <Social />
   </Container>

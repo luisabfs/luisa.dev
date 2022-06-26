@@ -8,7 +8,7 @@ export const interestsLinks = [
     title: 'Filmes/Séries - Filmow',
   },
   {
-    url: 'https://duome.eu/lul_ly',
+    url: 'https://duolingo.com/profile/luisabfs',
     title: 'Aprendizado de Idiomas - Duolingo',
   },
 ];

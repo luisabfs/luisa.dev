@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { IconContext } from 'react-icons';
-import { MdPerson, MdSchool } from 'react-icons/md';
+import { MdSchool, MdWork } from 'react-icons/md';
 import { FaReact } from 'react-icons/fa';
 
 import { Container, Item, CaptionWrap } from './styles';
@@ -13,11 +13,10 @@ const About = () => (
     <CaptionWrap>
       <Item>
         <IconContext.Provider value={{ size: '64px', color: '#000' }}>
-          <MdPerson />
+          <MdWork />
         </IconContext.Provider>
         <span>
-          Tenho 21 anos, programo desde os 13 e sou de Aracaju, Sergipe -
-          Brasil.
+          Tenho 2 anos e meio de experiência profissional
         </span>
       </Item>
       <Item>
@@ -33,7 +32,7 @@ const About = () => (
           <FaReact />
         </IconContext.Provider>
         <span>
-          Estudo o ecossistema Javascript - com foco em React e NodeJS.
+          Trabalho com o ecossistema Javascript - com foco em React e React Native.
         </span>
       </Item>
     </CaptionWrap>
