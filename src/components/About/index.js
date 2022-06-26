@@ -16,7 +16,7 @@ const About = () => (
           <MdWork />
         </IconContext.Provider>
         <span>
-          Tenho 2 anos e meio de experiência profissional.
+          Tenho 2 anos e meio de experiência profissional
         </span>
       </Item>
       <Item>
