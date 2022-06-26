@@ -33,7 +33,7 @@ const About = () => (
           <FaReact />
         </IconContext.Provider>
         <span>
-          Estudo o ecossistema Javascript - com foco em React e NodeJS.
+          Estudo o ecossistema Javascript - com foco em React e React Native.
         </span>
       </Item>
     </CaptionWrap>
