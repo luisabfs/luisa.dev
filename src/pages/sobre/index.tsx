@@ -27,7 +27,7 @@ import { ScrollToTopOnMount } from '../../components/ScrollToTop';
 
 import { interestsLinks, studyLinks } from './data';
 
-function About(p) {
+function About() {
   const theme = useTheme();
 
   const infos = useMemo(() => [

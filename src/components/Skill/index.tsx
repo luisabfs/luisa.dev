@@ -1,10 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { IconContext } from 'react-icons';
+import { IconContext, IconType } from 'react-icons';
 
 import { Container } from './styles';
 
-function Skill({ icon, color, text }) {
+interface Props {
+  icon: React.ReactNode;
+  color: string;
+  text: string;
+}
+
+function Skill({ icon, color, text }: Props) {
   return (
     <Container>
       <IconContext.Provider
@@ -16,9 +21,5 @@ function Skill({ icon, color, text }) {
     </Container>
   );
 }
-Skill.propTypes = {
-  icon: PropTypes.element.isRequired,
-  color: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
-};
+
 export default Skill;
