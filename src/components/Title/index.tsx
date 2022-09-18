@@ -1,10 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import layer from '../../assets/icons/layer.png';
 
 import { Container } from './styles';
 
-function Title({ children }) {
+interface Props {
+  children: React.ReactNode;
+}
+
+function Title({ children }: Props) {
   return (
     <Container>
       <h1>{children}</h1>
@@ -12,12 +15,5 @@ function Title({ children }) {
     </Container>
   );
 }
-
-Title.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
-};
 
 export default Title;

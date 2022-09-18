@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import {
   Container,
@@ -9,7 +8,13 @@ import {
   Image,
 } from './styles';
 
-const LinkCard = ({ title, src, link }) => (
+interface Props {
+  title: string;
+  src: string;
+  link: string;
+}
+
+const LinkCard = ({ title, src, link }: Props) => (
   <Link href={link} target="_blank" rel="noopener noreferrer">
     <Container>
       <Image src={src} />
@@ -19,11 +24,5 @@ const LinkCard = ({ title, src, link }) => (
     </Container>
   </Link>
 );
-
-LinkCard.propTypes = {
-  link: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  src: PropTypes.element.isRequired,
-};
 
 export default LinkCard;

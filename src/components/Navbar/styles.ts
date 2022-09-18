@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 import theme from '../../theme';
 
+interface Props {
+  menu?: boolean;
+}
+
 export const Container = styled.div`
   display: flex;
   justify-content: center;
@@ -43,7 +47,7 @@ export const NavMenu = styled.ul`
   /* ############### RESPONSIVE ############### */
 
   @media (max-width: 768px) {
-    align-items: ${(props) => (props.menu === true ? 'flex-start' : 'center')};
+    align-items: ${(props: Props) => (props.menu === true ? 'flex-start' : 'center')};
   }
 `;
 
