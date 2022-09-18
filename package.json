@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@material-ui/core": "^4.9.13",
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "eslint-config-react": "^1.1.7",
     "node-notifier": "^8.0.1",
     "object-path": "^0.11.5",
