@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { IconContext, IconType } from 'react-icons';
 
 import { Container } from './styles';
@@ -22,9 +21,5 @@ function Skill({ icon, color, text }: Props) {
     </Container>
   );
 }
-Skill.propTypes = {
-  icon: PropTypes.element.isRequired,
-  color: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
-};
+
 export default Skill;

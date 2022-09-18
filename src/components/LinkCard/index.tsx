@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import {
   Container,
@@ -25,11 +24,5 @@ const LinkCard = ({ title, src, link }: Props) => (
     </Container>
   </Link>
 );
-
-LinkCard.propTypes = {
-  link: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  src: PropTypes.element.isRequired,
-};
 
 export default LinkCard;

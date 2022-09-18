@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import layer from '../../assets/icons/layer.png';
 
 import { Container } from './styles';
@@ -16,12 +15,5 @@ function Title({ children }: Props) {
     </Container>
   );
 }
-
-Title.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
-};
 
 export default Title;

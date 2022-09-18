@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import {
   Link,
@@ -38,12 +37,5 @@ const ProjectCard = ({
     </Container>
   </Link>
 );
-
-ProjectCard.propTypes = {
-  link: PropTypes.string.isRequired,
-  img: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
-};
 
 export default ProjectCard;
