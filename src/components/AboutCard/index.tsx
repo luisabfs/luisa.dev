@@ -10,7 +10,13 @@ import {
   Content,
 } from './styles';
 
-const AboutCard = ({ icon, title, content }) => (
+interface Props {
+  icon: React.ReactNode;
+  title: string;
+  content: React.ReactNode;
+}
+
+const AboutCard = ({ icon, title, content }: Props) => (
   <Container>
     <WrapCaption>
       <IconContext.Provider value={{ size: '32px', color: '#000' }}>

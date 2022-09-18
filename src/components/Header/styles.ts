@@ -1,10 +1,14 @@
 import styled from 'styled-components';
 
+interface Props {
+  bg?: any;
+}
+
 export const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: url(${(props) => props.bg}) no-repeat center fixed;
+  background: url(${(props: Props) => props.bg}) no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

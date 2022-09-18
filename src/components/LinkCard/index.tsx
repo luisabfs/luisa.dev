@@ -9,7 +9,13 @@ import {
   Image,
 } from './styles';
 
-const LinkCard = ({ title, src, link }) => (
+interface Props {
+  title: string;
+  src: string;
+  link: string;
+}
+
+const LinkCard = ({ title, src, link }: Props) => (
   <Link href={link} target="_blank" rel="noopener noreferrer">
     <Container>
       <Image src={src} />

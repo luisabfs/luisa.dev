@@ -12,9 +12,16 @@ import {
   Content,
 } from './styles';
 
+interface Props {
+  link: string;
+  img: string;
+  title: string;
+  content: React.ReactNode;
+}
+
 const ProjectCard = ({
   link, img, title, content,
-}) => (
+}: Props) => (
   <Link href={link} target="_blank" rel="noopener noreferrer">
     <Container>
       <Wrapper>
