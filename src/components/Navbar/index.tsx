@@ -70,7 +70,7 @@ export default class Navbar extends Component {
             </NavItem>
             <NavItem>
               <WrapMenu>
-                <a role="button" tabIndex={0} onKeyDown={this.handleMenuShow} onClick={this.handleMenuShow}>
+                <a href="showMenu" role="button" tabIndex={0} onKeyDown={this.handleMenuShow} onClick={this.handleMenuShow}>
                   <FiMenu />
                   {
                     showMenu ? <Menu /> : null

@@ -22,9 +22,6 @@ export default class Menu extends Component {
               <NavLink to="/sobre" activeStyle={style}>sobre mim</NavLink>
             </li>
             {/* <li>
-              <NavLink to="/projetos" activeStyle={style}>projetos</NavLink>
-            </li> */}
-            {/* <li>
               <NavLink to="/blog" activeStyle={style}>blog</NavLink>
             </li> */}
             <li>
