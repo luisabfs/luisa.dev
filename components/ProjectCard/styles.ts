@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Image from 'next/image'
 
 export const Container = styled.div`
   display: flex;
@@ -23,7 +24,7 @@ export const Link = styled.a`
   color: #000;
 `;
 
-export const Image = styled.img`
+export const Thumb = styled(Image)`
   width: 100%;
   max-width: 300px;
   max-height: 200px;

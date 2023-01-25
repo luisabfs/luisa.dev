@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'
 
 import Title from '../Title';
 
@@ -14,7 +15,7 @@ const Blog = () => (
     <Title>últimos posts no blog</Title>
     <Wrapper>
       <Card>
-        <img src={thumbnail2} alt="" />
+        <Image src={thumbnail2} alt="" />
         <CardDetails>
           <span>#web</span>
           <a href="">
@@ -24,7 +25,7 @@ const Blog = () => (
         </CardDetails>
       </Card>
       <Card>
-        <img src={thumbnail2} alt="" />
+        <Image src={thumbnail2} alt="" />
         <CardDetails>
           <span>#web</span>
           <a href="">
@@ -34,7 +35,7 @@ const Blog = () => (
         </CardDetails>
       </Card>
       <Card>
-        <img src={thumbnail2} alt="" />
+        <Image src={thumbnail2} alt="" />
         <CardDetails>
           <span>#web</span>
           <a href="">
@@ -44,7 +45,7 @@ const Blog = () => (
         </CardDetails>
       </Card>
       <Card>
-        <img src={thumbnail} alt="" />
+        <Image src={thumbnail} alt="" />
         <CardDetails>
           <span>#web</span>
           <a href="">
@@ -54,7 +55,7 @@ const Blog = () => (
         </CardDetails>
       </Card>
       <Card>
-        <img src={thumbnail} alt="" />
+        <Image src={thumbnail} alt="" />
         <CardDetails>
           <span>#web</span>
           <a href="">
@@ -64,7 +65,7 @@ const Blog = () => (
         </CardDetails>
       </Card>
       <Card>
-        <img src={thumbnail} alt="" />
+        <Image src={thumbnail} alt="" />
         <CardDetails>
           <span>#web</span>
           <a href="">

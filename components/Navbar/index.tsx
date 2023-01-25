@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
+import Link from 'next/link'
 
 import { FiMenu } from 'react-icons/fi';
 import {
@@ -10,8 +9,6 @@ import {
   NavItem,
   WrapMenu,
 } from './styles';
-
-import resume from '../../assets/files/cv-luisa-barros.pdf';
 
 import Menu from '../NavMenu';
 
@@ -48,13 +45,13 @@ export default class Navbar extends Component {
         <Wrapper>
           <NavMenu menu={showMenu}>
             <NavItem>
-              <NavLink exact to="/">luisa.<span>dev</span></NavLink>
+              <Link href="/">luisa.<span>dev</span></Link>
             </NavItem>
             <NavItem>
-              <NavLink exact to="/" activeStyle={style}>home</NavLink>
+              <Link href="/" >home</Link>
             </NavItem>
             <NavItem>
-              <NavLink to="/sobre" activeStyle={style}>sobre mim</NavLink>
+              <Link href="/about">sobre mim</Link>
             </NavItem>
             {/* <NavItem>
               <NavLink to="/projetos" activeStyle={style}>projetos</NavLink>
@@ -63,10 +60,7 @@ export default class Navbar extends Component {
               <NavLink to="/blog" activeStyle={style}>blog</NavLink>
             </NavItem> */}
             <NavItem>
-              <a href={resume} target="_blank" rel="noopener noreferrer">currículo</a>
-            </NavItem>
-            <NavItem>
-              <HashLink to="/#contact">contato</HashLink>
+              <a href="/assets/files/cv-luisa-barros.pdf" target="_blank" rel="noopener noreferrer">currículo</a>
             </NavItem>
             <NavItem>
               <WrapMenu>

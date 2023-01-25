@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Image from 'next/image'
 
 export const Container = styled.div`
   display: flex;
@@ -25,7 +26,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Avatar = styled.img`
+export const Avatar = styled(Image)`
   width: 180px;
   height: 180px;
   border-radius: 100%;

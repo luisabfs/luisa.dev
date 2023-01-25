@@ -1,9 +1,10 @@
 import React from 'react';
+import { StaticImageData } from 'next/image'
 
 import {
   Link,
   Container,
-  Image,
+  Thumb,
   Wrapper,
   WrapCaption,
   WrapImage,
@@ -13,7 +14,7 @@ import {
 
 interface Props {
   link: string;
-  img: string;
+  img: StaticImageData;
   title: string;
   content: React.ReactNode;
 }
@@ -25,7 +26,7 @@ const ProjectCard = ({
     <Container>
       <Wrapper>
         <WrapImage>
-          <Image src={img} />
+          <Thumb src={img} alt="" />
         </WrapImage>
         <WrapCaption>
           <Title>{title}</Title>

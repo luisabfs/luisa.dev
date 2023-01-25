@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import { NavLink, Link } from 'react-router-dom';
-
-import { HashLink } from 'react-router-hash-link';
+import Link from 'next/link'
 
 import { Container, Wrapper, NavMenu } from './styles';
 
-import resume from '../../assets/files/cv-luisa-barros.pdf';
+// import resume from '../../assets/files/cv-luisa-barros.pdf';
 
 const style = { borderBottom: '4px solid #88c6dd' };
 
@@ -16,10 +14,10 @@ export default class Menu extends Component {
         <Wrapper>
           <NavMenu>
             <li>
-              <NavLink exact to="/" activeStyle={style}>home</NavLink>
+              <Link href="/">home</Link>
             </li>
             <li>
-              <NavLink to="/sobre" activeStyle={style}>sobre mim</NavLink>
+              <Link href="/sobre">sobre mim</Link>
             </li>
             {/* <li>
               <NavLink to="/projetos" activeStyle={style}>projetos</NavLink>
@@ -27,12 +25,12 @@ export default class Menu extends Component {
             {/* <li>
               <NavLink to="/blog" activeStyle={style}>blog</NavLink>
             </li> */}
-            <li>
-              <Link to={resume} target="_blank">currículo</Link>
-            </li>
-            <li>
+            {/* <li>
+              <Link href={resume} target="_blank">currículo</Link>
+            </li> */}
+            {/* <li>
               <HashLink to="/#contact">contato</HashLink>
-            </li>
+            </li> */}
           </NavMenu>
         </Wrapper>
       </Container>

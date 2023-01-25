@@ -1,5 +1,6 @@
 import React from 'react';
-import layer from '../../assets/icons/layer.png';
+import Image from 'next/image'
+import layer from '../../public/assets/icons/layer.png';
 
 import { Container } from './styles';
 
@@ -11,7 +12,7 @@ function Title({ children }: Props) {
   return (
     <Container>
       <h1>{children}</h1>
-      <img src={layer} alt="" />
+      <Image src={layer} alt="" />
     </Container>
   );
 }

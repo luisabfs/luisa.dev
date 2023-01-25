@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link'
 
 import { IconContext } from 'react-icons';
 import { MdSchool, MdWork } from 'react-icons/md';
@@ -16,7 +16,7 @@ const About = () => (
           <MdWork />
         </IconContext.Provider>
         <span>
-          Tenho 2 anos e meio de experiência profissional
+          Tenho 3 de experiência profissional.
         </span>
       </Item>
       <Item>
@@ -36,7 +36,7 @@ const About = () => (
         </span>
       </Item>
     </CaptionWrap>
-    <Link to="/sobre">SABER MAIS</Link>
+    <Link href="/sobre">SABER MAIS</Link>
   </Container>
 );
 

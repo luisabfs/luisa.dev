@@ -8,13 +8,14 @@ import {
 import { Container, Avatar, Location } from './styles';
 
 import Social from '../Social';
+import Image from 'next/image'
 
-import headshot from '../../assets/images/headshot.jpg';
-import layer from '../../assets/icons/layer.png';
+import headshot from '../../public/assets/images/headshot.jpg';
+import layer from '../../public/assets/icons/layer.png';
 
 const Profile = () => (
   <Container>
-    <Avatar src={headshot} />
+    <Avatar src={headshot} alt="" />
     <h1>Luísa Barros</h1>
     <Location>
       <IconContext.Provider value={{ size: '24px', color: '#000' }}>
@@ -22,7 +23,7 @@ const Profile = () => (
       </IconContext.Provider>
     </Location>
     <p>21 anos. Programadora mobile. Autodidata. Aspirante a poliglota.</p>
-    <img src={layer} alt="" />
+    <Image src={layer} alt="" />
     <Social />
   </Container>
 );

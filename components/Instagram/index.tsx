@@ -1,11 +1,12 @@
 import React, { useMemo } from 'react';
+import Image from 'next/image'
 
-import Thumb1 from '../../assets/images/instagram/instagram1.jpg';
-import Thumb2 from '../../assets/images/instagram/instagram2.jpg';
-import Thumb3 from '../../assets/images/instagram/instagram3.jpg';
-import Thumb4 from '../../assets/images/instagram/instagram4.jpg';
-import Thumb6 from '../../assets/images/instagram/instagram6.jpg';
-import Thumb7 from '../../assets/images/instagram/instagram7.jpg';
+import Thumb1 from '../../public/assets/images/instagram/instagram1.jpg';
+import Thumb2 from '../../public/assets/images/instagram/instagram2.jpg';
+import Thumb3 from '../../public/assets/images/instagram/instagram3.jpg';
+import Thumb4 from '../../public/assets/images/instagram/instagram4.jpg';
+import Thumb6 from '../../public/assets/images/instagram/instagram6.jpg';
+import Thumb7 from '../../public/assets/images/instagram/instagram7.jpg';
 
 import { Container, Wrapper, Card } from './styles';
 
@@ -43,7 +44,7 @@ const Instagram = () => {
       <Wrapper>
         {images.map((image) => (
           <Card key={image.link} href={image.link} target="_blank" rel="noopener noreferrer">
-            <img src={image.thumbnail} alt="" />
+            <Image src={image.thumbnail} alt="" />
           </Card>
         ))}
       </Wrapper>

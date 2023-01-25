@@ -18,7 +18,7 @@ export const Title = styled.h1`
   margin-left: 12px;
 `;
 
-export const Content = styled.p`
+export const Content = styled.div`
   font-size: 18px;
   font-weight: 400;
   text-align: left;
