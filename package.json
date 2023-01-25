@@ -6,10 +6,9 @@
   "private": true,
   "scripts": {
     "clear": "rm -rf node_modules && rm -rf yarn.lock && yarn",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,28 +29,26 @@
     "@material-ui/core": "^4.9.13",
     "axios": "^0.21.1",
     "eslint-config-react": "^1.1.7",
+    "next": "^13.1.5",
     "node-notifier": "^8.0.1",
     "object-path": "^0.11.5",
     "prettier": "^1.18.2",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-icons": "^3.7.0",
-    "react-router-dom": "^5.1.2",
     "react-router-hash-link": "^1.2.2",
-    "react-scripts": "3.2.0",
-    "react-useanimations": "^1.2.10",
     "styled-components": "^5.3.0",
     "typescript": "^4.8.3",
     "yarn": "^1.22.10"
   },
   "devDependencies": {
-    "@types/react-router-dom": "^5.3.3",
-    "@types/react-router-hash-link": "^2.4.5",
-    "@types/styled-components": "^5.1.26",
     "@types/jest": "^29.0.3",
     "@types/node": "^18.7.18",
     "@types/react": "^18.0.20",
     "@types/react-dom": "^18.0.6",
+    "@types/react-router-hash-link": "^2.4.5",
+    "@types/styled-components": "^5.1.26",
+    "babel-plugin-styled-components": "^2.0.7",
     "eslint": "^6.5.1",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.11.0",
