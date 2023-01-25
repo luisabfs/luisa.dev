@@ -10,10 +10,10 @@ import {
   FiAtSign, FiStar, FiCoffee,
 } from 'react-icons/fi';
 
-import Navbar from '../../components/Navbar';
-import AboutCard from '../../components/AboutCard';
-import Profile from '../../components/Profile';
-import Skill from '../../components/Skill';
+import Navbar from '../components/Navbar';
+import AboutCard from '../components/AboutCard';
+import Profile from '../components/Profile';
+import Skill from '../components/Skill';
 
 import {
   Container,
@@ -22,13 +22,53 @@ import {
   Sidebar,
   SkillWrapper,
   CaptionWrapper,
-} from './styles';
-import { ScrollToTopOnMount } from '../../components/ScrollToTop';
-
-import { interestsLinks, studyLinks } from './data';
+} from '../styles/about';
+import { ScrollToTopOnMount } from '../components/ScrollToTop';
 
 function About() {
-  const theme = useTheme();
+  const { colors } = useTheme();
+
+  const studyLinks = useMemo(() => [
+    {
+      url: 'https://rocketseat.com.br/bootcamp',
+      title: 'Bootcamp GoStack 6.0 | Rocketseat',
+    },
+    {
+      url: 'https://www.udemy.com/course/git-e-github-na-vida-real',
+      title: 'Git e Github na Vida Real | Willian Justen',
+    },
+    {
+      url: 'https://www.udemy.com/course/git-e-github-para-iniciantes/',
+      title: 'Git e Github para Iniciantes | Willian Justen',
+    },
+    {
+      url: 'https://www.udemy.com/course/ultimate-web/',
+      title: 'Beginner Full Stack Web Development | Devslopes',
+    },
+    {
+      url: 'https://www.udemy.com/course/curso-completo-do-desenvolvedor-android/',
+      title: 'Curso Completo de Desenvolvimento Android | Jamilton Damasceno',
+    },
+    {
+      url: 'https://www.udemy.com/course/curso-kotlin-android/',
+      title: 'Curso Completo de Kotlin para Desenvolvimento Android | AndroidPro Blog',
+    },
+  ], []);
+
+  const interestsLinks = useMemo(() => [
+    {
+      url: 'https://www.skoob.com.br/usuario/1123866-lully',
+      title: 'Livros - Skoob',
+    },
+    {
+      url: 'https://filmow.com/usuario/lul_ly',
+      title: 'Filmes/Séries - Filmow',
+    },
+    {
+      url: 'https://duolingo.com/profile/luisabfs',
+      title: 'Aprendizado de Idiomas - Duolingo',
+    },
+  ], []);
 
   const infos = useMemo(() => [
     {
@@ -38,11 +78,11 @@ function About() {
         <>
           <CaptionWrapper>
             <SkillWrapper>
-              <Skill icon={<FaJs />} color={theme.colors.yellowJs} text="Javascript" />
-              <Skill icon={<SiTypescript />} color={theme.colors.blueTs} text="Typescript" />
-              <Skill icon={<FaReact />} color={theme.colors.blueReact} text="React" />
-              <Skill icon={<FaNodeJs />} color={theme.colors.greenNode} text="Node.js" />
-              <Skill icon={<DiGit />} color={theme.colors.redGit} text="Git" />
+              <Skill icon={<FaJs />} color={colors.yellowJs} text="Javascript" />
+              <Skill icon={<SiTypescript />} color={colors.blueTs} text="Typescript" />
+              <Skill icon={<FaReact />} color={colors.blueReact} text="React" />
+              <Skill icon={<FaNodeJs />} color={colors.greenNode} text="Node.js" />
+              <Skill icon={<DiGit />} color={colors.redGit} text="Git" />
             </SkillWrapper>
           </CaptionWrapper>
         </>
@@ -55,9 +95,9 @@ function About() {
         <>
           <CaptionWrapper>
             <b>Desenvolvedora Fullstack</b>
-            <p>
+            <div>
               Lojas Riachuelo S/A
-              <span>janeiro/2021 - atualmente</span>
+              <span>janeiro/2021 - janeiro/2023</span>
               <span>
                 <li>Atuação em uma das maiores varejistas do Brasil</li>
                 <li>Implementação de um PDV Mobile, almejando melhorias na experiência do cliente em lojas físicas, no contexto de vendas e pagamentos</li>
@@ -68,12 +108,12 @@ function About() {
                 <li>Manutenção de repositórios no Microsoft Azure, seguindo o pipeline CI/CD</li>
                 <li>Stack: Java/Spring Boot, Typescript, NodeJS, React, React Native, RealmDB</li>
               </span>
-            </p>
+            </div>
           </CaptionWrapper>
           <br />
           <CaptionWrapper>
             <b>Desenvolvedora Mobile</b>
-            <p>
+            <div>
               ma9 Soluções Inteligentes
               <span>novembro/2019 - junho/2020</span>
               <span>
@@ -83,7 +123,7 @@ function About() {
                 <li>Colaborei na manutenção de um repositório no Github</li>
                 <li>Stack: Javascript, React, React Native, AsyncStorage, React Context API</li>
               </span>
-            </p>
+            </div>
           </CaptionWrapper>
         </>
       ),
@@ -102,7 +142,7 @@ function About() {
           </CaptionWrapper>
           <CaptionWrapper>
             <h3>cursos</h3>
-            <p>
+            <div>
               {studyLinks.map((link) => (
                 <a
                   href={link.url}
@@ -112,7 +152,7 @@ function About() {
                   {link.title}
                 </a>
               ))}
-            </p>
+            </div>
           </CaptionWrapper>
         </>
       ),
@@ -150,7 +190,7 @@ function About() {
         </>
       )
     }
-  ], [theme.colors.blueReact, theme.colors.blueTs, theme.colors.greenNode, theme.colors.redGit, theme.colors.yellowJs]);
+  ], [colors.blueReact, colors.blueTs, colors.greenNode, colors.redGit, colors.yellowJs]);
 
   return (
     <Container>

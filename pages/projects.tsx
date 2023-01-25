@@ -1,13 +1,13 @@
 import React, { useMemo } from 'react';
 
-import ProjectCard from '../../components/ProjectCard';
-import Title from '../../components/Title';
+import ProjectCard from '../components/ProjectCard';
+import Title from '../components/Title';
 
-import project1 from '../../assets/images/projects/todolist.png';
-import project2 from '../../assets/images/projects/barber.png';
-import project3 from '../../assets/images/projects/gituser.png';
+import project1 from '../public/assets/images/projects/todolist.png';
+import project2 from '../public/assets/images/projects/barber.png';
+import project3 from '../public/assets/images/projects/gituser.png';
 
-import { Container, WrapProjects } from './styles';
+import { Container, WrapProjects } from '../styles/projects';
 
 const Projects = () => {
   const projects = useMemo(() => [

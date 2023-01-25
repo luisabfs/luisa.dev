@@ -1,22 +1,22 @@
 import React, { useMemo } from 'react';
 
 // TODO: export all from index and add @components path
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
-import Title from '../../components/Title';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import Title from '../components/Title';
 
 // TODO: add @assets path
-import Logbook from '../../assets/images/logbook.png';
-import Setup from '../../assets/images/instagram/instagram7.jpg';
-import PersonalBranding from '../../assets/images/instagram/personal-branding.png';
+import Logbook from '../public/assets/images/logbook.png';
+import Setup from '../public/assets/images/instagram/instagram7.jpg';
+import PersonalBranding from '../public/assets/images/instagram/personal-branding.png';
 
 import {
   Container,
-  Image,
+  Thumb,
   Link,
   LinkContainer,
   WrapCaption,
-} from './styles';
+} from '../styles/links';
 
 function Links() {
   const links = useMemo(() => [
@@ -25,7 +25,7 @@ function Links() {
       title: 'Personal Branding',
       author: 'Dimitri Vieira',
       thumbnail: PersonalBranding,
-    }, 
+    },
     {
       url: 'https://woliveiras.com.br/posts/criando-nosso-plano-de-carreira-e-assumindo-o-controle-do-nosso-futuro-profissional/',
       title: 'Plano de Carreira',
@@ -46,14 +46,14 @@ function Links() {
       <Title>links úteis</Title>
       {links.map((link) => (
         <Link href={link.url} target="_blank" rel="noopener noreferrer">
-         <LinkContainer>
-           <Image src={link.thumbnail} />
-           <WrapCaption>
-             <h2>{link.title}</h2>
-             <label>{link.author}</label>
-           </WrapCaption>
-         </LinkContainer>
-       </Link>
+          <LinkContainer>
+            <Thumb src={link.thumbnail} alt="" />
+            <WrapCaption>
+              <h2>{link.title}</h2>
+              <label>{link.author}</label>
+            </WrapCaption>
+          </LinkContainer>
+        </Link>
       ))}
       <Footer />
     </Container>
