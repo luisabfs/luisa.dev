@@ -1,5 +1,0 @@
-{
-  "rewrites": [{
-    "source": "/todolist", "destination": "https://todolist.luisa.dev/"
-  }]
-}
