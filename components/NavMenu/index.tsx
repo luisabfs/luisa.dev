@@ -3,10 +3,6 @@ import Link from 'next/link'
 
 import { Container, Wrapper, NavMenu } from './styles';
 
-// import resume from '../../assets/files/cv-luisa-barros.pdf';
-
-const style = { borderBottom: '4px solid #88c6dd' };
-
 export default class Menu extends Component {
   render() {
     return (
@@ -19,18 +15,9 @@ export default class Menu extends Component {
             <li>
               <Link href="/sobre">sobre mim</Link>
             </li>
-            {/* <li>
-              <NavLink to="/projetos" activeStyle={style}>projetos</NavLink>
-            </li> */}
-            {/* <li>
-              <NavLink to="/blog" activeStyle={style}>blog</NavLink>
-            </li> */}
-            {/* <li>
-              <Link href={resume} target="_blank">currículo</Link>
-            </li> */}
-            {/* <li>
-              <HashLink to="/#contact">contato</HashLink>
-            </li> */}
+            <li>
+              <a href="/assets/files/cv-luisa-barros.pdf" target="_blank" rel="noopener noreferrer">currículo</a>
+            </li>
           </NavMenu>
         </Wrapper>
       </Container>
