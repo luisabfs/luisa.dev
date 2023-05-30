@@ -56,12 +56,12 @@ export default function Navbar() {
 
           <NavItem>
             <WrapMenu>
+            {showMenu ?
               <button tabIndex={0} onKeyDown={handleMenuShow} onClick={handleMenuShow}>
                 <FiMenu />
-                {
-                  showMenu ? <Menu /> : null
-                }
+                <Menu /> 
               </button>
+            : null}
             </WrapMenu>
           </NavItem>
         </NavMenu>
