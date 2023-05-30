@@ -7,6 +7,7 @@
 ## Stack
 
 - React
+- Next.js
 - CSS-in-JS with styled-components
 - Declarative routing with react-router-dom
-- HTTP requests and REST API's consuming with axios
+- Vercel for deployment and hosting
