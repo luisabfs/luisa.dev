@@ -24,7 +24,7 @@ export default function Navbar() {
       ref: '/about',
       label: `sobre mim`,
     }, {
-      ref: '/assets/files/cv-luisa-barros.pdf',
+      ref: '/assets/files/CV-LUISA-BARROS-PT.pdf',
       label: `currículo`,
       newTab: true,
     },

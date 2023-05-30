@@ -16,7 +16,7 @@ export default class Menu extends Component {
               <Link href="/sobre">sobre mim</Link>
             </li>
             <li>
-              <a href="/assets/files/cv-luisa-barros.pdf" target="_blank" rel="noopener noreferrer">currículo</a>
+              <a href="/assets/files/CV-LUISA-BARROS-PT.pdf" target="_blank" rel="noopener noreferrer">currículo</a>
             </li>
           </NavMenu>
         </Wrapper>
