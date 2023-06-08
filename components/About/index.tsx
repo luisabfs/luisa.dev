@@ -36,7 +36,7 @@ const About = () => (
         </span>
       </Item>
     </CaptionWrap>
-    <Link href="/sobre">SABER MAIS</Link>
+    <Link href="/about">SABER MAIS</Link>
   </Container>
 );
 
