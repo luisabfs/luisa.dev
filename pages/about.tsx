@@ -96,8 +96,10 @@ function About() {
           <CaptionWrapper>
             <b>Desenvolvedora Fullstack</b>
             <div>
-              Lojas Riachuelo S/A
-              <span>janeiro/2021 - janeiro/2023</span>
+              <span>Lojas Riachuelo S/A</span>
+              <br />
+              <p><span>janeiro/2021 - janeiro/2023</span></p>
+              <br />
               <span>
                 <li>Atuação em uma das maiores varejistas do Brasil</li>
                 <li>Implementação de um PDV Mobile, almejando melhorias na experiência do cliente em lojas físicas, no contexto de vendas e pagamentos</li>
@@ -114,8 +116,10 @@ function About() {
           <CaptionWrapper>
             <b>Desenvolvedora Mobile</b>
             <div>
-              ma9 Soluções Inteligentes
-              <span>novembro/2019 - junho/2020</span>
+              <span>ma9 Soluções Inteligentes</span>
+              <br />
+              <p><span>novembro/2019 - junho/2020</span></p>
+              <br />
               <span>
                 <li>Atuei no desenvolvimento de um aplicativo mobile fintech em React Native</li>
                 <li>Implementei UIs <i>cross-platform</i>, feitas pela equipe de design responsável</li>
@@ -144,13 +148,16 @@ function About() {
             <h3>cursos</h3>
             <div>
               {studyLinks.map((link) => (
-                <a
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {link.title}
-                </a>
+                <>
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                    {link.title}
+                  </a>
+                  <br />
+                </>
               ))}
             </div>
           </CaptionWrapper>
