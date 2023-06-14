@@ -50,7 +50,7 @@ export default function Home() {
               onStateChange={e => setPlayerState(e.data)}
               style={{ aspectRatio: 16/9, margin: 30 }} />
     
-              {playerState  !==  (-1 | 0 | 1 | 3 | 2 | 5)
+              {playerState == null
                 ? <Skeleton width={'100%'} height={'100%'} style={{ position: 'absolute', top: 0, right: 0, aspectRatio: 16/9, margin: 30 }} /> 
                 : null
               }
