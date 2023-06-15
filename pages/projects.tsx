@@ -13,9 +13,9 @@ const Projects = () => {
   const projects = useMemo(() => [
     {
       link: 'https://github.com/luisabfs/hero-mobile',
-      title: 'Hero Mobile',
+      title: 'Heroes',
       thumbnail: project2,
-      description: 'Aplicação React Native com integração à Marvel Comics API.',
+      description: 'Aplicação React Native com integração à Marvel API.',
     }, {
       link: 'https://github.com/luisabfs/gituser',
       title: 'Git User',
