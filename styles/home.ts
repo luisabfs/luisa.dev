@@ -49,22 +49,31 @@ export const HeaderContainer = styled.div`
   background-size: cover;
   background-attachment: scroll;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 `;
 
 export const HeaderBlurb = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-around;
+  flex-direction: row;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    height: 100%;
+
+  }
 `;
 
 export const HeaderWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
 
   h1, h2 {
     margin: 0;
@@ -94,5 +103,16 @@ export const Headshot = styled(Image)`
   &:hover {
     box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.18), 0 0px 12px 0 rgba(0, 0, 0, 0.15);
     opacity: 0.8;
+  }
+`;
+
+export const VideoWrapper = styled.div`
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-right: 100px;
+
+  @media (max-width: 800px) {
+    margin-right: 0;
   }
 `;
