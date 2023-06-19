@@ -29,7 +29,7 @@ export default function Home() {
         <Navbar />
         <HeaderBlurb>
           <HeaderWrapper>
-            <Link href="/sobre">
+            <Link href="/about">
               <Headshot loading='lazy' src={headshot} alt="" />
             </Link>
             <h1>Luísa Barros</h1>
