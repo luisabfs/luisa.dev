@@ -50,7 +50,7 @@ function Links() {
             <Thumb src={link.thumbnail} alt="" />
             <WrapCaption>
               <h2>{link.title}</h2>
-              <label>{link.author}</label>
+              <span>{link.author}</span>
             </WrapCaption>
           </LinkContainer>
         </Link>
