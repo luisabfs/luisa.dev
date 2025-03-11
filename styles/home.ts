@@ -6,7 +6,7 @@ export const Bottom = styled.section`
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
 `;
 
 export const Wrapper = styled.div`
@@ -42,12 +42,12 @@ export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: url(${background.src}) no-repeat center fixed;
+  /* background: url(${background.src}) no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: scroll; */
   width: 100%;
   height: 100%;
 `;
@@ -79,6 +79,7 @@ export const HeaderWrapper = styled.div`
     margin: 0;
     padding: 10px;
     font-weight: 600;
+    color: #f1f1f1;
   }
 
   h1 {

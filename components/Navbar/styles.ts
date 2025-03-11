@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import theme from '../../theme';
+import theme from '../../theme/themes';
 
 interface Props {
   menu?: boolean;
@@ -56,17 +56,17 @@ export const NavItem = styled.li`
   margin-top: 10px;
 
   a {
-    color: ${theme.colors.black};
+    color: ${theme.globalTheme.PRIMARY_TEXT_COLOR};
     font-size: 18px;
     text-decoration: none;
     padding: 16px 15px;
 
     span {
-      color: ${theme.colors.blue};
+      color: ${theme.globalTheme.ACCENT_COLOR};
     }
 
     &:hover {
-      color: ${theme.colors.blue};
+      color: ${theme.colors.pink};
     }
 
     /* ############### RESPONSIVE ############### */
@@ -89,7 +89,7 @@ export const NavItem = styled.li`
     margin-right: auto;
 
     a {
-      font-family: 'Fredericka the Great', cursive;
+      font-family: 'Poppins';
       font-size: 48px;
 
       &:hover {

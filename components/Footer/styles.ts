@@ -8,6 +8,7 @@ export const Container = styled.footer`
   padding: 10px 0;
   width: 100%;
   margin-top: auto;
+  color: #f1f1f1;
 
   h2 {
     font-size: 18px;

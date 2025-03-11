@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { colors } from '../../theme/colors';
 
 export const Container = styled.div`
   display: flex;
@@ -59,7 +60,7 @@ export const Form = styled.form`
 `;
 
 export const Button = styled.button`
-  background-color: #88c6dd;
+  background-color: ${colors.pink};
   color: #fff;
   font-size: 18px;
   font-weight: bold;
@@ -72,6 +73,6 @@ export const Button = styled.button`
   transition: .2s ease-in-out;
 
   &:hover {
-    background-color: #6594a5;
+    opacity: 0.8;
   }
 `;

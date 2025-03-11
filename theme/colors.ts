@@ -3,6 +3,7 @@ export const colors = {
   blue: '#88c6dd',
   darkBlue: '#6594a5',
   lighGrey: '#f2f2f2',
+  gray: '#C4C4C4',
   dark: '#191919',
   white: '#fff',
   black: '#000',
@@ -11,4 +12,6 @@ export const colors = {
   blueReact: '#61dbfb',
   greenNode: '#3c873a',
   redGit: '#f1502f',
+  darkBackground: '#383838',
+  pink: '#FF4081'
 };

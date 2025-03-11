@@ -5,7 +5,7 @@ import { Container, Form, Button } from './styles';
 
 const Contact = () => (
   <Container>
-    <Title>entre em contato</Title>
+    <Title color='#f2f2f2'>entre em contato</Title>
     <Form>
       <input type="text" name="name" placeholder="seu nome" />
       <input type="email" name="email" placeholder="seu melhor e-mail" />

@@ -6,12 +6,13 @@ import { Container } from './styles';
 
 interface Props {
   children: React.ReactNode;
+  color?: string;
   showImage?: boolean;
 }
 
-function Title({ children, showImage = true }: Props) {
+function Title({ children, color = '#000', showImage = true }: Props) {
   return (
-    <Container>
+    <Container color={color}>
       <h1>{children}</h1>
      {showImage ? <Image src={layer} alt="" /> : null}
     </Container>
