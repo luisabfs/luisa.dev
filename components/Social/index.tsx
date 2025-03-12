@@ -15,7 +15,7 @@ import {
 
 const Social = () => (
   <Container>
-    <IconContext.Provider value={{ size: '32px', color: '#000' }}>
+    <IconContext.Provider value={{ size: '32px', color: '#f2f2f2' }}>
       <a href="https://github.com/luisabfs" target="_blank" rel="noopener noreferrer">
         <FaGithub />
       </a>

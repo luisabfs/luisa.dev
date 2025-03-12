@@ -8,6 +8,7 @@ justify-content: center;
 
 h1 {
   text-align: center;
+  color: ${({ color }) => color};
 }
 
 img {

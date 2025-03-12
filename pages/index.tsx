@@ -49,16 +49,35 @@ export default function Home() {
               }}
               onStateChange={e => setPlayerState(e.data)}
               style={{ aspectRatio: 16/9, margin: 30 }} />
-    
+
               {playerState == null
-                ? <Skeleton width={'100%'} height={'100%'} style={{ position: 'absolute', top: 0, right: 0, aspectRatio: 16/9, margin: 30 }} /> 
+                ? <Skeleton width={'100%'} height={'100%'} style={{ position: 'absolute', top: 0, right: 0, aspectRatio: 16/9, margin: 30 }} />
                 : null
               }
           </VideoWrapper>
+
+          {/* <VideoWrapper>
+              <Youtube videoId="GwClERflCVw" opts={{
+                height: '100%',
+                width: '100%',
+                playerVars: {
+                  autoplay: 1,
+                  rel: 0,
+                  modestbranding: 1
+                }
+              }}
+              onStateChange={e => setPlayerState(e.data)}
+              style={{ aspectRatio: 16/9, borderRadius: 20 }} />
+
+              {playerState == null
+                ? <Skeleton width={'100%'} height={'100%'} style={{ position: 'absolute', top: 0, right: 0, aspectRatio: 16/9, margin: 30 }} />
+                : null
+              }
+          </VideoWrapper> */}
         </HeaderBlurb>
       </HeaderContainer>
 
-      <About />
+      {/* <About /> */}
       <Projects />
       <Bottom>
         <Wrapper>

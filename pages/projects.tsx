@@ -31,7 +31,7 @@ const Projects = () => {
 
   return (
     <Container>
-      <Title>meus projetos</Title>
+      <Title color="#f2f2f2">meus projetos</Title>
       <WrapProjects>
         {projects.map((project) => (
           <ProjectCard

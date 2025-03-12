@@ -11,6 +11,7 @@ export const Container = styled.div`
 
   h1 {
     margin-bottom: 10px;
+    color: #f2f2f2;
   }
 `;
 

@@ -49,7 +49,7 @@ export default function Navbar() {
           </NavItem>
 
           {navItems.map(item => (
-            <NavItem>
+            <NavItem key={item.ref}>
               <Link href={item.ref} target={item.newTab ? '_blank' : undefined} rel={item.newTab ? "noopener noreferrer" : undefined}>{item.label}</Link>
             </NavItem>
           ))}
@@ -59,7 +59,7 @@ export default function Navbar() {
             {showMenu ?
               <button tabIndex={0} onKeyDown={handleMenuShow} onClick={handleMenuShow}>
                 <FiMenu />
-                <Menu /> 
+                <Menu />
               </button>
             : null}
             </WrapMenu>

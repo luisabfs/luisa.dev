@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import theme from '../theme/themes';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -8,8 +9,8 @@ const GlobalStyle = createGlobalStyle`
 
   html, body, #root, .App {
     height: 100%;
-    background-color: #fff;
-    color: #191919;
+    background-color: ${theme.globalTheme.PRIMARY_COLOR};
+    /* color: ${theme.globalTheme.PRIMARY_TEXT_COLOR}; */
   }
 
   html {
@@ -20,9 +21,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
-    background: #181818;
     font-family: 'Montserrat', sans-serif;
-    color: #fff;
   }
 
   h1 {
