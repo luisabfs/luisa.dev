@@ -15,6 +15,8 @@ import {
 } from '../styles/lista-de-presentes';
 import WeddingLogoSvg from '../components/Wedding/WeddingLogoSvg';
 
+const LINK_NUBANK = "https://nubank.com.br/cobrar/2jhtx/67d0d315-1891-4311-a212-943d8054edc7";
+
 function Links() {
   const presents = useMemo(() => [
     {
@@ -22,7 +24,6 @@ function Links() {
       description: 'A clássica vaquinha da obrigação social. Te faz parecer generoso sem muito esforço!',
       price: 'R$ 20,00',
       thumbnail: '/assets/images/presents-list/julius.gif',
-      url: 'https://nubank.com.br/cobrar/2jhtx/67cf3908-cf73-4545-b764-adc1abb261d8',
 
     },
     {
@@ -30,7 +31,6 @@ function Links() {
       description: 'Porque casamento é lindo, mas ninguém quer ver a gente mal-humorado sem café.',
       price: 'R$ 50,00',
       thumbnail: '/assets/images/presents-list/pao-com-salame.jpeg',
-      url: 'https://nubank.com.br/cobrar/2jhtx/67cf3908-cf73-4545-b764-adc1abb261d8',
 
     },
     {
@@ -38,7 +38,6 @@ function Links() {
       description: 'Ajude a financiar um novo jogo pra nossa coleção! Prometemos não prejudicar nenhuma relação depois de uma partida intensa.',
       price: 'R$ 100,00',
       thumbnail: '/assets/images/presents-list/uno.jpg',
-      url: 'https://nubank.com.br/cobrar/2jhtx/67cf3908-cf73-4545-b764-adc1abb261d8',
 
     },
     {
@@ -46,7 +45,6 @@ function Links() {
       description: 'Uma humilde contribuição para garantir que este casamento seja tão abençoado quanto financiado!',
       price: 'R$ 1.000,00',
       thumbnail: '/assets/images/presents-list/intervention.jpg',
-      url: 'https://nubank.com.br/cobrar/2jhtx/67cf3908-cf73-4545-b764-adc1abb261d8',
 
     },
     {
@@ -54,22 +52,19 @@ function Links() {
       description: 'Luísa precisa de um dia de silêncio depois de interagir com tantos humanos no casamento.',
       price: 'R$ 80,00',
       thumbnail: '/assets/images/presents-list/introvert.jpg',
-      url: 'https://nubank.com.br/cobrar/2jhtx/67cf3908-cf73-4545-b764-adc1abb261d8',
 
     },
     {
-      name: 'Kit pra Vitor lavar o (futuro) carro novo 🙏',
+      name: 'Kit pro noivo lavar o (futuro) carro novo 🙏',
       description: 'Porque todo dono de carro jura que vai lavar toda semana… e acaba no lava-rápido mesmo.',
       price: 'R$ 120,00',
       thumbnail: '/assets/images/presents-list/vitor-car.png',
-      url: 'https://nubank.com.br/cobrar/2jhtx/67cf3908-cf73-4545-b764-adc1abb261d8',
     },
     {
       name: 'Arranhadores para os gatos não destruírem nossos móveis',
       description: 'Vai funcionar? Provavelmente não. Mas pelo menos tentamos.',
       price: 'R$ 300,00',
       thumbnail: '/assets/images/presents-list/gato.webp',
-      url: 'https://nubank.com.br/cobrar/2jhtx/67cf3908-cf73-4545-b764-adc1abb261d8',
 
     },
     {
@@ -77,7 +72,6 @@ function Links() {
       description: 'A missão: entrar no vestido sem precisar prender a respiração. Patrocine um pré-treino e um empurrão moral!',
       price: 'R$ 200,00',
       thumbnail: '/assets/images/presents-list/noiva-fitness.png',
-      url: 'https://nubank.com.br/cobrar/2jhtx/67cf3908-cf73-4545-b764-adc1abb261d8',
 
     },
     {
@@ -85,14 +79,12 @@ function Links() {
       description: 'Para aquelas noites preguiçosas com pipoca e cobertor.',
       price: 'R$ 90,00',
       thumbnail: 'https://images.pexels.com/photos/4009407/pexels-photo-4009407.jpeg',
-      url: 'https://nubank.com.br/cobrar/2jhtx/67cf3908-cf73-4545-b764-adc1abb261d8',
     },
     {
-      name: 'Vitor não quer saber quanto custou o casamento',
-      description: 'Ajude a manter a paz e evite que ele descubra os números reais.',
-      price: 'R$ ???,??',
-      thumbnail: 'https://images.pexels.com/photos/3760790/pexels-photo-3760790.jpeg',
-      url: 'https://nubank.com.br/cobrar/2jhtx/67cf3908-cf73-4545-b764-adc1abb261d8',
+      name: 'Lua de Mel em 📌 Xique Xique - Bahia ',
+      description: 'Depois da farra, nada melhor do que relaxar. Ajude esse casal a aproveitar o merecido descanso!',
+      price: 'R$ ????,??',
+      thumbnail: '/assets/images/presents-list/lua-de-mel.jpg',
 
     },
   ], []);
@@ -102,30 +94,29 @@ function Links() {
       <div style={{ display: 'flex', flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <WeddingLogoSvg style={{ width: 200, overflow: 'visible', maxWidth: '100%', maxHeight: '100%' }} />
       </div>
-      <Title showImage={false}>nossa lista de presentes</Title>
+      <Title color="#f2f2f2" showImage={false}>lista de presentes</Title>
       <InfoIcon>
-        <div style={{display: 'flex', alignItems: 'center', gap: 8 }}>
-        <a
-          target='_blank'
-          href="https://www.amazon.com.br/hz/wishlist/ls/257FJD6NBUN2Z?ref_=wl_share"
-          style={{ color: 'white' }}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          <a
+            target='_blank'
+            href="https://www.amazon.com.br/hz/wishlist/ls/257FJD6NBUN2Z?ref_=wl_share"
+            style={{ color: 'white' }}
 
           >
-          Lista da Amazon
-        </a>
-        <FaInfoCircle color="#9f9e9e" width={24} height={24} />
-          </div>
+            Lista da Amazon
+          </a>
+          <FaInfoCircle color="#9f9e9e" width={24} height={24} />
+        </div>
         <Tooltip className="tooltip">
-          ✨ Oi, gente! Um recadinho sobre nossa lista de presentes:<br />
-          Muitas pessoas têm nos perguntado, então resolvemos criar essa versão simbólica e divertida para quem quiser nos ajudar financeiramente.<br /><br />
-          Como já moramos juntos há um ano, nosso enxoval está praticamente completo, então o que mais precisamos agora é um empurrãozinho para a nossa lua de mel e para cobrir alguns custos do grande dia.<br /><br />
-          Se preferirem presentear com algo físico, incluímos também algumas opções na Amazon. Mas, de verdade, o maior presente será ter vocês celebrando esse momento tão especial conosco! 💖<br /><br />
-          Obrigada de coração! 🥰💍
+          ✨ Oi, gente! Muitas pessoas têm nos perguntado, então resolvemos criar essa versão simbólica e divertida para quem quiser nos ajudar financeiramente.
+          Já moramos juntos há um ano e nosso enxoval está completo, então o que mais precisamos é um empurrãozinho para a lua de mel e alguns custos do grande dia.
+          Se preferirem presentear com algo físico, temos algumas opções na Amazon. Mas, de coração, o maior presente será ter vocês comemorando com a gente! 💖
+
         </Tooltip>
       </InfoIcon>
       <div style={{ display: 'flex', width: '100%', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'stretch' }}>
         {presents.map((present) => (
-          <Link href={present.url} target="_blank" rel="noopener noreferrer">
+          <Link href={LINK_NUBANK} target="_blank" rel="noopener noreferrer">
             <LinkContainer>
               <div style={{ width: '100%', height: 250, position: 'relative' }}>
                 <Thumb fill src={present.thumbnail} alt='Thumb' style={{

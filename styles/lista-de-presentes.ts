@@ -30,9 +30,10 @@ export const LinkContainer = styled.div`
   border-radius: 8px;
   background-color: #f2f2f2;
   cursor: pointer;
+  transition: transform .2s;
 
-  &:hover{
-    opacity: 0.8;
+  &:hover {
+    transform: scale(1.03);
   }
 
   @media (max-width: 768px) {
