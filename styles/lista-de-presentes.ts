@@ -7,9 +7,30 @@ export const Container = styled.div`
   align-items: center;
   /* width: 100%; */
   height: 100vh;
-  padding: 30px;
-  gap: 16px;
+  /* padding: 30px; */
+  /* gap: 16px; */
   overflow-x: hidden;
+`;
+
+export const Section = styled.section`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('/assets/images/presents-list/background-casamento.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+
+  /* Blur Overlay */
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    backdrop-filter: blur(10px); /* Blur effect */
+  }
 `;
 
 export const Title = styled.div`
@@ -88,7 +109,7 @@ export const Tooltip = styled.p`
   transform: translateX(-50%);
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
-  font-size: 0.8rem;
+  font-size: 14px;
   line-height: 1.2;
   white-space: normal;
   z-index: 10;
@@ -96,4 +117,52 @@ export const Tooltip = styled.p`
   @media (max-width: 768px) {
     width: 300px;
   }
+`;
+
+export const Details = styled.div`
+  font-size: 18px;
+  color: #f2f2f2;
+  line-height: 1.6;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  height: 100%;
+
+  p {
+    margin: 10px 0;
+  }
+
+  a {
+    color: #c96f3e;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 30px;
+  }
+`;
+
+export const DetailItem = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+
+  strong {
+    font-size: 32px;
+    color: #c96f3e;
+  }
+`;
+
+export const MapContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
 `;
