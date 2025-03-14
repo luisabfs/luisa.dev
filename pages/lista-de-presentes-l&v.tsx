@@ -107,7 +107,7 @@ function Links() {
           alignItems: 'center',
           width: '100%',
           minHeight: '100vh',
-          backgroundImage: `url('/assets/images/presents-list/background-casamento.png')`,
+          backgroundImage: `url('/assets/images/presents-list/background-casamento-low.png')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -149,7 +149,7 @@ function Links() {
       </section>
       <section id="details" style={{
         // backgroundColor: '#e6e1da',
-        display: 'flex', gap: 16, minHeight: '100vh', flexDirection: 'column', width: '100%', padding: 30, alignItems: 'center', textAlign: 'center'
+        display: 'flex', gap: 12, minHeight: '100vh', flexDirection: 'column', width: '100%', padding: 30, alignItems: 'center', textAlign: 'center'
       }}>
         <Title color="#f2f2f2" showImage={false}>💍 Detalhes</Title>
         <Details>
@@ -160,7 +160,7 @@ function Links() {
             <span>12h</span>
           </DetailItem>
           <div>
-            <p>
+            <p style={{ marginBottom: 30 }}>
               Temos o prazer de convidá-lo para celebrar nosso casamento de um jeito leve, divertido e descontraído!
               Vista-se com conforto e, se quiser, traga roupa de banho para aproveitar a piscina ou a praia bem em frente.
               Ah, e venha com fome – teremos muito churrasco! 🥩🔥
@@ -172,8 +172,7 @@ function Links() {
             </p>
           </div>
           <MapContainer>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.5100340984216!2d-37.093920024147886!3d-10.967574889195665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70ff95b680f91a3%3A0x78f6c7b1c2d18672!2sAv.%20In%C3%A1cio%20Barbosa%2C%209940%20-%20Mosqueiro%2C%20Aracaju%20-%20SE%2C%2049045-285!5e0!3m2!1sen!2sbr!4v1710000000000"
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d978.8188594119481!2d-37.121782299382204!3d-11.092837739293797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDA1JzM0LjMiUyAzN8KwMDcnMTguMCJX!5e0!3m2!1spt-BR!2sbr!4v1741963974187!5m2!1spt-BR!2sbr"
               width="100%"
               height="100%"
               style={{ border: 0, borderRadius: '8px' }}
@@ -183,9 +182,6 @@ function Links() {
           </MapContainer>
         </Details>
       </section>
-      {/* <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <WeddingLogoSvg style={{ width: 200, overflow: 'visible', maxWidth: '100%', maxHeight: '100%' }} />
-      </div> */}
       <div style={{
         width: '100%',
         textAlign: 'center',
@@ -207,26 +203,26 @@ function Links() {
           color: '#fff',
           position: 'relative'
         }}>
-          <h2 color="#f2f2f2">🎁 Nossa Lista de Presentes 🎁</h2>
+          <h3 color="#f2f2f2">🎁 Nossa Lista de Presentes 🎁</h3>
         </span>
       </div>
       <InfoIcon>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, marginTop: 5 }}>
-            <a
-              target='_blank'
-              href="https://www.amazon.com.br/hz/wishlist/ls/257FJD6NBUN2Z?ref_=wl_share"
-              style={{ color: 'white' }}
-            >
-              Lista da Amazon
-            </a>
-            <FaInfoCircle color="#9f9e9e" width={24} height={24} />
-          </div>
-          <Tooltip className="tooltip">
-            ✨ Muitas pessoas têm nos perguntado, então resolvemos criar essa versão simbólica e divertida para quem quiser nos ajudar financeiramente.
-            Já moramos juntos há um ano e nosso enxoval está completo, então o que mais precisamos é um empurrãozinho para a lua de mel e alguns custos do grande dia.
-            Se preferirem presentear com algo físico, temos algumas opções na Amazon. Mas, de coração, o maior presente será ter vocês comemorando com a gente! 💖
-          </Tooltip>
-        </InfoIcon>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, marginTop: 5 }}>
+          <a
+            target='_blank'
+            href="https://www.amazon.com.br/hz/wishlist/ls/257FJD6NBUN2Z?ref_=wl_share"
+            style={{ color: 'white' }}
+          >
+            Lista da Amazon
+          </a>
+          <FaInfoCircle color="#9f9e9e" width={24} height={24} />
+        </div>
+        <Tooltip className="tooltip">
+          ✨ Muitas pessoas têm nos perguntado, então resolvemos criar essa versão simbólica e divertida para quem quiser nos ajudar financeiramente.
+          Já moramos juntos há um ano e nosso enxoval está completo, então o que mais precisamos é um empurrãozinho para a lua de mel e alguns custos do grande dia.
+          Se preferirem presentear com algo físico, temos algumas opções na Amazon. Mas, de coração, o maior presente será ter vocês comemorando com a gente! 💖
+        </Tooltip>
+      </InfoIcon>
       <section style={{ display: 'flex', flexDirection: 'column', padding: 30, alignItems: 'center', justifyContent: 'center', gap: 8 }}>
 
         <div style={{ display: 'flex', width: '100%', maxWidth: '1500px', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'stretch' }}>

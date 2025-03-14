@@ -149,12 +149,12 @@ export const DetailItem = styled.div`
   align-items: center;
   justify-content: center;
   gap: 15px;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 15px;
 
   strong {
-    font-size: 32px;
+    font-size: 28px;
     color: #c96f3e;
   }
 `;
