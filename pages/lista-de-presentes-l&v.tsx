@@ -229,7 +229,7 @@ function Links() {
         </InfoIcon>
       <section style={{ display: 'flex', flexDirection: 'column', padding: 30, alignItems: 'center', justifyContent: 'center', gap: 8 }}>
 
-        <div style={{ display: 'flex', width: '100%', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'stretch' }}>
+        <div style={{ display: 'flex', width: '100%', maxWidth: '1500px', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'stretch' }}>
           {presents.map((present) => (
             <Link href={LINK_NUBANK} target="_blank" rel="noopener noreferrer">
               <LinkContainer>
