@@ -107,7 +107,7 @@ function Links() {
           alignItems: 'center',
           width: '100%',
           minHeight: '100vh',
-          backgroundImage: `url('/assets/images/presents-list/background-casamento.png')`,
+          backgroundImage: `url('/assets/images/presents-list/background-casamento-low.png')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
