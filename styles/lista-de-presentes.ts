@@ -1,5 +1,16 @@
-import styled from 'styled-components';
+import styled, { keyframes } from "styled-components";
 import Image from 'next/image'
+
+const bounce = keyframes`
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+`;
 
 export const Container = styled.div`
   display: flex;
@@ -84,10 +95,14 @@ export const Thumb = styled(Image)`
 
 export const InfoIcon = styled.span`
   position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 1rem;
-  color: #888;
+  color: #fff;
   cursor: help;
+  padding: 30px 30px 0 30px;
+  gap: 20px;
 
   &:hover .tooltip {
     visibility: visible;
@@ -165,4 +180,12 @@ export const MapContainer = styled.div`
   margin-top: 20px;
   border-radius: 8px;
   overflow: hidden;
+`;
+
+export const BouncingLink = styled.a`
+  display: inline-block; /* Ensures transform works properly */
+  text-decoration: none;
+  font-size: 20px;
+  color: #333;
+  animation: ${bounce} 0.8s ease-in-out infinite; /* Infinite loop */
 `;
