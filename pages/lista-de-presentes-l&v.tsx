@@ -16,6 +16,7 @@ import {
   MapContainer,
   Details,
   DetailItem,
+  BouncingLink,
 } from '../styles/lista-de-presentes';
 import WeddingLogoSvg from '../components/Wedding/WeddingLogoSvg';
 import FlipClockCountdown from "@leenguyen/react-flip-clock-countdown";
@@ -203,28 +204,27 @@ function Links() {
           color: '#fff',
           position: 'relative'
         }}>
-          <h3 color="#f2f2f2">🎁 Nossa Lista de Presentes 🎁</h3>
+          <h2 color="#f2f2f2">Nossa Lista de Presentes</h2>
         </span>
       </div>
       <InfoIcon>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, marginTop: 5 }}>
-          <a
+        {/* <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, marginTop: 5 }}>
+          <FaInfoCircle color="#9f9e9e" width={24} height={24} />
+        </div> */}
+        <p style={{ maxWidth: 1000, textAlign: 'center' }}>
+          Muitas pessoas têm nos perguntado, então resolvemos criar essa versão simbólica e divertida para quem quiser nos ajudar financeiramente.
+          Já moramos juntos há um ano e nosso enxoval está completo, então o que mais precisamos é um empurrãozinho para a lua de mel e alguns custos do grande dia.
+          Se preferirem presentear com algo físico, temos abaixo algumas opções na Amazon. Mas, de coração, o maior presente será ter vocês comemorando com a gente! 💖
+        </p>
+        <BouncingLink
             target='_blank'
             href="https://www.amazon.com.br/hz/wishlist/ls/257FJD6NBUN2Z?ref_=wl_share"
-            style={{ color: 'white' }}
+            style={{ color: 'white', fontSize: 16, fontWeight: 'bold' }}
           >
-            Lista da Amazon
-          </a>
-          <FaInfoCircle color="#9f9e9e" width={24} height={24} />
-        </div>
-        <Tooltip className="tooltip">
-          ✨ Muitas pessoas têm nos perguntado, então resolvemos criar essa versão simbólica e divertida para quem quiser nos ajudar financeiramente.
-          Já moramos juntos há um ano e nosso enxoval está completo, então o que mais precisamos é um empurrãozinho para a lua de mel e alguns custos do grande dia.
-          Se preferirem presentear com algo físico, temos algumas opções na Amazon. Mas, de coração, o maior presente será ter vocês comemorando com a gente! 💖
-        </Tooltip>
+            🎁 Lista da Amazon 🎁
+          </BouncingLink>
       </InfoIcon>
       <section style={{ display: 'flex', flexDirection: 'column', padding: 30, alignItems: 'center', justifyContent: 'center', gap: 8 }}>
-
         <div style={{ display: 'flex', width: '100%', maxWidth: '1500px', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'stretch' }}>
           {presents.map((present) => (
             <Link href={LINK_NUBANK} target="_blank" rel="noopener noreferrer">
