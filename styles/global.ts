@@ -18,6 +18,10 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+
   body {
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;

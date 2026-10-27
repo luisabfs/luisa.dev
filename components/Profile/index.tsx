@@ -10,7 +10,7 @@ import { Container, Avatar, Location } from './styles';
 import Social from '../Social';
 import Image from 'next/image'
 
-import headshot from '../../public/assets/images/headshot.jpg';
+import headshot from '../../public/assets/images/headshot.jpeg';
 import layer from '../../public/assets/icons/layer.png';
 
 const Profile = () => (
@@ -22,7 +22,7 @@ const Profile = () => (
         <FiMapPin />Aracaju-Sergipe, Brasil
       </IconContext.Provider>
     </Location>
-    <p>21 anos. Programadora mobile. Autodidata. Aspirante a poliglota.</p>
+    <p>Frontend &amp; Mobile Engineer com mais de 6 anos de experiência em React Native, React, TypeScript, Next.js e Expo.</p>
     <Image src={layer} alt="" />
     <Social />
   </Container>

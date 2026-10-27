@@ -16,19 +16,19 @@ import {
 const Social = () => (
   <Container>
     <IconContext.Provider value={{ size: '32px', color: '#f2f2f2' }}>
-      <a href="https://github.com/luisabfs" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/luisabfs" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
         <FaGithub />
       </a>
-      <a href="https://linkedin.com/in/luisabfs" target="_blank" rel="noopener noreferrer">
+      <a href="https://linkedin.com/in/luisabfs" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
         <FaLinkedin />
       </a>
-      <a href="https://instagram.com/luisa.dev" target="_blank" rel="noopener noreferrer">
+      <a href="https://instagram.com/luisa.dev" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
         <FaInstagram />
       </a>
-      <a href="https://behance.net/luisabfs" target="_blank" rel="noopener noreferrer">
+      <a href="https://behance.net/luisabfs" target="_blank" rel="noopener noreferrer" aria-label="Behance">
         <FaBehance />
       </a>
-      <a href="mailto:luisa.barros.dev@gmail.com">
+      <a href="mailto:luisa.barros.dev@gmail.com" aria-label="Email Luísa Barros">
         <FaEnvelope />
       </a>
     </IconContext.Provider>
