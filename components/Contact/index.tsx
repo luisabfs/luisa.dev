@@ -1,17 +1,17 @@
 import React from 'react';
-import Title from '../Title';
 
-import { Container, Form, Button } from './styles';
+import { Container, Eyebrow, Inner, MailLink } from './styles';
 
 const Contact = () => (
-  <Container>
-    <Title color='#f2f2f2'>entre em contato</Title>
-    <Form>
-      <input type="text" name="name" placeholder="seu nome" />
-      <input type="email" name="email" placeholder="seu melhor e-mail" />
-      <textarea inputMode="text" name="message" placeholder="sua mensagem" />
-      <Button type="submit">enviar</Button>
-    </Form>
+  <Container id="contact" aria-labelledby="contact-title">
+    <Inner>
+      <Eyebrow>03 / Let&apos;s connect</Eyebrow>
+      <h2 id="contact-title">Let&apos;s build something great together.</h2>
+      <p className="contact-description">
+        Open to interesting opportunities, creative collaborations, and conversations about technology.
+      </p>
+      <MailLink href="mailto:luisa.barros.dev@gmail.com">Say hello <span aria-hidden="true">↗</span></MailLink>
+    </Inner>
   </Container>
 );
 

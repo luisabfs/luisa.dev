@@ -1,121 +1,94 @@
 import styled from 'styled-components';
-import theme from '../../theme/themes';
 
-interface Props {
-  menu?: boolean;
+interface NavProps {
+  $open: boolean;
 }
 
-export const Container = styled.div`
-  display: flex;
-  justify-content: center;
-
+export const Container = styled.header`
+  box-sizing: border-box;
+  position: relative;
+  z-index: 5;
   width: 100%;
+  padding: 22px 32px;
+  border-bottom: 1px solid rgba(183, 186, 195, 0.12);
+  background: #292d33;
 `;
 
 export const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1274px;
+  margin: 0 auto;
+`;
 
-  /* ############### RESPONSIVE ############### */
+export const Brand = styled.a`
+  color: #faf7f8;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  text-decoration: none;
 
-  @media (max-width: 1180px) {
-    max-width: 800px;
-  }
+  span { color: #e03d58; }
 
-  /* portrait tablet and regular desktop */
-  @media (max-width: 768px) {
-    max-width: 600px;
-  }
-
-  /* portrait phones to regular tablet */
-  @media (min-width: 768px) and (max-width: 979px) {
-  }
-
-  /* regular phones and below */
-  @media (max-width: 480px) {
-    margin: 0 20px;
+  &:focus-visible {
+    outline: 3px solid #f38b9b;
+    outline-offset: 5px;
+    border-radius: 2px;
   }
 `;
 
-export const NavMenu = styled.ul`
-  width: 100%;
-  list-style: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+export const NavToggle = styled.button`
+  display: none;
+  border: 1px solid #515660;
+  border-radius: 10px;
+  padding: 9px 12px;
+  color: #faf7f8;
+  background: #343840;
+  font: 600 14px 'Montserrat', sans-serif;
+  cursor: pointer;
 
-  /* ############### RESPONSIVE ############### */
+  &:focus-visible { outline: 3px solid #f38b9b; outline-offset: 3px; }
 
-  @media (max-width: 768px) {
-    align-items: ${(props: Props) => (props.menu === true ? 'flex-start' : 'center')};
-  }
+  @media (max-width: 760px) { display: inline-flex; align-items: center; gap: 8px; }
 `;
 
-export const NavItem = styled.li`
+export const NavMenu = styled.nav<NavProps>`
+  display: flex;
   align-items: center;
-  margin-top: 10px;
+  gap: clamp(16px, 2.2vw, 34px);
 
   a {
-    color: ${theme.globalTheme.PRIMARY_TEXT_COLOR};
-    font-size: 18px;
+    color: #d0d1d6;
+    font: 500 13px 'Montserrat', sans-serif;
     text-decoration: none;
-    padding: 16px 15px;
-
-    span {
-      color: ${theme.globalTheme.ACCENT_COLOR};
-    }
-
-    &:hover {
-      color: ${theme.colors.pink};
-    }
-
-    /* ############### RESPONSIVE ############### */
-
-    @media (max-width: 1180px) {
-      padding: 12px 10px;
-    }
+    transition: color 150ms ease;
   }
 
-  svg {
-    display: none;
+  a:hover, a:focus-visible { color: #fff; }
+  a:focus-visible { outline: 2px solid #f38b9b; outline-offset: 5px; border-radius: 2px; }
+  .resume-link { color: #f38b9b; font-weight: 700; }
 
-    @media (max-width: 769px) {
-      margin-left: auto;
-      padding: 15px 0;
-    }
+  @media (max-width: 760px) {
+    display: ${({ $open }) => ($open ? 'flex' : 'none')};
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
+    right: 0;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0;
+    padding: 8px 24px 18px;
+    border-bottom: 1px solid #515660;
+    background: #292d33;
+
+    a { padding: 12px 4px; }
+    a + a { border-top: 1px solid rgba(183, 186, 195, 0.12); }
   }
 
-  &:first-child {
-    margin-right: auto;
-
-    a {
-      font-family: 'Poppins';
-      font-size: 48px;
-
-      &:hover {
-        color: ${theme.colors.black};
-      }
-    }
-
-    @media (max-width: 769px) {
-      padding: 15px 0;
-    }
+  @media (prefers-reduced-motion: reduce) {
+    a { transition: none; }
   }
-
-    /* ############### RESPONSIVE ############### */
-
-    @media (max-width: 768px) {
-    svg {
-      display: flex;
-    }
-
-    &:not(:first-child):not(:last-child) {
-      display: none;
-    }
-  }
-`;
-
-export const WrapMenu = styled.div`
-  display: flex;
-  justify-content: flex-end;
 `;

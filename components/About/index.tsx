@@ -16,7 +16,7 @@ const About = () => (
           <MdWork />
         </IconContext.Provider>
         <span>
-          Tenho 3 anos de experiência profissional.
+          Tenho mais de 6 anos de experiência profissional.
         </span>
       </Item>
       <Item>
@@ -32,7 +32,7 @@ const About = () => (
           <FaReact />
         </IconContext.Provider>
         <span>
-          Trabalho com o ecossistema Javascript - com foco em React e React Native.
+          Trabalho com React Native, React, TypeScript, Next.js e Expo.
         </span>
       </Item>
     </CaptionWrap>

@@ -1,72 +1,39 @@
-import React, { useState, useMemo } from 'react';
-import Link from 'next/link'
+import React, { useState } from 'react';
+import Link from 'next/link';
+import { FiMenu, FiX } from 'react-icons/fi';
 
-import { FiMenu } from 'react-icons/fi';
-import {
-  Container,
-  Wrapper,
-  NavMenu,
-  NavItem,
-  WrapMenu,
-} from './styles';
-
-import Menu from '../NavMenu';
+import { Brand, Container, NavMenu, NavToggle, Wrapper } from './styles';
 
 export default function Navbar() {
-  const [showMenu, setShowMenu] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const navItems = useMemo(() => [
-    {
-      ref: '/',
-      label: `home`,
-    },
-    {
-      ref: '/about',
-      label: `sobre mim`,
-    }, {
-      ref: '/assets/files/CV-LUISA-BARROS-PT.pdf',
-      label: `currículo`,
-      newTab: true,
-    },
-  ], []);
-
-  const handleMenuShow = () => {
-    setShowMenu(!showMenu);
-    document.addEventListener('click', handleMenuClose);
-  }
-
-  const handleMenuClose = () => {
-    setShowMenu(false);
-    document.removeEventListener('click', handleMenuClose);
-  }
+  const closeMenu = () => setMenuOpen(false);
 
   return (
     <Container>
       <Wrapper>
-        <NavMenu menu={showMenu}>
-          <NavItem>
-            <Link href="/">luisa.<span>dev</span></Link>
-          </NavItem>
+        <Link href="/" passHref legacyBehavior>
+          <Brand aria-label="Luisa.dev home">luisa<span>.dev</span></Brand>
+        </Link>
 
-          {navItems.map(item => (
-            <NavItem key={item.ref}>
-              <Link href={item.ref} target={item.newTab ? '_blank' : undefined} rel={item.newTab ? "noopener noreferrer" : undefined}>{item.label}</Link>
-            </NavItem>
-          ))}
+        <NavToggle
+          type="button"
+          aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+          aria-expanded={menuOpen}
+          aria-controls="primary-navigation"
+          onClick={() => setMenuOpen((open) => !open)}
+        >
+          {menuOpen ? <FiX aria-hidden="true" /> : <FiMenu aria-hidden="true" />}
+          Menu
+        </NavToggle>
 
-          <NavItem>
-            <WrapMenu>
-            {showMenu ?
-              <button tabIndex={0} onKeyDown={handleMenuShow} onClick={handleMenuShow}>
-                <FiMenu />
-                <Menu />
-              </button>
-            : null}
-            </WrapMenu>
-          </NavItem>
+        <NavMenu id="primary-navigation" aria-label="Primary navigation" $open={menuOpen}>
+          <Link href="/#projects" onClick={closeMenu}>Projects</Link>
+          <Link href="/#about" onClick={closeMenu}>About</Link>
+          <Link href="/#contact" onClick={closeMenu}>Contact</Link>
+          <a className="resume-link" href="/assets/files/CV-LUISA-BARROS-EN.pdf" target="_blank" rel="noopener noreferrer">Résumé (EN)</a>
         </NavMenu>
       </Wrapper>
     </Container>
   );
 }
-

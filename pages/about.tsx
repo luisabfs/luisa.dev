@@ -78,9 +78,12 @@ function About() {
         <>
           <CaptionWrapper>
             <SkillWrapper>
-              <Skill icon={<FaJs />} color={colors.yellowJs} text="Javascript" />
-              <Skill icon={<SiTypescript />} color={colors.blueTs} text="Typescript" />
+              <Skill icon={<FaJs />} color={colors.yellowJs} text="JavaScript" />
+              <Skill icon={<SiTypescript />} color={colors.blueTs} text="TypeScript" />
               <Skill icon={<FaReact />} color={colors.blueReact} text="React" />
+              <Skill icon={<FaReact />} color={colors.blueReact} text="React Native" />
+              <Skill icon={<FaReact />} color={colors.blueReact} text="Next.js" />
+              <Skill icon={<FaReact />} color={colors.blueReact} text="Expo" />
               <Skill icon={<FaNodeJs />} color={colors.greenNode} text="Node.js" />
               <Skill icon={<DiGit />} color={colors.redGit} text="Git" />
             </SkillWrapper>
@@ -94,39 +97,62 @@ function About() {
       content: (
         <>
           <CaptionWrapper>
-            <b>Desenvolvedora Fullstack</b>
+            <b>Frontend &amp; Mobile Engineer</b>
             <div>
-              <span>Lojas Riachuelo S/A</span>
+              <span>Flutter Brazil</span>
               <br />
-              <p><span>janeiro/2021 - janeiro/2023</span></p>
+              <p><span>julho/2024 - outubro/2026</span></p>
               <br />
-              <span>
-                <li>Atuação em uma das maiores varejistas do Brasil</li>
-                <li>Implementação de um PDV Mobile, almejando melhorias na experiência do cliente em lojas físicas, no contexto de vendas e pagamentos</li>
-                <li>Substituição de sistemas legados, visando integração <i>omnichannel</i></li>
-                <li>UIs e arquiteturas de acordo com princípios <i>offline-first</i></li>
-                <li>Squad composta por 10+ desenvolvedores, PM/POs, QAs e UXs</li>
-                <li>Metodologia ágil Kanban, Jira e cerimônias (dailies, plannings e retrospectivas)</li>
-                <li>Manutenção de repositórios no Microsoft Azure, seguindo o pipeline CI/CD</li>
-                <li>Stack: Java/Spring Boot, Typescript, NodeJS, React, React Native, RealmDB</li>
-              </span>
+              <ul>
+                <li>Contribuí para lançamentos na App Store e Google Play e releases mobile contínuos, incluindo um app Android com mais de 5 milhões de downloads.</li>
+                <li>Desenvolvi componentes reutilizáveis em React e TypeScript e interfaces transacionais, incluindo migrações de legado, integração com Design System, gerenciamento de estado e testes automatizados.</li>
+                <li>Melhorei a interoperabilidade entre React Native e WebViews usando postMessage, polling de API, invalidação de cache RTK Query e persistência específica por plataforma.</li>
+                <li>Integrei o SDK nativo de analytics Amplitude e implementei hooks de eventos; investiguei incidentes de produção e erros transacionais, além de apoiar releases com feature flags e monitoramento.</li>
+                <li>Atualizei o Storybook para a versão 10 e validei mudanças na biblioteca de componentes com Chromatic.</li>
+              </ul>
             </div>
           </CaptionWrapper>
           <br />
           <CaptionWrapper>
-            <b>Desenvolvedora Mobile</b>
+            <b>Frontend Developer</b>
             <div>
-              <span>ma9 Soluções Inteligentes</span>
+              <span>Mackenzie Presbyterian University</span>
+              <br />
+              <p><span>outubro/2023 - agosto/2024</span></p>
+              <br />
+              <ul>
+                <li>Desenvolvi funcionalidades frontend para uma plataforma de educação digital com React, Next.js, TypeScript e Tailwind CSS.</li>
+                <li>Criei e documentei componentes reutilizáveis no Storybook e implementei testes de componente e ponta a ponta com Cypress.</li>
+                <li>Colaborei em integrações GraphQL, práticas de code review e melhorias na qualidade do frontend.</li>
+              </ul>
+            </div>
+          </CaptionWrapper>
+          <br />
+          <CaptionWrapper>
+            <b>Mobile Developer</b>
+            <div>
+              <span>Lojas Riachuelo</span>
+              <br />
+              <p><span>janeiro/2021 - janeiro/2023</span></p>
+              <br />
+              <ul>
+                <li>Desenvolvi aplicações React Native e TypeScript para varejo omnichannel, incluindo ponto de venda mobile e autoatendimento.</li>
+                <li>Trabalhei com fluxos offline-first, banco Realm, limitações de dispositivos Android e periféricos de loja, como impressoras e leitores.</li>
+                <li>Mantive interfaces transacionais em diferentes tamanhos de tela e participei da substituição de sistemas legados de loja.</li>
+              </ul>
+            </div>
+          </CaptionWrapper>
+          <br />
+          <CaptionWrapper>
+            <b>Junior Mobile Developer</b>
+            <div>
+              <span>ma9</span>
               <br />
               <p><span>novembro/2019 - junho/2020</span></p>
               <br />
-              <span>
-                <li>Atuei no desenvolvimento de um aplicativo mobile fintech em React Native</li>
-                <li>Implementei UIs <i>cross-platform</i>, feitas pela equipe de design responsável</li>
-                <li>Trabalhei, como parte do time de desenvolvimento, com a metologia ágil Scrum</li>
-                <li>Colaborei na manutenção de um repositório no Github</li>
-                <li>Stack: Javascript, React, React Native, AsyncStorage, React Context API</li>
-              </span>
+              <ul>
+                <li>Desenvolvi interfaces React Native para um aplicativo fintech, colaborando com design em fluxos multiplataforma e experiências seguras.</li>
+              </ul>
             </div>
           </CaptionWrapper>
         </>
@@ -222,3 +248,12 @@ function About() {
 }
 
 export default About;
+
+export async function getServerSideProps() {
+  return {
+    redirect: {
+      destination: '/#about',
+      permanent: true,
+    },
+  };
+}

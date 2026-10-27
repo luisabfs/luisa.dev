@@ -48,3 +48,12 @@ const Projects = () => {
 };
 
 export default Projects;
+
+export async function getServerSideProps() {
+  return {
+    redirect: {
+      destination: '/#projects',
+      permanent: true,
+    },
+  };
+}
